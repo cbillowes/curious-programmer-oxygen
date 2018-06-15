@@ -11,6 +11,7 @@ The birth of the curious programmer
 
 ## Resources
 
+* [gatsby-advanced-starter](https://github.com/Vagr9K/gatsby-advanced-starter)
 * [Oxygen Logo](https://seeklogo.com/vector-logo/329229/oxygen)
 
 ## License
