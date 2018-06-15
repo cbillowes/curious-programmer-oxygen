@@ -4,6 +4,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/00ba1fed9223c420b5f5/maintainability)](https://codeclimate.com/github/cbillowes/curious-programmer-oxygen/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/00ba1fed9223c420b5f5/test_coverage)](https://codeclimate.com/github/cbillowes/curious-programmer-oxygen/test_coverage)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1d020d15c27c4121827612f6fcf19811)](https://www.codacy.com/app/cbillowes/curious-programmer-oxygen?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cbillowes/curious-programmer-oxygen&amp;utm_campaign=Badge_Grade)
 
 # Curious Programmer _(Codename Oxygen)_
 
