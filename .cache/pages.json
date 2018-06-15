@@ -10,15 +10,15 @@
         "componentChunkName": "component---src-templates-post-jsx",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-jsx",
-        "jsonName": "the-perfect-illusion.json",
-        "path": "/the-perfect-illusion"
+        "jsonName": "manage-expectations.json",
+        "path": "/manage-expectations"
     },
     {
         "componentChunkName": "component---src-templates-post-jsx",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-jsx",
-        "jsonName": "manage-expectations.json",
-        "path": "/manage-expectations"
+        "jsonName": "the-perfect-illusion.json",
+        "path": "/the-perfect-illusion"
     },
     {
         "componentChunkName": "component---src-templates-post-jsx",
@@ -59,13 +59,6 @@
         "componentChunkName": "component---src-templates-post-jsx",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-jsx",
-        "jsonName": "problems-with-microservices.json",
-        "path": "/problems-with-microservices"
-    },
-    {
-        "componentChunkName": "component---src-templates-post-jsx",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-jsx",
         "jsonName": "how-this-blog-improved-my-productivity.json",
         "path": "/how-this-blog-improved-my-productivity"
     },
@@ -73,8 +66,22 @@
         "componentChunkName": "component---src-templates-post-jsx",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "problems-with-microservices.json",
+        "path": "/problems-with-microservices"
+    },
+    {
+        "componentChunkName": "component---src-templates-post-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
         "jsonName": "people-oriented-software.json",
         "path": "/people-oriented-software"
+    },
+    {
+        "componentChunkName": "component---src-templates-post-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "dealing-with-change-in-teams.json",
+        "path": "/dealing-with-change-in-teams"
     },
     {
         "componentChunkName": "component---src-templates-post-jsx",
@@ -94,8 +101,8 @@
         "componentChunkName": "component---src-templates-post-jsx",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-jsx",
-        "jsonName": "dealing-with-change-in-teams.json",
-        "path": "/dealing-with-change-in-teams"
+        "jsonName": "soft-skils-every-developer-should-know-about.json",
+        "path": "/soft-skils-every-developer-should-know-about"
     },
     {
         "componentChunkName": "component---src-templates-post-jsx",
@@ -103,13 +110,6 @@
         "layoutComponentChunkName": "component---src-layouts-index-jsx",
         "jsonName": "people-do-stupid-things.json",
         "path": "/people-do-stupid-things"
-    },
-    {
-        "componentChunkName": "component---src-templates-post-jsx",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-jsx",
-        "jsonName": "soft-skils-every-developer-should-know-about.json",
-        "path": "/soft-skils-every-developer-should-know-about"
     },
     {
         "componentChunkName": "component---src-templates-post-jsx",
@@ -416,15 +416,15 @@
         "componentChunkName": "component---src-templates-tag-jsx",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-jsx",
-        "jsonName": "tags-mindset.json",
-        "path": "/tags/mindset/"
+        "jsonName": "tags-communication.json",
+        "path": "/tags/communication/"
     },
     {
         "componentChunkName": "component---src-templates-tag-jsx",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-jsx",
-        "jsonName": "tags-communication.json",
-        "path": "/tags/communication/"
+        "jsonName": "tags-mindset.json",
+        "path": "/tags/mindset/"
     },
     {
         "componentChunkName": "component---src-templates-tag-jsx",
