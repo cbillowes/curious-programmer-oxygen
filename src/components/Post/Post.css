@@ -1,3 +1,8 @@
+.post-title {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
 .post-title a {
   text-decoration: none;
 }
@@ -5,6 +10,8 @@
 .post-subtitle {
   font-weight: normal;
   font-style: italic;
+  font-size: 1em;
+  line-height: 1.75em;
 }
 
 .post-meta {
