@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import Moment from "react-moment"
+import Post from "../Post/Post"
 import "./PostListing.css";
 
 class PostListing extends React.Component {
@@ -23,29 +24,15 @@ class PostListing extends React.Component {
     const postList = this.getPostList();
     return (
       <div className="container">
-        {
-          postList.map(post => (
-            <div className="post-preview">
-              <h2 class="post-title">
-                <Link to={post.path} key={post.title}>
-                  {post.title}
-                </Link>
-              </h2>
-              <h3 class="post-subtitle">
-                {post.excerpt}
-              </h3>
-              <p class="post-meta">
-                Posted
-                <Moment date={post.date} fromNow />
-                on
-                <Moment format="dddd DD MMMM YYYY" date={post.date} fromNow ago />
-                (
-                  {post.timeToRead}
-                  {post.timeToRead <= 1 ? " minute" : " minutes"}
-                )
-              </p>
-            </div>
-        ))}
+        <div className="row">
+          <div className="col-lg-8 col-md-10 mx-auto">
+            {
+              postList.map(post => (
+                <Post post={post} />
+              ))
+            }
+          </div>
+        </div>
       </div>
     );
   }

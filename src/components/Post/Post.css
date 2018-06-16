@@ -1,0 +1,16 @@
+.post-title a {
+  text-decoration: none;
+}
+
+.post-subtitle {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.post-meta {
+  display: inline;
+}
+
+.post-meta time {
+  margin: 2px;
+}
