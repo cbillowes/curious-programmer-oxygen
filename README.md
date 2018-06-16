@@ -45,6 +45,8 @@
   * `sudo npm i -g libvips`
   * `sudo npm install -g node-gyp`
   * `sudo yarn upgrade-interactive` > **gatsby** package
+  * `sudo npm i -g libvips --unsafe-perm=true --allow-root `
+  * `sudo npm install --unsafe-perm=true --allow-root`
   * Cleaning steps
 
 ```shell
