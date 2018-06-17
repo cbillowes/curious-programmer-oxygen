@@ -28,7 +28,7 @@ class PostListing extends React.Component {
           <div className="col-lg-8 col-md-10 mx-auto">
             {
               postList.map(post => (
-                <div>
+                <div key={post.path}>
                   <PostSnippet post={post} />
                   <hr />
                 </div>
