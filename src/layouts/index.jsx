@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import Gorget from "../components/Gorget/Gorget";
+import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
 import "./index.css";
 
@@ -49,6 +50,7 @@ export default class MainLayout extends React.Component {
         </Helmet>
         <Gorget title={config.siteTitle} />
         {children()}
+        <Footer config={config} />
       </div>
     );
   }
