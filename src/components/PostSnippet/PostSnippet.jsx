@@ -10,19 +10,20 @@ class PostSnippet extends React.Component {
     return (
       <div className="post-preview">
         <Link to={post.path} key={post.title}>
-          <h2 class="post-title">
+          <h2 className="post-title">
             {post.title}
           </h2>
-          <h3 class="post-subtitle">
+          <h3 className="post-subtitle">
             {post.excerpt}
           </h3>
         </Link>
-        <p class="post-meta">
-          Posted <Moment date={post.date} fromNow />
-          on <Moment format="dddd, DD MMMM YYYY" date={post.date} fromNow ago />
-          <span class="estTimeToRead">
-            ({post.timeToRead} {post.timeToRead <= 1 ? " minute" : " minutes"})
-          </span>
+        <p className="post-meta">
+          Posted{" "}
+          <Moment date={post.date} fromNow />
+          on{" "}
+          <Moment format="dddd, DD MMMM YYYY" date={post.date} fromNow ago />
+          {" "}
+          ({post.timeToRead} {post.timeToRead <= 1 ? " minute" : " minutes"})
         </p>
       </div>
     )
