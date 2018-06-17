@@ -15,9 +15,9 @@
 
 * **Theme:** All things curious, but what exactly is yet to be discovered with time.
 
-* **Migration:** From Jekyll to Gatsby.js to to dabble in some Webpack and React. 
+* **Migration:** From Jekyll to Gatsby.js to to dabble in some Webpack and React.
 
-  
+
 
 ## Resources
 
@@ -25,7 +25,7 @@
 
 * [Oxygen Logo](https://seeklogo.com/vector-logo/329229/oxygen)
 
-  
+
 
 ## Gremlins
 
@@ -42,12 +42,6 @@
     `sudo gatsby develop --host localhost --port 14789`
 
 * Permission denied trying to install **lovell/sharp-libvips**
-  * `sudo npm i -g libvips`
-  * `sudo npm install -g node-gyp`
-  * `sudo yarn upgrade-interactive` > **gatsby** package
-  * `sudo npm i -g libvips --unsafe-perm=true --allow-root `
-  * `sudo npm install --unsafe-perm=true --allow-root`
-  * Cleaning steps
 
 ```shell
 info sharp Downloading https://github.com/lovell/sharp-libvips/releases/download/v8.6.1/libvips-8.6.1-linux-x64.tar.gz
@@ -57,13 +51,18 @@ events.js:167
 EACCES: permission denied, open '/home/<directory>/node_modules/sharp/10298-libvips-8.6.1-linux-x64.tar.gz'
 ```
 
+  * `sudo npm install -g node-gyp`
+  * `sudo yarn upgrade-interactive` > **gatsby** package
+  * `sudo npm i libvips --unsafe-perm=true --allow-root`
+  * `sudo npm install --unsafe-perm=true --allow-root`
+  * Cleaning steps
+
+
 ```log
 50728 silly lifecycle   '(node install/libvips && node install/dll-copy && prebuild-install) || (node-gyp rebuild && node install/dll-copy)' ]
 50729 silly lifecycle sharp@0.20.1~install: Returned: code: 1  signal: null
 50730 info lifecycle sharp@0.20.1~install: Failed to exec install script
 ```
-
-
 
 ## MIT License
 
