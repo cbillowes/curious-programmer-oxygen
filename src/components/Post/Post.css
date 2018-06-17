@@ -1,23 +1,30 @@
+.post-preview a {
+  text-decoration: none;
+}
+
 .post-title {
   font-size: 2em;
   line-height: 1.5em;
 }
 
-.post-title a {
-  text-decoration: none;
-}
-
 .post-subtitle {
-  font-weight: normal;
-  font-style: italic;
-  font-size: 1em;
+  font-weight: 300;
   line-height: 1.75em;
+  line-height: 1.75em;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .post-meta {
   display: inline;
+  font-size: 1em;
+  font-style: italic;
+  color: #868e96;
 }
 
 .post-meta time {
   margin: 2px;
+}
+
+.post-meta .estTimeToRead {
+  margin-left: 0.25em;
 }

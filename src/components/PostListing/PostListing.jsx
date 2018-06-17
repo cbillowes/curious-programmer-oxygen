@@ -28,7 +28,10 @@ class PostListing extends React.Component {
           <div className="col-lg-8 col-md-10 mx-auto">
             {
               postList.map(post => (
-                <Post post={post} />
+                <div>
+                  <Post post={post} />
+                  <hr />
+                </div>
               ))
             }
           </div>

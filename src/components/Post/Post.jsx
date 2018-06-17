@@ -9,18 +9,20 @@ class Post extends React.Component {
 
     return (
       <div className="post-preview">
-        <h2 class="post-title">
-          <Link to={post.path} key={post.title}>
+        <Link to={post.path} key={post.title}>
+          <h2 class="post-title">
             {post.title}
-          </Link>
-        </h2>
-        <h3 class="post-subtitle">
-          {post.excerpt}
-        </h3>
+          </h2>
+          <h3 class="post-subtitle">
+            {post.excerpt}
+          </h3>
+        </Link>
         <p class="post-meta">
           Posted <Moment date={post.date} fromNow />
-          on <Moment format="dddd DD MMMM YYYY" date={post.date} fromNow ago />
-          ({post.timeToRead} {post.timeToRead <= 1 ? " minute" : " minutes"})
+          on <Moment format="dddd, DD MMMM YYYY" date={post.date} fromNow ago />
+          <span class="estTimeToRead">
+            ({post.timeToRead} {post.timeToRead <= 1 ? " minute" : " minutes"})
+          </span>
         </p>
       </div>
     )
