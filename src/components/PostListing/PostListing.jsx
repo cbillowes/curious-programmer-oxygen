@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import Moment from "react-moment"
-import Post from "../Post/Post"
+import PostSnippet from "../PostSnippet/PostSnippet"
 import "./PostListing.css";
 
 class PostListing extends React.Component {
@@ -29,7 +29,7 @@ class PostListing extends React.Component {
             {
               postList.map(post => (
                 <div>
-                  <Post post={post} />
+                  <PostSnippet post={post} />
                   <hr />
                 </div>
               ))

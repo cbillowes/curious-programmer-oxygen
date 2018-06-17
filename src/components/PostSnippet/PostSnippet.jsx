@@ -1,9 +1,9 @@
 import React from "react"
 import Link from "gatsby-link"
 import Moment from "react-moment"
-import "./Post.css"
+import "./PostSnippet.css"
 
-class Post extends React.Component {
+class PostSnippet extends React.Component {
   render() {
     var post = this.props.post
 
@@ -29,4 +29,4 @@ class Post extends React.Component {
   }
 }
 
-export default Post
+export default PostSnippet
