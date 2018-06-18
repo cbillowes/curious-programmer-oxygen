@@ -19,11 +19,11 @@ class PostSnippet extends React.Component {
         </Link>
         <p className="post-meta">
           Posted{" "}
-          <Moment date={post.date} fromNow />
-          on{" "}
-          <Moment format="dddd, DD MMMM YYYY" date={post.date} fromNow ago />
+          <Moment date={post.date} fromNow ago />
+          {" "}on{" "}
+          <Moment date={post.date} format="ddd, MMM DD YYYY" />
           {" "}
-          ({post.timeToRead} {post.timeToRead <= 1 ? " minute" : " minutes"})
+          ({post.timeToRead} minute read)
         </p>
       </div>
     )
