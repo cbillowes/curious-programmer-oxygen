@@ -6,16 +6,20 @@ import {
   TwitterShareButton,
   TelegramShareButton,
   RedditShareButton,
+  WhatsappShareButton,
+
   FacebookShareCount,
   GooglePlusShareCount,
   LinkedinShareCount,
   RedditShareCount,
+
   FacebookIcon,
   TwitterIcon,
   TelegramIcon,
   GooglePlusIcon,
   LinkedinIcon,
-  RedditIcon
+  RedditIcon,
+  WhatsappIcon
 } from "react-share"
 import config from "../../../data/SiteConfig"
 import "./SocialLinks.css"
@@ -38,21 +42,25 @@ class SocialLinks extends Component {
             {count => <div className="share-count">{filter(count)}</div>}
           </RedditShareCount>
         </RedditShareButton>
+
         <TwitterShareButton url={url} title={post.title}>
           <TwitterIcon round size={iconSize} />
         </TwitterShareButton>
+
         <GooglePlusShareButton url={url}>
           <GooglePlusIcon round size={iconSize} />
           <GooglePlusShareCount url={url}>
             {count => <div className="share-count">{filter(count)}</div>}
           </GooglePlusShareCount>
         </GooglePlusShareButton>
+
         <FacebookShareButton url={url} quote={postNode.excerpt}>
           <FacebookIcon round size={iconSize} />
           <FacebookShareCount url={url}>
             {count => <div className="share-count">{filter(count)}</div>}
           </FacebookShareCount>
         </FacebookShareButton>
+
         <LinkedinShareButton
           url={url}
           title={post.title}
@@ -63,9 +71,14 @@ class SocialLinks extends Component {
             {count => <div className="share-count">{filter(count)}</div>}
           </LinkedinShareCount>
         </LinkedinShareButton>
+
         <TelegramShareButton url={url}>
           <TelegramIcon round size={iconSize} />
         </TelegramShareButton>
+
+        <WhatsappShareButton url={url} title={postNode.title}>
+          <WhatsappIcon round size={iconSize} />
+        </WhatsappShareButton>
       </div>
     )
   }
