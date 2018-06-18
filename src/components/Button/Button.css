@@ -1,0 +1,9 @@
+.button.badge {
+  padding:10px;
+  background-color: #ccc;
+}
+
+.button.badge:hover {
+  background-color: #cc0000;
+  color: #fff;
+}
