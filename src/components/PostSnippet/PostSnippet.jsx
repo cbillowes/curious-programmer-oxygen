@@ -5,7 +5,8 @@ import "./PostSnippet.css"
 
 class PostSnippet extends React.Component {
   render() {
-    var post = this.props.post
+    const post = this.props.post
+    const postDate = Date.parse(post.date, "YYYY-MM-dd")
 
     return (
       <div className="post-preview">
@@ -18,12 +19,11 @@ class PostSnippet extends React.Component {
           </h3>
         </Link>
         <p className="post-meta">
-          Posted{" "}
-          <Moment date={post.date} fromNow ago />
-          {" "}on{" "}
-          <Moment date={post.date} format="ddd, MMM DD YYYY" />
+          <Moment date={postDate} fromNow ago />
+          {" on "}
+          <Moment date={postDate} format="ddd, D MMMM YYYY" />
           {" "}
-          ({post.timeToRead} minute read)
+          (Est. {post.timeToRead} minute read)
         </p>
       </div>
     )
