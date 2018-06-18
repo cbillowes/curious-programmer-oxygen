@@ -1,4 +1,13 @@
-.post-meta {
+.post p {
+    line-height: 2em;
+}
+
+.post blockquote {
+    border-left: #cc0000 0.5em solid;
+    padding-left: 1.5em;
+}
+
+.post .post-meta {
     display: flex;
     flex-direction: column;
     justify-content: center;
