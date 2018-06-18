@@ -10,8 +10,16 @@
 
 .social-links > div {
     margin: 5px 15px;
+    cursor: pointer;
 }
 
-.share-count {
+.social-links .share-count {
     text-align: center;
+}
+
+.social-links svg:hover circle{
+    fill: #cc0000;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 700;
+    stroke-width: 2;
 }
