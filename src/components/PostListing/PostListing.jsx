@@ -1,12 +1,12 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from "react"
+import Link from "gatsby-link"
 import Moment from "react-moment"
 import PostSnippet from "../PostSnippet/PostSnippet"
-import "./PostListing.css";
+import "./PostListing.css"
 
 class PostListing extends React.Component {
   getPostList() {
-    const postList = [];
+    const postList = []
     this.props.postEdges.forEach(postEdge => {
       postList.push({
         path: postEdge.node.fields.slug,
@@ -16,12 +16,12 @@ class PostListing extends React.Component {
         date: postEdge.node.frontmatter.date,
         excerpt: postEdge.node.excerpt,
         timeToRead: postEdge.node.timeToRead
-      });
-    });
-    return postList;
+      })
+    })
+    return postList
   }
   render() {
-    const postList = this.getPostList();
+    const postList = this.getPostList()
     return (
       <div className="container">
         <div className="row">
@@ -37,8 +37,8 @@ class PostListing extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default PostListing;
+export default PostListing

@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import _ from "lodash";
-import Link from "gatsby-link";
+import React, { Component } from "react"
+import _ from "lodash"
+import Link from "gatsby-link"
 
 class PostTags extends Component {
   render() {
-    const { tags } = this.props;
+    const { tags } = this.props
     return (
       <div className="post-tag-container">
         {tags &&
@@ -18,8 +18,8 @@ class PostTags extends Component {
             </Link>
           ))}
       </div>
-    );
+    )
   }
 }
 
-export default PostTags;
+export default PostTags

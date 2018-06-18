@@ -1,6 +1,6 @@
-const config = require("./data/SiteConfig");
+const config = require("./data/SiteConfig")
 
-const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
+const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -89,10 +89,10 @@ module.exports = {
       resolve: "gatsby-plugin-feed",
       options: {
         setup(ref) {
-          const ret = ref.query.site.siteMetadata.rssMetadata;
-          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "GatsbyJS Material Starter";
-          return ret;
+          const ret = ref.query.site.siteMetadata.rssMetadata
+          ret.allMarkdownRemark = ref.query.allMarkdownRemark
+          ret.generator = "GatsbyJS Material Starter"
+          return ret
         },
         query: `
         {
@@ -114,7 +114,7 @@ module.exports = {
         feeds: [
           {
             serialize(ctx) {
-              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata;
+              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
               return ctx.query.allMarkdownRemark.edges.map(edge => ({
                 categories: edge.node.frontmatter.tags,
                 date: edge.node.frontmatter.date,
@@ -124,7 +124,7 @@ module.exports = {
                 url: rssMetadata.site_url + edge.node.fields.slug,
                 guid: rssMetadata.site_url + edge.node.fields.slug,
                 custom_elements: [{ "content:encoded": edge.node.html }]
-              }));
+              }))
             },
             query: `
             {
@@ -156,4 +156,4 @@ module.exports = {
       }
     }
   ]
-};
+}

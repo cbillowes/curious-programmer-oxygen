@@ -1,5 +1,5 @@
 import React from "react"
-import "./Gorget.css";
+import "./Gorget.css"
 
 class Gorget extends React.Component {
   render() {
