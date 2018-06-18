@@ -36,30 +36,9 @@ class SocialLinks extends Component {
 
     return (
       <div className="social-links">
-        <RedditShareButton url={url} title={post.title}>
-          <RedditIcon round size={iconSize} />
-          <RedditShareCount url={url}>
-            {count => <div className="share-count">{filter(count)}</div>}
-          </RedditShareCount>
-        </RedditShareButton>
-
         <TwitterShareButton url={url} title={post.title}>
           <TwitterIcon round size={iconSize} />
         </TwitterShareButton>
-
-        <GooglePlusShareButton url={url}>
-          <GooglePlusIcon round size={iconSize} />
-          <GooglePlusShareCount url={url}>
-            {count => <div className="share-count">{filter(count)}</div>}
-          </GooglePlusShareCount>
-        </GooglePlusShareButton>
-
-        <FacebookShareButton url={url} quote={postNode.excerpt}>
-          <FacebookIcon round size={iconSize} />
-          <FacebookShareCount url={url}>
-            {count => <div className="share-count">{filter(count)}</div>}
-          </FacebookShareCount>
-        </FacebookShareButton>
 
         <LinkedinShareButton
           url={url}
@@ -79,6 +58,27 @@ class SocialLinks extends Component {
         <WhatsappShareButton url={url} title={postNode.title}>
           <WhatsappIcon round size={iconSize} />
         </WhatsappShareButton>
+
+        <RedditShareButton url={url} title={post.title}>
+          <RedditIcon round size={iconSize} />
+          <RedditShareCount url={url}>
+            {count => <div className="share-count">{filter(count)}</div>}
+          </RedditShareCount>
+        </RedditShareButton>
+
+        <GooglePlusShareButton url={url}>
+          <GooglePlusIcon round size={iconSize} />
+          <GooglePlusShareCount url={url}>
+            {count => <div className="share-count">{filter(count)}</div>}
+          </GooglePlusShareCount>
+        </GooglePlusShareButton>
+
+        <FacebookShareButton url={url} quote={postNode.excerpt}>
+          <FacebookIcon round size={iconSize} />
+          <FacebookShareCount url={url}>
+            {count => <div className="share-count">{filter(count)}</div>}
+          </FacebookShareCount>
+        </FacebookShareButton>
       </div>
     )
   }
