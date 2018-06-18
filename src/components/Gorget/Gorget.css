@@ -1,9 +1,16 @@
-.logo {
+.header {
+  background-color:#212529;
+  padding: 25px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.header .logo {
   font-size: 1.25em;
   font-weight: 900;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.normal {
+.header .normal-weight {
   font-weight: normal;
 }
