@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "gatsby-link"
 import "./Gorget.css"
 
 class Gorget extends React.Component {
@@ -14,9 +15,9 @@ class Gorget extends React.Component {
           <div className="row">
             <div className="col-lg-8 col-md-10 mx-auto">
               <div className="logo">
-                <a href="/">
+                <Link to="/">
                   &#123; <span className="normal-weight">{left}</span> {right} &#125;
-                </a>
+                </Link>
               </div>
             </div>
           </div>
