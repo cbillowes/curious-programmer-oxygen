@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="static/logos/oxygen.png" alt="Logo" width='150px' height='150px'/>
+    <img src="static/curious-programmer-oxygen.png" alt="Logo" />
 </div>
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cbillowes/curious-programmer-oxygen/blob/master/LICENSE)
