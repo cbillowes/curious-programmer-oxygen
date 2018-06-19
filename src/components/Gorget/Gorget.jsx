@@ -14,7 +14,9 @@ class Gorget extends React.Component {
           <div className="row">
             <div className="col-lg-8 col-md-10 mx-auto">
               <div className="logo">
-                &#123; <span className="normal-weight">{left}</span> {right} &#125;
+                <a href="/">
+                  &#123; <span className="normal-weight">{left}</span> {right} &#125;
+                </a>
               </div>
             </div>
           </div>
