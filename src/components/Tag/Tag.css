@@ -1,6 +1,7 @@
 .button.badge {
-  padding:10px;
+  padding:0.75em;
   background-color: #ccc;
+  margin-right: 0.75em;
 }
 
 .button.badge:hover {

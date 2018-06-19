@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import Moment from "react-moment"
+import PostTags from "../PostTags/PostTags"
 import "./PostSnippet.css"
 
 class PostSnippet extends React.Component {
@@ -18,6 +19,7 @@ class PostSnippet extends React.Component {
             {post.excerpt}
           </h3>
         </Link>
+        <PostTags tags={post.tags} />
         <p className="post-meta">
           <Moment date={postDate} fromNow ago />
           {" on "}
