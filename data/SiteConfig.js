@@ -9,7 +9,7 @@ module.exports = {
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
   googleAnalyticsID: "", // GA tracking ID.
-  disqusShortname: "", // Disqus shortname.
+  disqusShortname: "curious-programmer", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   userName: "", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
