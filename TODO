@@ -1,0 +1,42 @@
+
+Todo:
+  ☐ Posts @today
+    ☐ Fix past posts (images, references, display etc) @critical
+    ☐ Add next and back feature @started(18-06-20 03:43) @paused(18-06-20 05:13)
+      The next and prev values are not available in the path context nor do I know how to add them.
+      @file:///home/clarice/Workspace/curious-programmer/curious-programmer-oxygen/src/templates/post.jsx#23
+      @file:///home/clarice/Workspace/curious-programmer/curious-programmer-oxygen/gatsby-node.js#79
+
+    ☐ Add hero image to post display
+    ☐ Add paging to post listing
+    ☐ Show hero image for the first post in the post listing of any listing page
+
+  ☐ Disqus @high
+    ☐ Fix widget display on pages @high
+    ☐ Create the Comment policy @high
+      ☐ Create page
+      ☐ Create content referencing example https://grist.org/grist-comment-policy/
+      ☐ Update Disqus website settings
+
+  ☐ Create new pages @low
+    ☐ About
+    ☐ Credits
+    ☐ Career timeline
+    ☐ Privacy policy @critical
+    ☐ Create RSS @critical
+    ☐ Add a menu
+
+  ☐ Tags @low
+    ☐ Add a heading to the tag page indicating what tag page the user is visiting @high
+    ☐ Add a page with all the tags
+    ☐ Remove tag from listing for the tag page the user is currently visiting as it is redundant information
+
+  ☐ Footer @low
+    ☐ Fix links - use icon styles
+    ☐ Use similar content to corporate programmer
+
+  ☐ Create tagline/description @low
+    ☐ Update in footer
+    ☐ Update in config
+    ☐ Update in README
+
