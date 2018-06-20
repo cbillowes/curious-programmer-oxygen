@@ -3,9 +3,9 @@ title: "Rewire your brain (Part 3) - Distress tolerance"
 slug: "rewire-your-brain-3"
 cover: "https://picsum.photos/1280/500/?image=891"
 date:   2017-05-29 11:16:43 +0200
-tags: 
-    - Mindset 
-    - Productivity 
+tags:
+    - Mindset
+    - Productivity
 ---
 
 > Oliver Goldsmith says that the mind is ever ingenious in making its own distress.
@@ -89,7 +89,7 @@ self-harm, and so on, are all self-destructive coping mechanisms.
 These mechanisms only deepens the pain both physically and emotionally
 and come at a negative cost.
 
-<span class="figure figure-left">![Negative reinforcing loop (thinking about the past)][negative-reinforcing-loop-past]</span>
+![Poster](./negative-reinforcing-loop-past.jpg "Negative reinforcing loop")
 
 Think about it. If you are obsessively dwelling on the past, you are missing out
 on what is happening right now. You miss out on all the good things happening
@@ -120,7 +120,7 @@ That means that:
 You **cannot change what is outside of your control**. You can control your
 actions, behavior and attitude.
 
-<span class="figure figure-right">![Negative reinforcing loop (victim role)][negative-reinforcing-loop-victim]</span>
+![Poster](./negative-reinforcing-loop-victim.jpg "Negative reinforcing loop")
 
 Blaming others or the situation and getting angry doesn't alleviate your pain
 and suffering. It just makes it worse because you can't change it. Another
@@ -143,7 +143,7 @@ Tell yourself phrases like:
 
 ## Distraction plan
 
-<span class="figure figure-left">![Keep calm poster][keep-calm-distract]</span>
+![Poster](./keep-calm-relax.jpg "Keep calm")
 
 You can temporarily distract yourself from the overwhelming pain. Focus
 on something that can help you calm down. It's like those silly calm down posters,
@@ -241,7 +241,7 @@ healthier way.
 
 ## Relaxation plan
 
-<span class="figure figure-right">![Keep calm poster][keep-calm-relax]</span>
+![Poster](./keep-calm-distract.jpg "Keep calm")
 
 When you are relaxed, your body feels good. Your heart beats slowly and your
 blood pressure is reduced.

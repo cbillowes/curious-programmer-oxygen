@@ -2,7 +2,7 @@
 title: "Streamline operations communication"
 cover: "https://picsum.photos/1280/500/?image=119"
 date:   2016-06-30 22:36:38 +0200
-tags: 
+tags:
     - Productivity
 ---
 
@@ -12,10 +12,8 @@ tags:
 Teams cannot focus on sprint work when there are multiple communication channels
 filtering into the team at any given point in time.
 
-{% include posts/image-caption.html
-     url="/img/posts/streamline-communication/multiple-channels.jpg"
-     description="Communication from the product department, technology department, executives & stakeholders and users directly entering the team."
-%}
+![Communications flow](./multiple-channels.jpg "Communication from external sources directly entering the team")
+_Source of image: Clarice Bouwer_
 
 This form of communication can occur for many reasons:
 
@@ -32,7 +30,7 @@ want the system to be up and stable.
 Depending on your product or the nature of your team and workload, operational
 tasks may come and go. When they are prevalent, your team needs to find ways to
 streamline the communication coming into the team so that you can support the
-product sustainably.
+product in a sustainable way.
 
 ## Support role
 
@@ -40,10 +38,8 @@ Your team could introduce a rotating support role where one technical person
 handles all incoming requests for that sprint and filters it into the team
 if necessary.
 
-{% include posts/image-caption.html
-     url="/img/posts/streamline-communication/support-person.jpg"
-     description="Communication from the product department, technology department, executives & stakeholders and users directly to the support person in a team."
-%}
+![Communications flow](./support-person.jpg "Communication from external sources directly to the support role in the team")
+_Source of image: Clarice Bouwer_
 
 Based on the nature of the queries entering the team, an escalation process
 can be created and shared with the organization in order to lessen the burden
@@ -71,10 +67,8 @@ that handles the bulk of the support role for you.
 Here an escalation process is highly recommended so that the operations team
 knows when and which teams to filter queries to.
 
-{% include posts/image-caption.html
-     url="/img/posts/streamline-communication/operations-team.jpg"
-     description="Communication from the product department, technology department, executives & stakeholders and users directly to the operations team. This team can escalate queries to the appropriate teams on an ad-hoc basis."
-%}
+![Communications flow](./operations-team.jpg "Communication from external sources directly to the operations team escalating ad-hoc queries")
+_Source of image: Clarice Bouwer_
 
 It is important to liaise with the operations team and guide them with incorrect
 escalations so that they can handle them more efficiently in the future.

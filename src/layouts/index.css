@@ -89,3 +89,35 @@ img::-moz-selection {
   color: #fff;
   background: transparent;
 }
+
+ul li {
+  margin: 0em;
+}
+
+ul li p {
+  margin: 0px;
+}
+
+table {
+  width: 100%;
+}
+
+table thead {
+  background-color: #212529;
+  color: #fff;
+}
+
+table th,
+table td {
+  padding: 5px;
+}
+
+table tr:nth-child(even) td {
+  background-color: #eff3f7;
+}
+
+table tr:hover td {
+  background-color: #cc0000;
+  color: #fff;
+}
+

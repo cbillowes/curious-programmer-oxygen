@@ -2,7 +2,7 @@
 title:  "HTML5 structural semantics"
 cover: "https://picsum.photos/1280/500/?image=36"
 date:   2016-06-17 12:02:38 +0200
-tags: 
+tags:
     - Technical
 ---
 
@@ -239,13 +239,8 @@ flowchart to help save time when making these decisions. They provide an
 "easy-to-understand HTML5 sectioning element flowchart to
 help you get to grips with some of the new elements in HTML5."
 
-{% include posts/image-caption.html
-     url="/img/posts/html5-structural-semantics/html5-doctor-flowchart.jpg"
-     link="<http://html5doctor.com/downloads/h5d-sectioning-flowchart.png>"
-     description="HTML5 Sectioning Flowchart by
-        HTML5 Doctor. There is also a
-        <a href='http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf'>PDF Version</a>."
-%}
+![Analogy](./html5-doctor-flowchart.jpg "HTML5 Sectioning Flowchart")
+_Source of image: [HTML5 Doctor](http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf)_
 
 * * *
 

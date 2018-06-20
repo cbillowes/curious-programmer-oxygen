@@ -2,7 +2,7 @@
 title:  Simulating mobile devices in Chrome
 cover: "https://picsum.photos/1280/500/?image=3"
 date:   2016-06-09 00:17:28 +0200
-tags: 
+tags:
     - Technical
 ---
 
@@ -28,32 +28,32 @@ used to achieve this but is beyond the scope of this topic.
 
 ## Getting started
 
-1.  Open the **Developer Tools** window.
+1.  * Open the **Developer Tools** window.
 
-    Open the **Chrome menu**
-    ![Chrome menu icon](/img/posts/chrome/icon-chrome-menu.png "Chrome menu icon")
-    at the top-right of your browser window, then select
-    **More tools > Developer tools**.
+    * Open the **Chrome menu**
+      at the top-right of your browser window, then select
+      **More tools > Developer tools**.
 
-    Use a shortcut:
+    * Use a shortcut:
+      -   Windows: `F12` or `Ctrl` + `Shift` + `I`
+      -   Mac: `Cmd` + `Opt` + `I`
 
-    -   Windows: `F12` or `Ctrl` + `Shift` + `I`
-    -   Mac: `Cmd` + `Opt` + `I`
+      ![Icon](./icon-chrome-menu.png "Chrome menu icon")
 
-2.  Enable the **Device Mode** feature.
+2.  * Enable the **Device Mode** feature.
 
-    Click on the **Device Mode**
-    ![Device Mode icon](/img/posts/chrome/icon-device-mode.png "Device Mode icon")
-    icon at the top-left of the **Developer Tools** window.
+    * Click on the **Device Mode**
+      icon at the top-left of the **Developer Tools** window.
 
-    You could use shortcuts, but make sure the focus is on the Developer Tools
-    window and not the browser window for it to work.
+    * You could use shortcuts, but make sure the focus is on the Developer Tools
+      window and not the browser window for it to work.
+      -   Windows: `Ctrl` + `Shift` + `M`
+      -   Mac: `Cmd` + `Shift` + `M`
 
-    -   Windows: `Ctrl` + `Shift` + `M`
-    -   Mac: `Cmd` + `Shift` + `M`
+      ![Icon](./icon-device-mode.png "Device Mode icon")
 
-You can disable Device Mode by clicking on the icon or using the same
-shortcuts as above.
+      You can disable Device Mode by clicking on the icon or using the same
+      shortcuts as above.
 
 ## Viewport controls
 
@@ -61,10 +61,8 @@ These controls give you the ability to test your web page across a variety of
 devices or directly interact with the responsive nature of it. You can change
 the device, width, height, zoom and orientation _(if height is present)_.
 
-{% include posts/image-caption.html
-     url="/img/posts/chrome-device-mode/viewport-controls.jpg"
-     description="iPad device selected through the Viewport controls"
-%}
+![Screenshot](./viewport-controls.jpg "iPad device selected through the Viewport controls")
+_Source of image: Screenshot of viewport controls in Chrome Developer Tools_
 
 ### Pre-configured devices
 
@@ -73,11 +71,8 @@ You can add pre-configured devices to the list by clicking on
 to the list. Click on the device dropdown in the viewport controls to see your
 updated list.
 
-{% include posts/image-caption.html
-     url="/img/posts/chrome-device-mode/emulated-devices.jpg"
-     description="Selected Galaxy Note 3 and Galaxy Note II in emulated devices<br/>
-       to add them to the list of devices"
-%}
+![Screenshot](./emulated-devices.jpg "Selected Galaxy Note 3 and Galaxy Note II in emulated devices to add them to the list of devices")
+_Source of image: Screenshot of emulated devices in Chrome_
 
 ### Custom devices
 
@@ -90,11 +85,10 @@ web browsers and applications to identify themselves by web servers.
 You can get a comprehensive list from
 [User Agent String.com](http://www.useragentstring.com/).
 
-{% include posts/image-caption.html
-     url="/img/posts/chrome-device-mode/add-custom-device.jpg"
-     description="Add custom device using User Agent String for SeaMonkey on Linux<br/>
-       <code>Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20120501 Firefox/12.0 SeaMonkey/2.9.1 Lightning/1.4</code>"
-%}
+![Screenshot](./add-custom-device.jpg "Add custom device using User Agent String for SeaMonkey on Linux")
+_Source of image: Screenshot of adding a custom device_
+
+`Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20120501 Firefox/12.0 SeaMonkey/2.9.1 Lightning/1.4`
 
 **Tip:** Increase the height of the Developer Tools window before adding the new device.
 The Settings modal overlays the Developer Tools window. If you increase
@@ -106,10 +100,8 @@ modal is open, the window height cannot be adjusted _(at least not on Windows)_.
 You can use the media query inspector by clicking on **Show media queries** in
 the vertical three dot menu at the top-right corner of the Viewport controls.
 
-{% include posts/image-caption.html
-     url="/img/posts/chrome-device-mode/show-media-queries.jpg"
-     description="Media queries inspector on iPad display"
-%}
+![Screenshot](./show-media-queries.jpg "Media queries inspector on iPad display")
+_Source of image: Screenshot of media queries in the Chrome Developer Tools_
 
 The media queries for the web page are detected and displayed as colored bars.
 When you **right-click** on a color, you can reveal the CSS in the source code.
@@ -145,10 +137,8 @@ will need to refresh the page to see the result. You may also want to monitor
 your network traffic and page load time using the **Network** tab in the
 Developer Tools window.
 
-{% include posts/image-caption.html
-     url="/img/posts/chrome-device-mode/throttling.jpg"
-     description="GPRS selected in throttling options"
-%}
+![Screenshot](./throttling.jpg "GPRS selected in throttling options")
+_Source of image: Screenshot of throttling in the Chrome Developer Tools_
 
 For out more about
 [optimizing performance under varying network conditions](https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/network-conditions).
@@ -164,11 +154,8 @@ override geolocation coordinates and device orientation accelerometer data.
 Click on the vertical three dot menu at the top-right corner of the Developer Tools
 window > **More tools > Sensors**.
 
-{% include posts/image-caption.html
-     url="/img/posts/chrome-device-mode/sensors.jpg"
-     description="Enabled emulate geolocation coordinates and device orientation<br/>
-       selected in sensors tab with default data"
-%}
+![Screenshot](./sensors.jpg "Enabled emulate geolocation coordinates and device orientation selected in sensors tab with default data")
+_Source of image: Screenshot of emulating selected sensors in the Chrome Developer Tools_
 
 Find out more about [emulating sensors](https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode/device-input-and-sensors).
 

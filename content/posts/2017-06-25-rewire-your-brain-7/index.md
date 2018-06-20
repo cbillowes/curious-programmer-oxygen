@@ -3,22 +3,22 @@ title: "Rewire your brain (Part 7) - Our habits"
 slug: "rewire-your-brain-7"
 date:   2017-06-27 18:05:39 +0200
 cover: "https://picsum.photos/1280/500/?image=800"
-tags: 
-    - Mindset 
+tags:
+    - Mindset
     - Productivity
 ---
 
-> Germany Kent says that it's a funny thing about life, once you begin to take 
-> note of the things you are grateful for, you begin to lose sight of the 
+> Germany Kent says that it's a funny thing about life, once you begin to take
+> note of the things you are grateful for, you begin to lose sight of the
 > things that you lack.
 
 In the [part 6](/blog/rewire-your-brain-6/), Neuroplasticity,
-we looked at how the chemicals of the brain can change. Changes can be short-term 
-(chemical), medium term (structural) and long term (functional) and the effects 
+we looked at how the chemicals of the brain can change. Changes can be short-term
+(chemical), medium term (structural) and long term (functional) and the effects
 can be introduced in many ways to make these changes.
 
 I specifically focused on Debbie Hampton's research and knowledge on this topic
-as it is exceptionally broad and offers a variety of techniques to rewire 
+as it is exceptionally broad and offers a variety of techniques to rewire
 one's brain.
 
 * * *
@@ -38,8 +38,8 @@ Let's take a simple example. I have a fear of missing out or what people
 these days call FOMO. So I tend to fight sleep. Obviously I wake up feeling
 exhausted the next day and don't get to enjoy it to its fullest because I'm tired.
 
-<span class="figure">![Cycle][bad-sleep]</span>
-<span class="figure-caption">Reinforcing loop for bad sleep patterns</span>
+![Cycle](./reinforcing-loop-for-bad-sleep.jpg "Reinforcing loop for bad sleep patterns")
+_Source of image: Corporate Programmer_
 
 Sleep should be a priority. It affects physical health and daytime performance
 and safety. It's suggested that adults get at least 7 to 8 hours sleep a day
@@ -57,11 +57,11 @@ you go back and forth trying to make a decision. The decision you make, you
 overthink thus ending up overwhelmed and then following the herd instead of
 going on what you think is right.
 
-It's important to be objective and look at the facts - consider all angles but 
+It's important to be objective and look at the facts - consider all angles but
 make a choice.
 
-<span class="figure">![Cycle][bad-decision-making]</span>
-<span class="figure-caption">Reinforcing loop for bad decision making</span>
+![Cycle](./reinforcing-loop-for-bad-decisions.jpg "Reinforcing loop for bad decision making")
+_Source of image: Corporate Programmer_
 
 -   Formulate your own opinions and decisions
 -   Don't mistake opinions as facts
@@ -71,13 +71,14 @@ make a choice.
 Apart from improving quality of life, physical activity has immediate and long-term
 health benefits like reducing the risk of developing several diseases.
 
-<span class="figure">![Cycle][no-exercise]</span>
-<span class="figure-caption">Reinforcing loop for no exercise</span>
+
+![Cycle](./reinforcing-loop-for-no-exercise.jpg "Reinforcing loop for no exercise")
+_Source of image: Corporate Programmer_
 
 _Aim for at least 30 minutes of physical activity every day.
 See everyday activities as a good opportunity to be active.
 Try to find the time for some regular, vigorous exercise for extra health and fitness benefits.
-Minimise the amount of time spent in prolonged sitting and break up long periods of sitting as often as possible._
+Minimize the amount of time spent in prolonged sitting and break up long periods of sitting as often as possible._
 
 ## Other habits
 

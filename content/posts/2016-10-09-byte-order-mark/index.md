@@ -2,7 +2,7 @@
 title:  "Byte order mark"
 cover: "https://picsum.photos/1280/500/?image=8"
 date:   2016-10-09 14:28:00 +0200
-tags: 
+tags:
     - Technical
 ---
 
@@ -85,10 +85,9 @@ little-endian.
 Bytes can be processed from left to right (big-endian: most significant byte
 first) or from right to left (little-endian: least significant byte first).
 
-{% include posts/image-caption.html
-     url="/img/posts/byte-order-mark/endianness.gif"
-     description="Example of a 32-bit integer committed to memory differently for big-endian and little-endian"
-%}
+![Interpretation](./endianness.gif "Example of a 32-bit integer committed to memory differently for big-endian and little-endian")
+
+_Source of image: Clarice Bouwer_
 
 As the word size for UTF-8 streams is 8-bits, one byte is read or written at a
 time. This means the encoding form is byte-oriented so there is no byte order
@@ -130,10 +129,9 @@ This table shows encoding forms with their BOM byte sequence and byte order.
 Let's say we have a text stream of the following characters: `¶@«®`. The Unicode
 code points for each are `U+00B6`, `U+0040`, `U+00AB` and `U+00AE`.
 
-{% include posts/image-caption.html
-     url="/img/posts/byte-order-mark/bom.gif"
-     description="The byte order mark for UTF-16 (big-endian and little-endian) and UTF-8"
-%}
+![Interpretation](./bom.gif "The byte order mark for UTF-16 (big-endian and little-endian) and UTF-8")
+
+_Source of image: Clarice Bouwer_
 
 When the UTF-16 streams are opened, the BOM defines the order the bytes must be
 read in and are read two bytes (16-bits) at a time. The way the bytes are mapped

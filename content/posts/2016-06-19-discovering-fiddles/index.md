@@ -2,7 +2,7 @@
 title:  "Discovering fiddles"
 cover: "https://picsum.photos/1280/500/?image=527"
 date:   2016-06-19 19:13:00 +0200
-tags: 
+tags:
     - Technical
     - Productivity
 ---
@@ -47,11 +47,8 @@ be created for any front end web experiment you wish you create.
 To find out more, you can [read about](https://codepen.io/hello/) CodePen and
 its super cool editor.
 
-{% include posts/image-caption.html
-     url="/img/posts/discovering-fiddles/codepen.jpg"
-     link="<http://codepen.io/>"
-     description="A screenshot of the CodePen layout"
-%}
+![Screenshot](./codepen.jpg "CodePen layout")
+_Source of image: Screenshot of [CodePen](http://codepen.io/)_
 
 ### Layout
 
@@ -104,11 +101,8 @@ with their online code editor. You can follow this
 [tutorial](http://doc.jsfiddle.net/tutorial.html)
 to learn how to get started with it.
 
-{% include posts/image-caption.html
-     url="/img/posts/discovering-fiddles/jsfiddle.jpg"
-     link="<https://jsfiddle.net/>"
-     description="A screenshot of the JSFiddle layout"
-%}
+![Screenshot](./jsfiddle.jpg "JSFiddle layout")
+_Source of image: Screenshot of [JSFiddle](http://jsfiddle.net/)_
 
 ### Layout
 
@@ -151,11 +145,8 @@ the original one.
 [StackOverflow](http://stackoverflow.com/) has added their own code snippet
 flavor to their answering platform for HTML, CSS and JavaScript.
 
-{% include posts/image-caption.html
-     url="/img/posts/discovering-fiddles/stackoverflow.jpg"
-     link="<http://stackoverflow.com/>"
-     description="A screenshot of the StackOverflow code snippet functionality"
-%}
+![Screenshot](./stackoverflow.jpg "StackOverflow code snippet functionality")
+_Source of image: Screenshot of [StackOverflow](http://stackoverflow.com/)_
 
 You can quickly write front end code from within the StackOverflow platform.
 
@@ -177,11 +168,8 @@ Oracle, PostgreSQL, SQLite and MS SQL Server.
 Check [this](http://sqlfiddle.com/about.html) out if you want to learn more
 about it.
 
-{% include posts/image-caption.html
-     url="/img/posts/discovering-fiddles/sqlfiddle.jpg"
-     link="<http://sqlfiddle.com/>"
-     description="A screenshot of part of the SQLFiddle layout"
-%}
+![Screenshot](./sqlfiddle.jpg "SQL Fiddle layout")
+_Source of image: Screenshot of [SQL Fiddle](http://sqlfiddle.com/)_
 
 ### Schema creation
 

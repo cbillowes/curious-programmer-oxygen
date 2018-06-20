@@ -27,10 +27,8 @@ It's okay to reformat badly or incorrectly formatted files. It is not okay to
 commit it along with your change. Try it out and check the diff. Can you spot your
 change easily? Show it to someone else to see if they can spot it.
 
-{% include posts/image-caption.html
-     url="/img/posts/importance-of-git-history/mixed-diff-with-formatting-and-code-changes.jpg"
-     description="Example of an HTML diff mixed with formatting and content changes"
-%}
+![Screenshot](./mixed-diff-with-formatting-and-code-changes.jpg "Example of an HTML diff mixed with formatting and content changes")
+_Source of image: Screenshot of Git Diff_
 
 When you reformat a file automatically, you need to make sure that your
 reformatting settings are consistent with the rest of the source code.
@@ -128,10 +126,8 @@ already exist. Instead I am going to reference a **very** informative
 Add the story number to your commit message so that Jira displays it
 automatically in the story.
 
-{% include posts/image-caption.html
-     url="/img/posts/importance-of-git-history/jira-bitbucket-integration.jpg"
-     description="BitBucket commits integrated in the Jira interface"
-%}
+![Screenshot](./jira-bitbucket-integration.jpg "BitBucket commits integrated in the JIRA interface")
+_Source of image: Screenshot of JIRA_
 
 ## Merge conflicts
 

@@ -2,8 +2,8 @@
 title: "What it means to be an expert"
 cover: "https://picsum.photos/1280/500/?image=26"
 date:   2016-06-22 21:10:43 +0200
-tags: 
-    - Mindset 
+tags:
+    - Mindset
     - Comfort Zone
     - Personal Brand
 ---
@@ -50,12 +50,15 @@ gain expertise and then you get to be a part of a much larger
 community than you so that when you need to do something there are people
 behind you.**"
 
-<iframe  
-  class="youtube"
-  src="https://www.youtube.com/embed/PeKKzeAte30"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+<div class="video-wrapper">
+    <iframe class="youtube"
+      src="https://www.youtube.com/embed/PeKKzeAte30"
+      frameborder="0"
+      allowfullscreen
+      width="560"
+      height="349">
+    </iframe>
+</div>
 
 On her blog, she states that her career has benefited tremendously from
 writing blog posts, speaking at conferences and sharing her code as open

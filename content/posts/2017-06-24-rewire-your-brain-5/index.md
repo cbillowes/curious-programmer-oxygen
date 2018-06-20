@@ -3,9 +3,9 @@ title: "Rewire your brain (Part 5) - The Satir Change Process Model"
 slug: "rewire-your-brain-5"
 date:   2017-06-25 22:02:42 +0200
 cover: "https://picsum.photos/1280/500/?image=874"
-tags: 
-    - Mindset 
-    - Productivity 
+tags:
+    - Mindset
+    - Productivity
 ---
 
 > Virginia Satir says that we can learn something new anytime we believe we can.
@@ -32,15 +32,13 @@ It also describes the effects each stage has on your feelings, thinking,
 performance and physiology. The principles in this model can help you
 improve how you process change <sup id="footnote-2">[2](#footnote-2-ref)</sup>.
 
-<span class="figure"><a href="https://www.flickr.com/photos/jurgenappelo/5201852636">![Graph][satir-change-graph]</a></span>
-<span class="figure-caption">Virginia Satir Change Curve. This illustration is adapted from the book <a href='http://www.management30.com'>Management 3.0</a></span>
+![Graph](./satir-change-graph.png "Virginia Satir Change Curve")
+_Source of image: [Flicker](https://www.flickr.com/photos/jurgenappelo/5201852636). This illustration is adapted from the book [Management 3.0](http://www.management30.com)._
 
 > Life is not what it's supposed to be. It's what it is.
 > The way you cope with it is what makes the difference. ~ Virginia Satir
 
 ## The Late Status Quo
-
-<span class="figure figure-right"><a href="https://www.flickr.com/photos/jurgenappelo/5201852636">![Puzzle pieces][late-status-quo]</a></span>
 
 This stage describes your ordinary day-to-day. Although your feelings can
 fluctuate you are still in familiar territory like pieces of a puzzle fitting
@@ -51,16 +49,12 @@ to discomfort, dissatisfaction, unhappiness and depression or anxiousness.
 
 ## The Foreign Element
 
-<span class="figure figure-left">![Bulls eye][foreign-element]</span>
-
 All of a sudden something needs to change. Your expectations are challenged.
 Your familiarity is now shaken up due to unexpected information, a
 significant event, invalidated assumptions or maybe the realization that
 something you have been doing your whole life needs to change.
 
 ## Chaos
-
-<span class="figure figure-right">![Chaos squiggle][chaos]</span>
 
 Now you are outside your comfort zone in a big unknown mysterious place. You
 are in an unpredictable unfamiliar territory. This can be very scary by
@@ -91,8 +85,6 @@ can be generated here.
 
 ## The Transforming Idea
 
-<span class="figure figure-left">![Light bulb][transforming-idea]</span>
-
 A powerful idea generated in the Chaos stage could lead to the transformation
 process which sheds light on the change and helps you understand it more
 and cope with it. This is the AHA! moment.
@@ -102,8 +94,6 @@ If it's not, try something other AHA!
 
 ## Practice and Integration
 
-<span class="figure figure-right">![Gaming console controller][practice]</span>
-
 The more you practice this new behavior extracted from your transforming idea
 the more you integrate it into your life. It is a learning phase that allows for
 mistakes so your progress may ebb and flow.
@@ -112,8 +102,6 @@ You have the opportunity to decide what is working and what isn't which makes
 you more skilled and hopeful as you continuously learn.
 
 ## The New Status Quo
-
-<span class="figure figure-left">![Gold star winners ribbon][new-status-quo]</span>
 
 Once you have fully absorbed the change you become more healthier, calmer and
 alert. You need to continue feeling safe in this space by practicing.
@@ -128,8 +116,8 @@ Emery sums it up elegantly by saying that:
 -   With time, the newness fades, and the New Status Quo becomes a Late Status Quo.
 -   And the change cycle begins again.
 
-<span class="figure">![Graph][satir-change-model-cycle]</span>
-<span class="figure-caption">The Satir Change Process Model Cycle</span>
+![Cycle](./satir-change-model-cycle.png "The Satir Change Process Model Cycle")
+_Source of image: Corporate Programmer_
 
 ## My final thoughts
 

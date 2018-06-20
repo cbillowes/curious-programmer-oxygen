@@ -95,12 +95,15 @@ about public speaking tips from world-class TED presenters.
 leadership speaker, shares some ideas in 9 minutes to help you overcome your
 fears.
 
-<iframe
-  class="youtube"
-  src="https://www.youtube.com/embed/vae0sHrNfFc"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+<div class="video-wrapper">
+    <iframe class="youtube"
+      src="https://www.youtube.com/embed/vae0sHrNfFc"
+      frameborder="0"
+      allowfullscreen
+      width="560"
+      height="349">
+    </iframe>
+</div>
 
 <small>
   Thanks to [Indran Naidoo](https://twitter.com/indrannaidoo) for sharing.
@@ -112,12 +115,15 @@ fears.
 straightforward techniques for giving excellent presentations. This talk is
 very entertaining and has some interesting filler lightning talks.
 
-<iframe
-  class="youtube"
-  src="https://www.youtube.com/embed/l9JXH7JPjR4"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+<div class="video-wrapper">
+    <iframe class="youtube"
+      src="https://www.youtube.com/embed/l9JXH7JPjR4"
+      frameborder="0"
+      allowfullscreen
+      width="560"
+      height="349">
+    </iframe>
+</div>
 
 <small>
   Thanks to [Steven McDonald](https://twitter.com/StevenMcD) for sharing this

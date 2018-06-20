@@ -2,7 +2,7 @@
 title:  "The horror behind design"
 cover: "https://picsum.photos/1280/500/?image=21"
 date:   2016-06-15 00:04:33 +0200
-tags: 
+tags:
     - Productivity
 ---
 
@@ -48,11 +48,8 @@ entire system architecture:
 Behind anything that looks appealing is something dark and sinister looming and
 waiting to jump out at you and scream "BOO!"
 
-{% include posts/image-caption.html
-   url="/img/posts/the-horror-behind-design/technical-debt.jpg"
-   description="There's a big difference between what the customer sees and what the developer sees."
-   image_source="Source of image unknown"
-%}
+![Analogy](./technical-debt.jpg "There's a big difference between what the customer sees and what the developer sees")
+_Source of image: Unknown_
 
 We are in the real world where things change rapidly. Deadlines loom,
 people change, teams change, strategies change, organizations

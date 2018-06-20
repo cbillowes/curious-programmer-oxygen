@@ -59,7 +59,9 @@ where you are coming from which gives a better understanding to the nature of
 your query. What you provide depends on who you talk to and where
 that person is from:
 
-![alt text](/svg/context_where-you-are-from.svg "Flow chart for deciding how to communicate where you are from")
+![Flow chart](./context-where-you-are-from.svg "Flow chart for deciding how to communicate where you are from")
+
+_Source of image: Clarice Bouwer_
 
 **Note:** If you are a consultant from a different company, keep it simple by
 omitting your company's name unless it is related to your query.
