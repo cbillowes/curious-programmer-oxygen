@@ -27,14 +27,20 @@ class Disqus extends Component {
       return null
     }
     const post = postNode.frontmatter
-    const url = config.siteUrl + config.pathPrefix + postNode.fields.slug
+    const comment = {
+      shortname: config.disqusShortname,
+      identifier: postNode.fields.slug,
+      title: post.title,
+      url: `${config.siteUrl}${config.pathPrefix}${postNode.fields.slug}`,
+      categoryId: post.category_id,
+    }
     return (
       <ReactDisqusComments
-        shortname={config.disqusShortname}
-        identifier={post.title}
-        title={post.title}
-        url={url}
-        category_id={post.category_id}
+        shortname={comment.shortname}
+        identifier={comment.identifier}
+        title={comment.title}
+        url={comment.url}
+        category_id={comment.categoryId}
         onNewComment={this.notifyAboutComment}
       />
     )
