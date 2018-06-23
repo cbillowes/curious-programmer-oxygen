@@ -38,16 +38,16 @@ aids.
 It's intended to contain headings but can also be used to wrap a section's
 table of contents, site navigation, a search form or any relevant logos and so on.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;header&gt;
-  &lt;h1&gt;Alliance vs Horde&lt;/h1&gt;
-  &lt;p&gt;
+```html
+<header>
+  <h1>Alliance vs Horde</h1>
+  <p>
     Which side are you on? The Alliance or the Horde?
     Both sides have equally captivating
     stories to tell.
-  &lt;/p&gt;
-&lt;/header&gt;
-</code></pre>
+  </p>
+</header>
+```
 
 [MDN Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element/header)
 
@@ -63,12 +63,12 @@ contain:
 -   back to the top of the page links, or
 -   related references.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;footer&gt;
+```html
+<footer>
   The content on the World of Warcraft Wiki is
   licensed under CC-BY-SA.
-&lt;/footer&gt;
-</code></pre>
+</footer>
+```
 
 **Note**: It doesn’t affect the document outline as it isn’t considered
 as sectioning content.
@@ -85,17 +85,17 @@ You can use the `nav` element in your document or many sections to contain:
 -   footer navigation containing common terms of service, privacy policy and
     copyright links.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;header&gt;
-  &lt;nav&gt;
-    &lt;ul&gt;
-      &lt;li&gt;History&lt;/li&gt;
-      &lt;li&gt;Alliance&lt;/li&gt;
-      &lt;li&gt;Horde&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/nav&gt;
-&lt;/header&gt;
-</code></pre>
+```html
+<header>
+  <nav>
+    <ul>
+      <li>History</li>
+      <li>Alliance</li>
+      <li>Horde</li>
+    </ul>
+  </nav>
+</header>
+```
 
 [MDN Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element/nav)
 
@@ -108,24 +108,24 @@ independently distributed or reused such as:
 -   article for a magazine, newspaper or online website, or
 -   content submitted by a user.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;article&gt;
-  &lt;header&gt;
-    &lt;h1&gt;For the Horde&lt;/h1&gt;
-    &lt;p&gt;
-      &lt;time
+```html
+<article>
+  <header>
+    <h1>For the Horde</h1>
+    <p>
+      <time
         pubdate
-        datetime="2016-06-18T08:30:00.00"&gt;
-      &lt;/time&gt;
-    &lt;/p&gt;
-  &lt;/header&gt;
-  &lt;p&gt;
+        datetime="2016-06-18T08:30:00.00">
+      </time>
+    </p>
+  </header>
+  <p>
     The Horde is made up of Orcs, Forsaken, Tauren,
     Trolls, Blood Elves, Goblins, and most recently,
     Pandaren (Huojin).
-  &lt;/p&gt;
-&lt;/article&gt;
-</code></pre>
+  </p>
+</article>
+```
 
 [MDN Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element/article)
 
@@ -140,26 +140,26 @@ on a theme or context such as:
 -   contact information, and
 -   numbered sections of a thesis.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;article&gt;
-  &lt;section&gt;
-    &lt;h1&gt;King of the Alliance&lt;/h1&gt;
-    &lt;p&gt;
+```html
+<article>
+  <section>
+    <h1>King of the Alliance</h1>
+    <p>
       The Supreme Allied Commander of the humans, also
       known as the king. This title is typically given
       to a hereditary, male monarch of a nation, region
       or state.
-    &lt;/p&gt;
-  &lt;/section&gt;
-  &lt;section&gt;
-    &lt;h1&gt;Warchief of the Horde&lt;/h1&gt;
-    &lt;p&gt;
-     Similar to the king of the humans, the Warchief
-     is the military leader of the Orcish Horde.
-    &lt;/p&gt;
-  &lt;/section&gt;
-&lt;/article&gt;
-</code></pre>
+    </p>
+  </section>
+  <section>
+    <h1>Warchief of the Horde</h1>
+    <p>
+    Similar to the king of the humans, the Warchief
+    is the military leader of the Orcish Horde.
+    </p>
+  </section>
+</article>
+```
 
 [MDN Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element/section)
 
@@ -174,23 +174,23 @@ but relates to its surrounding content such as:
 -   advertising, or
 -   navigational aid.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;article&gt;
-  &lt;h1&gt;Lore&lt;/h1&gt;
-  &lt;p&gt;
+```html
+<article>
+  <h1>Lore</h1>
+  <p>
     Blizzard's background story to the Warcraft
     series of games.
-  &lt;/p&gt;
-&lt;/article&gt;
-&lt;aside&gt;
-  &lt;h1&gt;Warcraft: The Beginning&lt;/h1&gt;
-  &lt;p&gt;
+  </p>
+</article>
+<aside>
+  <h1>Warcraft: The Beginning</h1>
+  <p>
     A movie directed by Duncan Jones, produced
     by Legendary Pictures, and distributed by
     Universal Pictures.
-  &lt;/p&gt;
-&lt;/aside&gt;
-</code></pre>
+  </p>
+</aside>
+```
 
 [MDN Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element/aside)
 
@@ -200,22 +200,22 @@ Browsers that don't support the new elements will render them as a `span`. If
 you want to enforce compatibility with legacy browsers you can style
 these elements in CSS to be block-level elements.
 
-<pre class="line-numbers"><code class="language-css">
+```css
 article, section, aside, nav, header, footer {
   display: block;
 }
-</code></pre>
+```
 
 Unfortunately some legacy browsers don't apply styling to unknown elements.
 If you need to support them, you could reference the
 [HTML5 Shiv JavaScript](https://github.com/aFarkas/html5shiv)
 for display and printing of your documents.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;!--[if lt IE 9]&gt;
-    &lt;script src="html5shiv.js"&gt;&lt;/script&gt;
-&lt;![endif]--&gt;
-</code></pre>
+```html
+<!--[if lt IE 9]>
+  <script src="html5shiv.js"></script>
+<![endif]-->
+```
 
 ## My final thoughts
 

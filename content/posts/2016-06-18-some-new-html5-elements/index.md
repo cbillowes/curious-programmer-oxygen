@@ -2,7 +2,7 @@
 title:  "Some new HTML5 elements"
 cover: "https://picsum.photos/1280/500/?image=526"
 date:   2016-06-18 13:26:44 +0200
-tags: 
+tags:
     - Technical
 ---
 
@@ -33,20 +33,20 @@ sectioning content.
 It must not be a child (or descendant) of `header`, `nav`, `article`, `aside`,
 or `footer` elements.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;main&gt;
-  &lt;h1&gt;Warcraft: The Beginning&lt;/h1&gt;
-  &lt;p&gt;
+```html
+<main>
+  <h1>Warcraft: The Beginning</h1>
+  <p>
     The peaceful realm of Azeroth stands on the brink
     of war as its civilization faces a fearsome race
     of invaders: orc warriors fleeing their dying
     home to colonize another.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Source snippet from &lt;cite&gt;IMDB&lt;/cite&gt;.
-  &lt;/p&gt;
-&lt;/main&gt;
-</code></pre>
+  </p>
+  <p>
+    Source snippet from <cite>IMDB</cite>.
+  </p>
+</main>
+```
 
 [MDN Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element/main)
 
@@ -57,16 +57,16 @@ provide additional information to a user.
 
 **Note**: Not all browsers currently support this feature.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;details&gt;
-  &lt;summary&gt;World of Warcraft has a Wiki&lt;/summary&gt;
-  &lt;p&gt;
+```html
+<details>
+  <summary>World of Warcraft has a Wiki</summary>
+  <p>
     Check out the community driven World of Warcraft
     wiki at http://wowwiki.wikia.com/wiki/ to find
     out more about the Horde and the Alliance.
-  &lt;/p&gt;
-&lt;/details&gt;
-</code></pre>
+  </p>
+</details>
+```
 
 <details>
   <summary><b>Live Demo</b>. If you can expand this then your browser supports this feature.</summary>
@@ -85,14 +85,14 @@ provide additional information to a user.
 You can use the `mark` element to highlight text that is relevant to a
 particular context like highlighting keywords from a search result.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;h1&gt;Search Results&lt;/h1&gt;
-&lt;p&gt;You searched for "spoilers"&lt;/p&gt;
-&lt;p&gt;
-  Beware of &lt;mark&gt;spoilers&lt;/mark&gt; when reading up
+```html
+<h1>Search Results</h1>
+<p>You searched for "spoilers"</p>
+<p>
+  Beware of <mark>spoilers</mark> when reading up
   on the "Warcraft: The Beginning" movie.
-&lt;/p&gt;
-</code></pre>
+</p>
+```
 
 <p>
   <b>Live Demo</b> (default styling has been overridden).<br>
@@ -112,14 +112,14 @@ can provide additional functionality such as:
 -   adding reminders for birthdays and scheduled events to a user's calendar, or
 -   producing smarter search results from search engines.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;p&gt;
+```html
+<p>
   I'll be watching "Warcraft: The Beginning" on
-  &lt;time datetime="2016-06-17T20:00"&gt;
+  <time datetime="2016-06-17T20:00">
     17 June at 8h00 pm
-  &lt;/time&gt;.
-&lt;/p&gt;  
-</code></pre>
+  </time>.
+</p>
+```
 
 [MDN Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element/time)
 
@@ -134,13 +134,11 @@ The content can be captioned with the `figcaption` element but isn't required.
 **Note**: It's position must be independent of the main flow of the document.
 If you remove it, the flow shouldn't be affected.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;figure&gt;
-  &lt;img
-    src="medivh.jpg"
-    alt="Photo of Medivh"&gt;
-&lt;/figure&gt;
-</code></pre>
+```html
+<figure>
+  <img src="medivh.jpg" alt="Photo of Medivh">
+</figure>
+```
 
 [MDN Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element/figure)
 
@@ -151,16 +149,12 @@ You can use the `figcaption` element to caption or create a legend for a figure.
 It's optional to use and can be placed as the first or last element
 within the `figure` element.
 
-<pre class="line-numbers"><code class="language-markup">
-&lt;figure&gt;
-  &lt;img
-    src="medivh.jpg"
-    alt="Photo of Medivh" &gt;
-  &lt;figcaption&gt;
-    Photo of Medivh, the Last Guardian of Tirisfal.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-</code></pre>
+```html
+<figure>
+  <img src="medivh.jpg" alt="Photo of Medivh" >
+  <figcaption> Photo of Medivh, the Last Guardian of Tirisfal.</figcaption>
+</figure>
+```
 
 [MDN Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element/figcaption)
 

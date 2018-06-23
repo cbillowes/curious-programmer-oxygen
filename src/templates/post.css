@@ -1,3 +1,16 @@
+.post mark,
+:not(pre) > code[class*="language-"] {
+    padding: 0.25em 0.5em;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+.post mark {
+    border-radius: .3em;
+    background-color: #cc0000;
+    text-shadow: 1px 1px 1px #333;
+    color: #fff;
+}
+
 .post p {
     line-height: 2em;
 }

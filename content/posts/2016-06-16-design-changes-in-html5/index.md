@@ -2,7 +2,7 @@
 title:  "Design changes in HTML5"
 date:   2016-06-16 10:00:00 +0200
 cover: "https://picsum.photos/1280/500/?image=20"
-tags: 
+tags:
     - Technical
 ---
 
@@ -35,9 +35,9 @@ to previous iterations.
 It's no longer coupled to a specific version or flavor (Strict, Traditional and
 Frameset) of an HTML specification.
 
-<pre><code class="language-markup">
-&lt;!DOCTYPE html&gt;
-</code></pre>
+```html
+<!DOCTYPE html>
+```
 
 ### Character encoding
 
@@ -45,27 +45,27 @@ To target a specific character encoding for your documents to be served, you
 should configure the `Content-Type` header. However, we no longer need to
 provide the `http-equiv` and `content` attributes.
 
-<pre><code class="language-markup">
-&lt;meta charset="UTF-8"&gt;
-</code></pre>
+```html
+<meta charset="UTF-8">
+```
 
 ### Script references
 
 Browsers by default assume scripts are written in JavaScript so the
 `type="text/javascript"` attribute can now be dropped.
 
-<pre><code class="language-markup">
-&lt;script src="script.js"&gt;&lt;/script&gt;
-</code></pre>
+```html
+<script src="script.js"></script>
+```
 
 ### CSS references
 
 We no longer need to specify `type="text/css"` when referencing external
 stylesheets.
 
-<pre><code class="language-markup">
-&lt;link rel="stylesheet" href="style.css"&gt;
-</code></pre>
+```html
+<link rel="stylesheet" href="style.css">
+```
 
 ### MathML & SVG
 
@@ -161,12 +161,12 @@ The `input` element has new values for the `type` attribute:
 
 ## JavaScript APIs
 
-For a long time browser implementers were making up JavaScript APIs for
+For a long time browser implementors were making up JavaScript APIs for
 browsers. Now the HTML 5 specification has sections dedicated to web application
 APIs. Some include:
 
 -   Drag and drop
--   Fullscreen
+-   Full screen
 -   History
 -   IndexDB
 -   Online and Offline events
