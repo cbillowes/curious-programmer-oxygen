@@ -2,7 +2,7 @@ module.exports = {
   blogPostDir: "posts", // The name of directory that contains your posts.
   siteTitle: "Curious Programmer", // Site title.
   siteTitleAlt: "Curious Programmer", // Alternative site title for SEO.
-  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
+  siteLogo: "/logos/logo.png", // Logo used for SEO and manifest.
   siteUrl: "https://curiousprogrammer.io", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "", // Website description used for RSS feeds/meta description tag.
