@@ -21,7 +21,7 @@ class PostSnippet extends React.Component {
         </Link>
         <PostTags tags={post.tags} />
         <p className="post-meta">
-          <Moment date={postDate} fromNow ago />
+          <Moment date={postDate} fromNow />
           {" on "}
           <Moment date={postDate} format="ddd, D MMMM YYYY" />
           {" "}
