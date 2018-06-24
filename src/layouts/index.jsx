@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
-import Gorget from "../components/Gorget/Gorget"
-import Footer from "../components/Footer/Footer"
+import Gorget from "../components/Gorget/Component"
+import Footer from "../components/Footer/Component"
 import config from "../../data/SiteConfig"
 import "./index.css"
 

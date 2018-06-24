@@ -1,14 +1,16 @@
 
 Todo:
-  ☐ Posts @today
-    ☐ Fix past posts (images, references, display etc) @critical
+  ☐ Technical
+    ✔ Readability experiment: Refactor JSX components to be Component.jsx instead of <Name>.jsx @started(18-06-24 10:49) @done(18-06-24 10:56) @lasted(7m37s)
+
+  ☐ Posts @high
+    ✔ Fix past posts (images, references, display etc) @critical @done(18-06-21 10:31)
+    ✔ Use /blog/ route @critical @done(18-06-21 10:43)
     ✔ Style and define code blocks @done(18-06-22 17:43)
     ✔ Change spacing and padding of tag buttons @started(18-06-24 10:40) @done(18-06-24 10:46) @lasted(6m49s)
     ☐ Fix embedded Twitter blocks
     ☐ Use post hero images from corporate programmer
-    ☐ Fix embedded Twitter blocks
     ☐ Add next and back feature
-    ☐ Add hero image to post display
     ☐ Add paging to post listing
     ☐ Show hero image for the first post in the post listing of any listing page
 

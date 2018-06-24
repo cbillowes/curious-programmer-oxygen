@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import Moment from "react-moment"
-import PostTags from "../PostTags/PostTags"
+import PostTags from "../PostTags/Component"
 import "./PostSnippet.css"
 
 class PostSnippet extends React.Component {
