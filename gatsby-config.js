@@ -11,7 +11,7 @@ module.exports = {
       feed_url: config.siteUrl + pathPrefix + config.siteRss,
       title: config.siteTitle,
       description: config.siteDescription,
-      image_url: `${config.siteUrl + pathPrefix}/logos/logo-512.png`,
+      image_url: `${config.siteUrl + pathPrefix}/logos/logo.png`,
       author: config.userName,
       copyright: config.copyright
     }
@@ -122,21 +122,18 @@ module.exports = {
                 description: edge.node.excerpt,
                 author: rssMetadata.author,
                 url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [{ "content:encoded": edge.node.html }]
+                guid: rssMetadata.site_url + edge.node.fields.slug
               }))
             },
             query: `
             {
               allMarkdownRemark(
-                limit: 1000,
+                limit: 10,
                 sort: { order: DESC, fields: [frontmatter___date] },
               ) {
                 edges {
                   node {
                     excerpt
-                    html
-                    timeToRead
                     fields { slug }
                     frontmatter {
                       title
