@@ -8,9 +8,10 @@ Todo:
     ✔ Use /blog/ route @critical @done(18-06-21 10:43)
     ✔ Style and define code blocks @done(18-06-22 17:43)
     ✔ Change spacing and padding of tag buttons @started(18-06-24 10:40) @done(18-06-24 10:46) @lasted(6m49s)
+    ✔ Add next and back feature @started(18-06-24 10:58) @done(18-06-24 11:57) @lasted(59m19s)
+    ☐ Glitz up the bottom next and back posts feature
     ☐ Fix embedded Twitter blocks
     ☐ Use post hero images from corporate programmer
-    ☐ Add next and back feature
     ☐ Add paging to post listing
     ☐ Show hero image for the first post in the post listing of any listing page
 
