@@ -12,8 +12,8 @@ module.exports = {
   googleAnalyticsID: "", // GA tracking ID.
   disqusShortname: "curious-programmer", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
-  userName: "", // Username to display in the author segment.
-  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
+  userName: "Clarice Bouwer", // Username to display in the author segment.
+  userTwitter: "cbillowes", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Johannesburg, South Africa", // User location to display in the author segment.
   userAvatar: "https://en.gravatar.com/userimage/34549463/acc6b8778c7b14437b7590078012302e.png?size=150", // User avatar to display in the author segment.
   userDescription:
