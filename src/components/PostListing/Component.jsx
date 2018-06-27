@@ -23,7 +23,7 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList()
     return (
-      <div className="container">
+      <div id="post-listing" className="container">
         <div className="row">
           <div className="col-lg-8 col-md-10 mx-auto">
             {
