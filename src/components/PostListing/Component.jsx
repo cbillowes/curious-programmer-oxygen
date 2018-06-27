@@ -25,7 +25,7 @@ class PostListing extends React.Component {
     return (
       <div id="post-listing" className="container">
         <div className="row">
-          <div className="col-lg-8 col-md-10 mx-auto">
+          <div className="col-lg-9 col-md-9 mx-auto">
             {
               postList.map(post => (
                 <div key={post.path}>

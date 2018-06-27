@@ -13,7 +13,7 @@ class Gorget extends React.Component {
       <div className="header">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 col-md-10 mx-auto">
+            <div className="col-lg-9 col-md-9 mx-auto">
               <div className="logo">
                 <Link to="/">
                   &#123; <span className="normal-weight">{left}</span> {right} &#125;
