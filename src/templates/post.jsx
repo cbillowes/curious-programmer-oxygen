@@ -45,7 +45,7 @@ export default class PostTemplate extends React.Component {
             <div className="container">
               <div className="row">
                 <div className="post-wrapper col-lg-9 col-md-9 mx-auto">
-                  <ReadNext next={getNextData()} prev={getPrevData()} />
+                  <ReadNext prettify={false} next={getNextData()} prev={getPrevData()} />
                   <h1>{post.title}</h1>
                   <UserInfo config={config} />
                   <div className="body" dangerouslySetInnerHTML={{ __html: postNode.html }} />
@@ -58,7 +58,7 @@ export default class PostTemplate extends React.Component {
               </div>
             </div>
           </div>
-          <ReadNext next={getNextData()} prev={getPrevData()} />
+          <ReadNext prettify={true} next={getNextData()} prev={getPrevData()} />
         </div>
       </div>
     )
