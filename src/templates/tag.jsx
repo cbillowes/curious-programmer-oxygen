@@ -1,5 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
+import Gorget from "../components/Gorget/Component"
 import PostListing from "../components/PostListing/Component"
 import config from "../../data/SiteConfig"
 
@@ -10,7 +11,12 @@ export default class TagTemplate extends React.Component {
     return (
       <div className="tag-container">
         <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
-        <PostListing postEdges={postEdges} />
+        <Gorget title={config.siteTitle} section={tag} />
+        <PostListing
+          postEdges={postEdges}
+          heading={`More about ${tag}`}
+          excludeTag={tag}
+        />
       </div>
     )
   }

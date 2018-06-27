@@ -22,6 +22,8 @@ class PostListing extends React.Component {
   }
   render() {
     const postList = this.getPostList()
+    const excludeTag = this.props.excludeTag
+
     return (
       <div id="post-listing" className="container">
         <div className="row">
@@ -29,7 +31,7 @@ class PostListing extends React.Component {
             {
               postList.map(post => (
                 <div key={post.path}>
-                  <PostSnippet post={post} />
+                  <PostSnippet post={post} excludeTag={excludeTag} />
                   <hr />
                 </div>
               ))

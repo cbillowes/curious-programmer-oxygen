@@ -8,6 +8,7 @@ class PostSnippet extends React.Component {
   render() {
     const post = this.props.post
     const postDate = Date.parse(post.date, "YYYY-MM-dd")
+    const excludeTag = this.props.excludeTag
 
     return (
       <div className="post-preview">
@@ -19,7 +20,7 @@ class PostSnippet extends React.Component {
             {post.excerpt}
           </h3>
         </Link>
-        <PostTags tags={post.tags} />
+        <PostTags tags={post.tags} excludeTag={excludeTag} />
         <p className="post-meta">
           <Moment date={postDate} fromNow />
           {" on "}

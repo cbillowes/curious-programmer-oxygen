@@ -1,6 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import PostListing from "../components/PostListing/Component"
+import Gorget from "../components/Gorget/Component"
 import config from "../../data/SiteConfig"
 
 export default class CategoryTemplate extends React.Component {
@@ -12,6 +13,7 @@ export default class CategoryTemplate extends React.Component {
         <Helmet
           title={`Posts in category "${category}" | ${config.siteTitle}`}
         />
+        <Gorget title={config.siteTitle} section={category} />
         <PostListing postEdges={postEdges} />
       </div>
     )

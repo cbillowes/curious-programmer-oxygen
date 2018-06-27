@@ -1,11 +1,11 @@
 import React, { Component } from "react"
 import _ from "lodash"
 import Tag from "../Tag/Component"
-import Link from "gatsby-link"
 
 class PostTags extends Component {
   render() {
     const { tags } = this.props
+    const excludeTag = this.props.excludeTag
     return (
       <div className="post-tag-container">
         {tags &&
@@ -14,6 +14,7 @@ class PostTags extends Component {
               key={tag}
               title={tag}
               url={`/tags/${_.kebabCase(tag)}`}
+              exclude={tag === excludeTag}
             />
           ))}
       </div>

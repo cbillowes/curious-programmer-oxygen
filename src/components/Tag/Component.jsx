@@ -5,6 +5,10 @@ import "./Tag.css"
 class Button extends Component {
   render() {
     const data = this.props
+    if (data.exclude) {
+      return <span />
+    }
+
     return (
       <Link
         to={data.url}

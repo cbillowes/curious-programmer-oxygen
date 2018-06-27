@@ -6,6 +6,7 @@ import PostTags from "../components/PostTags/Component"
 import SocialLinks from "../components/SocialLinks/Component"
 import SEO from "../components/SEO/Component"
 import ReadNext from "../components/ReadNext/Component"
+import Gorget from "../components/Gorget/Component"
 import config from "../../data/SiteConfig"
 import "./prism-default.css"
 import "./prism-default.js"
@@ -40,6 +41,7 @@ export default class PostTemplate extends React.Component {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
+        <Gorget title={config.siteTitle} />
         <div id="post">
           <div className={coverStyle} style={{ backgroundImage: `url(${post.cover})` }}>
             <div className="container">

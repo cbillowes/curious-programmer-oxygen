@@ -1,5 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
+import Gorget from "../components/Gorget/Component"
 import PostListing from "../components/PostListing/Component"
 import SEO from "../components/SEO/Component"
 import config from "../../data/SiteConfig"
@@ -11,6 +12,7 @@ class Index extends React.Component {
       <div className="index-container">
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
+        <Gorget title={config.siteTitle} section="Home" />
         <PostListing postEdges={postEdges} />
       </div>
     )
