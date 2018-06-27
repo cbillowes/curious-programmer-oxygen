@@ -1,68 +1,91 @@
-.post.cover {
+#post .cover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
 }
 
-.post #post {
+#post .cover .post-wrapper {
+    margin-top: 10em;
+}
+
+#post .post-wrapper {
     background-color: rgba(255,255,255,.5);
     background: linear-gradient(180deg,rgba(250,250,250,.9) 0,rgba(250,250,250,.9) 1%,rgba(255,255,255,.5));
     padding: 3em;
     box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.1);
 }
 
-.post.cover #post {
-    margin-top: 10em;
-}
-
-.post mark,
+#post .body  mark,
 :not(pre) > code[class*="language-"] {
     padding: 0.25em 0.5em;
     text-shadow: 1px 1px 1px #ccc;
 }
 
-.post mark {
+#post .body  mark {
     border-radius: .3em;
     background-color: #cc0000;
     text-shadow: 1px 1px 1px #333;
     color: #fff;
 }
 
-.post p {
+#post .body  p {
     line-height: 2em;
 }
 
-.post img {
+#post .body  img {
     display: inline-block;
     margin: 0 auto;
 }
 
-.post video {
+#post .body  video {
     width: 100%;
 }
 
-.post blockquote {
+#post .body  blockquote {
     border-left: #cc0000 0.5em solid;
     padding-left: 1.5em;
 }
 
-.post .post-meta {
+#post .body a {
+    color: #cc0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#post .body a:hover {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#post .body a:visited {
+    color: #30966d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#post .body  .post-meta {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.video-wrapper {
+#post .body .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
     padding-top: 25px;
     height: 0;
     margin-bottom: 1em;
 }
-.video-wrapper iframe {
+
+#post .body .video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+#post .body p:hover {
+    background-color: #007bff1a;
 }

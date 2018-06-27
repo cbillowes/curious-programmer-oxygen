@@ -26,7 +26,7 @@ export default class PostTemplate extends React.Component {
     const post = postNode.frontmatter
     const getNextData = () => (next ? formatReadPost(data.next) : null);
     const getPrevData = () => (prev ? formatReadPost(data.prev) : null);
-    const coverStyle = (post.cover) ? "post cover" : "post"
+    const coverStyle = (post.cover) ? "cover" : ""
 
     if (!post.id) {
       post.id = slug
@@ -40,19 +40,21 @@ export default class PostTemplate extends React.Component {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
-        <div className={coverStyle} style={{backgroundImage: `url(${post.cover})`}}>
-          <div className="container">
-            <div className="row">
-              <div id="post" className="col-lg-9 col-md-9 mx-auto">
-                <ReadNext next={getNextData()} prev={getPrevData()} />
-                <h1>{post.title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-                <div className="post-meta">
-                  <PostTags tags={post.tags} />
-                  <SocialLinks postPath={slug} postNode={postNode} />
+        <div id="post">
+          <div className={coverStyle} style={{ backgroundImage: `url(${post.cover})` }}>
+            <div className="container">
+              <div className="row">
+                <div className="post-wrapper col-lg-9 col-md-9 mx-auto">
+                  <ReadNext next={getNextData()} prev={getPrevData()} />
+                  <h1>{post.title}</h1>
+                  <UserInfo config={config} />
+                  <div className="body" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+                  <div className="post-meta">
+                    <PostTags tags={post.tags} />
+                    <SocialLinks postPath={slug} postNode={postNode} />
+                  </div>
+                  <Disqus postNode={postNode} />
                 </div>
-                <UserInfo config={config} />
-                <Disqus postNode={postNode} />
               </div>
             </div>
           </div>
