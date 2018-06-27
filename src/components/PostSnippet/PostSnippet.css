@@ -13,21 +13,3 @@
   line-height: 1.75em;
   font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
-
-.post-preview .post-meta {
-  display: inline-block;
-  font-size: 0.85em;
-  font-style: italic;
-  color: #868e96;
-  text-align: right;
-  width: 100%;
-  margin: 0.5em;
-}
-
-.post-preview .post-meta time {
-  margin: 2px;
-}
-
-.post-preview .post-meta .estTimeToRead {
-  margin-left: 0.25em;
-}

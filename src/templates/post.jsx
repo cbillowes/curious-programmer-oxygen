@@ -7,6 +7,7 @@ import SocialLinks from "../components/SocialLinks/Component"
 import SEO from "../components/SEO/Component"
 import ReadNext from "../components/ReadNext/Component"
 import Gorget from "../components/Gorget/Component"
+import PostMeta from "../components/PostMeta/Component"
 import config from "../../data/SiteConfig"
 import "./prism-default.css"
 import "./prism-default.js"
@@ -48,8 +49,9 @@ export default class PostTemplate extends React.Component {
               <div className="row">
                 <div className="post-wrapper col-lg-11 col-md-11 mx-auto">
                   <ReadNext prettify={false} next={getNextData()} prev={getPrevData()} />
-                  <h1>{post.title}</h1>
                   <UserInfo config={config} />
+                  <h1>{post.title}</h1>
+                  <PostMeta date={post.date} timeToRead={postNode.timeToRead} orientation="left" />
                   <div className="body" dangerouslySetInnerHTML={{ __html: postNode.html }} />
                   <div className="post-meta">
                     <PostTags tags={post.tags} />
