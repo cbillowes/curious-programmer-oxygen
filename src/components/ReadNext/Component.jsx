@@ -15,7 +15,7 @@ const ReadNextStory = props => {
   if (post) {
     const { path, title, excerpt, cover } = post
     const classes = (prettify) ? classNames("read-next-story", props.className) : ""
-    const background = (prettify) ? `url(${cover})`: ""
+    const background = (prettify) ? `url(${cover}&blur)`: ""
 
     return (
       <Link className={classes} to={path} style={{ backgroundImage: background }}>

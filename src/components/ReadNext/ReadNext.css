@@ -45,7 +45,6 @@ a.read-next-compact:hover {
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    background-color: #cc0000;
 }
 
 .read-next-story {
@@ -66,12 +65,11 @@ a.read-next-compact:hover {
     background-size: cover;
     overflow: hidden;
     padding: 0em 3.5em;
-    text-shadow: black 2px 2px 2px;
+    text-shadow: #000 1px 1px 5px;
 }
 
 .read-next-story:hover {
     text-decoration: none;
-    color: #fff;
 }
 
 .read-next-story:hover::before {
@@ -126,6 +124,12 @@ a.read-next-compact:hover {
 .read-next-story p {
     margin: 0;
     color: rgba(255, 255, 255 0.8);
+    background-color: #00000028;
+    padding: 0.5em;
+}
+
+.read-next a:hover {
+    color: #fff;
 }
 
 .read-next + .site-footer {
