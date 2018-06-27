@@ -1,7 +1,6 @@
 .header {
   background-color:#212529;
-  padding: 25px;
-  margin-bottom: 25px;
+  padding: 0.75em 0 1.25em 0;
 }
 
 .header .logo {

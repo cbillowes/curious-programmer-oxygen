@@ -1,3 +1,20 @@
+.post.cover {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.post #post {
+    background-color: rgba(255,255,255,.5);
+    background: linear-gradient(180deg,rgba(250,250,250,.9) 0,rgba(250,250,250,.9) 1%,rgba(255,255,255,.5));
+    padding: 3em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.post.cover #post {
+    margin-top: 10em;
+}
+
 .post mark,
 :not(pre) > code[class*="language-"] {
     padding: 0.25em 0.5em;

@@ -26,6 +26,7 @@ export default class PostTemplate extends React.Component {
     const post = postNode.frontmatter
     const getNextData = () => (next ? formatReadPost(data.next) : null);
     const getPrevData = () => (prev ? formatReadPost(data.prev) : null);
+    const coverStyle = (post.cover) ? "post cover" : "post"
 
     if (!post.id) {
       post.id = slug
@@ -39,10 +40,10 @@ export default class PostTemplate extends React.Component {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
-        <div className="post">
+        <div className={coverStyle} style={{backgroundImage: `url(${post.cover})`}}>
           <div className="container">
             <div className="row">
-              <div className="col-lg-8 col-md-10 mx-auto">
+              <div id="post" className="col-lg-9 col-md-9 mx-auto">
                 <ReadNext next={getNextData()} prev={getPrevData()} />
                 <h1>{post.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
