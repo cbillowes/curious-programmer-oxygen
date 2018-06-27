@@ -44,7 +44,7 @@ export default class PostTemplate extends React.Component {
           <div className={coverStyle} style={{ backgroundImage: `url(${post.cover})` }}>
             <div className="container">
               <div className="row">
-                <div className="post-wrapper col-lg-9 col-md-9 mx-auto">
+                <div className="post-wrapper col-lg-11 col-md-11 mx-auto">
                   <ReadNext prettify={false} next={getNextData()} prev={getPrevData()} />
                   <h1>{post.title}</h1>
                   <UserInfo config={config} />
