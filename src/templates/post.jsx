@@ -18,7 +18,9 @@ const formatReadPost = value => ({
   path: value.fields.slug,
   title: value.frontmatter.title,
   cover: value.frontmatter.cover,
-  excerpt: value.excerpt
+  date: value.frontmatter.date,
+  excerpt: value.excerpt,
+  timeToRead: value.timeToRead
 })
 
 export default class PostTemplate extends React.Component {
@@ -90,7 +92,8 @@ export const pageQuery = graphql`
     }
 
     prev: markdownRemark(fields: { slug: { eq: $prev } }) {
-      excerpt(pruneLength: 112)
+      excerpt(pruneLength: 200)
+      timeToRead
       frontmatter {
         title
         cover
@@ -102,7 +105,8 @@ export const pageQuery = graphql`
     }
 
     next: markdownRemark(fields: { slug: { eq: $next } }) {
-      excerpt(pruneLength: 112)
+      excerpt(pruneLength: 200)
+      timeToRead
       frontmatter {
         title
         cover

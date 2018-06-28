@@ -32,104 +32,67 @@ a.read-next-compact:hover {
     text-decoration: none;
 }
 
+.read-next-compact .post-meta,
 .read-next-compact .post p {
     display: none;
 }
 
-.read-next {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+.read-next, .read-next-story {
     display: flex;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
+    background-color: white;
+    padding: 2.5em 3em;
+    margin: -2.5em 0.25em -5em 0.25em;
+    box-shadow: #007bff 0px 3px 3px;
 }
 
 .read-next-story {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    min-width: 50%;
-    text-decoration: none;
-    position: relative;
-    text-align: center;
-    color: #fff;
-    background: #222 no-repeat center center;
-    background-size: cover;
-    overflow: hidden;
-    padding: 0em 3.5em;
-    text-shadow: #000 1px 1px 5px;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .read-next-story:hover {
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.9), 0 0 5px rgba(0, 0, 0, 0.5) inset;
+}
+
+.read-next-story:before, .read-next-story:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+.read-next-story:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.read-next:hover,
+.read-next-story:hover {
+    border-color: #007bff;
     text-decoration: none;
 }
 
-.read-next-story:hover::before {
-    background: rgba(0, 0, 0, 0.6);
-    transition: all 0.2s ease;
-}
-
-.read-next-story:hover .post::before {
-    color: #222;
-    background: #fff;
-    transition: all 0.2s ease;
-}
-
-.read-next-story::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4);
-    transition: all 0.5s ease;
-}
-
-.read-next-story .post {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-}
-
-.read-next-story .post::before {
-    content: "Read This Next";
-    padding: 4px 10px 5px;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-family: "Open Sans", sans-serif;
-    color: rgba(255, 255, 255, 0.8);
-    border: rgba(255, 255, 255, 0.5) 1px solid;
-    border-radius: 4px;
-    transition: all 0.5s ease;
-}
-
-.read-next-story.prev .post::before {
-    content: "You Might Enjoy";
-}
-
-.read-next-story h2 {
-    margin-top: 1rem;
-    color: #fff;
-}
-
-.read-next-story p {
-    margin: 0;
-    color: rgba(255, 255, 255 0.8);
-    background-color: #00000028;
-    padding: 0.5em;
-}
-
-.read-next a:hover {
-    color: #fff;
+.read-next-story.prev {
+    text-align: right;
 }
 
 .read-next + .site-footer {
@@ -140,14 +103,12 @@ a.read-next-compact:hover {
     margin: 0;
 }
 
-@media only screen and (max-width: 900px) {
-    .read-next {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
+@media only screen and (min-width: 500px) and (max-width: 1200px) {
+    .read-next, .read-next-story {
+        border: none;
+        padding: 0em 5em;
+        margin: 0em;
         flex-direction: column;
-        margin-top: 4rem;
     }
 
     .read-next p {

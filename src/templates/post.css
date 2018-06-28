@@ -1,6 +1,6 @@
 #post .cover,
 #post .background {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
