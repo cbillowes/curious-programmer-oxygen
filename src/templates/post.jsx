@@ -54,11 +54,10 @@ export default class PostTemplate extends React.Component {
                   <UserInfo config={config} />
                   <h1>{post.title}</h1>
                   <PostMeta date={post.date} timeToRead={postNode.timeToRead} orientation="left" />
+                  <PostTags tags={post.tags} />
                   <div className="body" dangerouslySetInnerHTML={{ __html: postNode.html }} />
-                  <div className="post-meta">
-                    <PostTags tags={post.tags} />
-                    <SocialLinks postPath={slug} postNode={postNode} />
-                  </div>
+                  <SocialLinks postPath={slug} postNode={postNode} />
+                  <p><strong>Cover image &hearts; </strong><a href={post.cover}>{post.cover}</a></p>
                   <Disqus postNode={postNode} />
                 </div>
               </div>
