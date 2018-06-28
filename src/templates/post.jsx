@@ -12,6 +12,7 @@ import config from "../../data/SiteConfig"
 import "./prism-default.css"
 import "./prism-default.js"
 import "./post.css"
+import "./post.js"
 
 const formatReadPost = value => ({
   path: value.fields.slug,
@@ -45,6 +46,7 @@ export default class PostTemplate extends React.Component {
         <Gorget title={config.siteTitle} />
         <div id="post">
           <div className={coverStyle} style={{ backgroundImage: `url(${post.cover})` }}>
+            <div id="post-background" className="background" style={{ backgroundImage: `url(${post.cover}&blur)` }}></div>
             <div className="container">
               <div className="row">
                 <div className="post-wrapper col-lg-11 col-md-11 mx-auto">

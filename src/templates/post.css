@@ -1,7 +1,18 @@
-#post .cover {
+#post .cover,
+#post .background {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
+    background-attachment: fixed;
+}
+
+#post .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
 }
 
 #post .cover .post-wrapper {
@@ -10,7 +21,7 @@
 
 #post .post-wrapper {
     background-color: rgba(255,255,255,.5);
-    background: linear-gradient(180deg,rgba(250,250,250,.9) 0,rgba(250,250,250,.9) 1%,rgba(255,255,255,.5));
+    background: linear-gradient(180deg,rgba(250,250,250,.85) 0,rgba(250,250,250,.7) 1%,rgba(255,255,255,.5));
     padding: 3em 5em;
     box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.1);
 }
