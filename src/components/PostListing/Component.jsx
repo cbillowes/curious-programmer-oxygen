@@ -32,7 +32,6 @@ class PostListing extends React.Component {
               postList.map(post => (
                 <div key={post.path}>
                   <PostSnippet post={post} excludeTag={excludeTag} />
-                  <hr />
                 </div>
               ))
             }
