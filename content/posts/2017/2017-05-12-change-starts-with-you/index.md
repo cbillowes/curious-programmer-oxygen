@@ -1,9 +1,9 @@
 ---
 title: Change starts with you
-cover: "https://picsum.photos/1280/500/?image=189"
+cover: "https://picsum.photos/1600/800/?image=189"
 date:   2017-05-12 12:52:25 +0200
-tags: 
-    - Mindset 
+tags:
+    - Mindset
     - Comfort Zone
     - Relationships
 ---

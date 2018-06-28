@@ -1,6 +1,6 @@
 ---
 title:  "Some new HTML5 elements"
-cover: "https://picsum.photos/1280/500/?image=526"
+cover: "https://picsum.photos/1600/800/?image=526"
 date:   2016-06-18 13:26:44 +0200
 tags:
     - Technical

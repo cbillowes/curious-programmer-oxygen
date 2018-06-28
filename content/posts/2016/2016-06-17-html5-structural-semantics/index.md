@@ -1,6 +1,6 @@
 ---
 title:  "HTML5 structural semantics"
-cover: "https://picsum.photos/1280/500/?image=36"
+cover: "https://picsum.photos/1600/800/?image=36"
 date:   2016-06-17 12:02:38 +0200
 tags:
     - Technical

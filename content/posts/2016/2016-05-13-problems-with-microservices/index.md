@@ -1,6 +1,6 @@
 ---
 title: "Problems with microservices"
-cover: "https://picsum.photos/1280/500/?image=1078"
+cover: "https://picsum.photos/1600/800/?image=1078"
 date:   2016-05-13 23:10:19 +0200
 category: "tech"
 tags:

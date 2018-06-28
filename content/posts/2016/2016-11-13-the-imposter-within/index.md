@@ -1,9 +1,9 @@
 ---
 title:  "The imposter within"
-cover: "https://picsum.photos/1280/500/?image=680"
+cover: "https://picsum.photos/1600/800/?image=680"
 date:   2016-11-13 11:23:10 +0200
-tags: 
-    - Mindset 
+tags:
+    - Mindset
     - Comfort Zone
 ---
 

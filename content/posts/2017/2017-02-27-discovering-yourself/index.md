@@ -1,9 +1,9 @@
 ---
 title:  "Discovering yourself"
-cover: "https://picsum.photos/1280/500/?image=103"
+cover: "https://picsum.photos/1600/800/?image=103"
 date:   2017-02-27 23:16:49 +0200
-tags: 
-    - Mindset 
+tags:
+    - Mindset
     - Communication
     - Relationships
 ---

@@ -1,8 +1,8 @@
 ---
 title:  "Making red-tape allies"
-cover: "https://picsum.photos/1280/500/?image=1020"
+cover: "https://picsum.photos/1600/800/?image=1020"
 date:   2016-07-04 20:34:56 +0200
-tags: 
+tags:
     - Productivity
 ---
 
@@ -100,7 +100,7 @@ with them.
 ## My final thoughts
 
 Building relationships with people outside your team gives you insights to how
-other people and teams are tackling different problems that your team may be 
+other people and teams are tackling different problems that your team may be
 experiencing. Sometimes we get too close to a problem that we can't always
 see the solution straightaway.
 

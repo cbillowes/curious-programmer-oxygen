@@ -1,9 +1,9 @@
 ---
 title:  "Coping with unknown outcomes"
-cover: "https://picsum.photos/1280/500/?image=639"
+cover: "https://picsum.photos/1600/800/?image=639"
 date:   2016-08-01 20:54:23 +0200
-tags: 
-    - Mindset 
+tags:
+    - Mindset
 ---
 
 > "I am an old man and I have known a great many troubles, but most of them

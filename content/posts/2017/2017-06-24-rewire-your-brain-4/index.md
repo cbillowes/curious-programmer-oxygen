@@ -1,11 +1,11 @@
 ---
 title: "Rewire your brain (Part 4) - Childhood survival rules"
 slug: "rewire-your-brain-4"
-cover: "https://picsum.photos/1280/500/?image=889"
+cover: "https://picsum.photos/1600/800/?image=889"
 date:   2017-06-24 20:35:14 +0200
-tags: 
-    - Mindset 
-    - Productivity 
+tags:
+    - Mindset
+    - Productivity
 ---
 
 > Virginia Satir says that you have learned what you have learned very well.

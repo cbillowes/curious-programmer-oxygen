@@ -1,6 +1,6 @@
 ---
 title: "Reignite the passion"
-cover: "https://picsum.photos/1280/500/?image=1011"
+cover: "https://picsum.photos/1600/800/?image=1011"
 date: 2016-05-26 22:21:22 +0200
 category: "tech"
 tags:

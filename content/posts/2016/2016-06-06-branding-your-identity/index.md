@@ -1,9 +1,9 @@
 ---
 title:  "Branding your identity"
-cover: "https://picsum.photos/1280/500/?image=628"
+cover: "https://picsum.photos/1600/800/?image=628"
 date:   2016-06-06 20:13:40 +0200
 tags:
-    - Personal Brand 
+    - Personal Brand
     - Comfort Zone
 ---
 

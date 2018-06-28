@@ -1,7 +1,7 @@
 ---
 title: "People do stupid sh*t"
 slug: "people-do-stupid-things"
-cover: "https://picsum.photos/1280/500/?image=1028"
+cover: "https://picsum.photos/1600/800/?image=1028"
 date: 2016-05-28 16:11:10 +0200
 category: "tech"
 tags:

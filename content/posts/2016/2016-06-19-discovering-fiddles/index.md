@@ -1,6 +1,6 @@
 ---
 title:  "Discovering fiddles"
-cover: "https://picsum.photos/1280/500/?image=527"
+cover: "https://picsum.photos/1600/800/?image=527"
 date:   2016-06-19 19:13:00 +0200
 tags:
     - Technical

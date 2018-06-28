@@ -1,9 +1,9 @@
 ---
 title: "A mindful day of happiness"
-cover: "https://picsum.photos/1280/500/?image=646"
+cover: "https://picsum.photos/1600/800/?image=646"
 date:   2016-07-22 21:54:15 +0200
-tags: 
-    - Mindset 
+tags:
+    - Mindset
     - Time Management
 ---
 

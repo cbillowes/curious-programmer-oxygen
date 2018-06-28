@@ -1,6 +1,6 @@
 ---
 title:  "Byte order mark"
-cover: "https://picsum.photos/1280/500/?image=8"
+cover: "https://picsum.photos/1600/800/?image=8"
 date:   2016-10-09 14:28:00 +0200
 tags:
     - Technical

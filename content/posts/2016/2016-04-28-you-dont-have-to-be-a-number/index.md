@@ -1,7 +1,7 @@
 ---
 title: "You don't have to be a number"
 slug: "you-dont-have-to-be-a-number"
-cover: "https://picsum.photos/1280/500/?image=978"
+cover: "https://picsum.photos/1600/800/?image=978"
 date:   2016-04-28 20:22:52 +0200
 author: "clarice.bouwer"
 category: "tech"

@@ -1,6 +1,6 @@
 ---
 title: "Time is precious"
-cover: "https://picsum.photos/1280/500/?image=1077"
+cover: "https://picsum.photos/1600/800/?image=1077"
 date:   2016-05-11 23:16:23 +0200
 category: "tech"
 tags:

@@ -1,9 +1,9 @@
 ---
 title:  "Words define your reality"
-cover: "https://picsum.photos/1280/500/?image=180"
+cover: "https://picsum.photos/1600/800/?image=180"
 date:   2017-03-04 00:01:00 +0200
-tags: 
-    - Mindset 
+tags:
+    - Mindset
     - Relationships
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Dealing with change in teams"
-cover: "https://picsum.photos/1280/500/?image=389"
+cover: "https://picsum.photos/1600/800/?image=389"
 date:   2016-05-17 21:44:49 +0200
 category: "tech"
 tags:

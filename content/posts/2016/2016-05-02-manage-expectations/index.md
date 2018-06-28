@@ -1,6 +1,6 @@
 ---
 title: " Manage expectations"
-cover: "https://picsum.photos/1280/500/?image=1062"
+cover: "https://picsum.photos/1600/800/?image=1062"
 date:   2016-05-02 19:20:00 +0200
 category: "tech"
 tags:

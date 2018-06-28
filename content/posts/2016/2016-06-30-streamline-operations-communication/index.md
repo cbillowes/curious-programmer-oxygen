@@ -1,6 +1,6 @@
 ---
 title: "Streamline operations communication"
-cover: "https://picsum.photos/1280/500/?image=119"
+cover: "https://picsum.photos/1600/800/?image=119"
 date:   2016-06-30 22:36:38 +0200
 tags:
     - Productivity

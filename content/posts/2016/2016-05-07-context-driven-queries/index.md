@@ -1,6 +1,6 @@
 ---
 title: "Context-driven queries"
-cover: "https://picsum.photos/1280/500/?image=192"
+cover: "https://picsum.photos/1600/800/?image=192"
 date:   2016-05-07 15:28:21 +0200
 category: "tech"
 tags:

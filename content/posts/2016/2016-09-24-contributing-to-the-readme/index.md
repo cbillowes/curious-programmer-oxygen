@@ -1,8 +1,8 @@
 ---
 title:  "Contributing to the README"
-cover: "https://picsum.photos/1280/500/?image=528"
+cover: "https://picsum.photos/1600/800/?image=528"
 date:   2016-09-24 15:00:49 +0200
-tags: 
+tags:
     - Communication
     - Relationships
     - Technical
@@ -46,7 +46,7 @@ to a great README file:
     sentences.
 -   If it's a component of a bigger project, mention it and reference the other
     components.
--   If the project has a vision add it.  
+-   If the project has a vision add it.
 
 ### Architecture
 

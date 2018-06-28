@@ -1,6 +1,6 @@
 ---
 title: "Adjusting the corporate mindset"
-cover: "https://picsum.photos/1280/500/?image=983"
+cover: "https://picsum.photos/1600/800/?image=983"
 date:   2016-05-11 23:16:23 +0200
 category: "tech"
 tags:

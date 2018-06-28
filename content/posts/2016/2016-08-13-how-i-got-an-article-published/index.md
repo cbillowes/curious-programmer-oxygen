@@ -1,9 +1,9 @@
 ---
 title:  "How I got my article published"
-cover: "https://picsum.photos/1280/500/?image=1073"
+cover: "https://picsum.photos/1600/800/?image=1073"
 date:   2016-08-13 19:45:00 +0200
 tags:
-    - Mindset 
+    - Mindset
     - Comfort Zone
     - Personal Brand
 ---

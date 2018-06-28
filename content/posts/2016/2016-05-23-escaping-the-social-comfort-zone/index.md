@@ -1,6 +1,6 @@
 ---
 title: "Escaping the social comfort zone"
-cover: "https://picsum.photos/1280/500/?image=1070"
+cover: "https://picsum.photos/1600/800/?image=1070"
 date: 2016-05-23 20:24:15 +0200
 category: "tech"
 tags:
@@ -75,7 +75,7 @@ Giving a true compliment is a great conversation starter and also has a
 positive impact on the other person. When in doubt, bring weather into the
 conversation.
 
-This helps build confidence when talking to people you don't know which helps 
+This helps build confidence when talking to people you don't know which helps
 when you want to start networking at events or other social gatherings.
 
 ## My final thoughts

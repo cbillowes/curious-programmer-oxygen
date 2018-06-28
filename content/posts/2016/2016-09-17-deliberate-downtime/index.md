@@ -1,9 +1,9 @@
 ---
 title:  "Deliberate downtime"
-cover: "https://picsum.photos/1280/500/?image=777"
+cover: "https://picsum.photos/1600/800/?image=777"
 date:   2016-09-17 12:03:33 +0200
-tags: 
-    - Mindset 
+tags:
+    - Mindset
     - Productivity
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Days that rush away"
-cover: "https://picsum.photos/1280/500/?image=396"
+cover: "https://picsum.photos/1600/800/?image=396"
 date:   2016-05-09 23:30:10 +0200
 category: "tech"
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "How this blog improved my productivity"
-cover: "https://picsum.photos/1280/500/?image=9"
+cover: "https://picsum.photos/1600/800/?image=9"
 date:   2016-05-14 01:30:45 +0200
 category: "tech"
 tags:
