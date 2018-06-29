@@ -121,3 +121,14 @@
     background-color: #007bff;
     color: #fff;
 }
+
+@media (max-width: 700px) {
+    #post .cover .post-wrapper {
+        margin-top: 5em;
+    }
+
+    #post .post-wrapper {
+        padding: 1em 2em;
+        background-color: rgba(255,255,255,.5);
+    }
+}
