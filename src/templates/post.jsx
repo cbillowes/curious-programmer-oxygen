@@ -42,7 +42,7 @@ export default class PostTemplate extends React.Component {
     const post = postNode.frontmatter
     const getNextData = () => (next ? formatReadPost(data.next) : null);
     const getPrevData = () => (prev ? formatReadPost(data.prev) : null);
-    const coverStyle = (post.cover) ? "cover" : ""
+    const coverStyle = (post.cover) ? "cover" : "cover-less"
 
     if (!post.id) {
       post.id = slug

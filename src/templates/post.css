@@ -1,3 +1,7 @@
+#post .cover-less {
+    padding-top: 3.5em;
+}
+
 #post .cover,
 #post .cover-blur {
     background-size: cover;
