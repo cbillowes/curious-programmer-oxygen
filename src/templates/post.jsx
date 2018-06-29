@@ -59,7 +59,7 @@ export default class PostTemplate extends React.Component {
         <Gorget title={config.siteTitle} />
         <div id="post">
           <div className={coverStyle} style={{ backgroundImage: `url(${post.cover})` }}>
-            <div id="post-background" className="background" style={{ backgroundImage: `url(${post.cover}&blur)` }}></div>
+            <div id="post-background" className="cover-blur" style={{ backgroundImage: `url(${post.cover}&blur)` }}></div>
             <div className="container">
               <div className="row">
                 <div className="post-wrapper col-lg-11 col-md-11 mx-auto">
