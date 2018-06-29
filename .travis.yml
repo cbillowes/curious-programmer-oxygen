@@ -4,7 +4,7 @@ node_js:
 before_script:
   - npm install gatsby-cli
 script:
-  - gatsby build
+  - npm run build
 git:
   depth: 3
 after_success:
