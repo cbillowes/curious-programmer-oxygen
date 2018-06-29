@@ -135,7 +135,3 @@ Check out the
 [story](https://storify.com/chiuki/writing-for-developers-panel-2016),
 complete with the video,
 compiled by [Chiu-Ki Chan](https://twitter.com/chiuki).
-
-## Social media activity
-
-<div class="storify"><iframe src="//storify.com/cbillowes/finding-opportunities-in-the-mistakes-we-make/embed?header=false&border=false" width="100%" height="750" frameborder="no" allowtransparency="true"></iframe><script src="//storify.com/cbillowes/finding-opportunities-in-the-mistakes-we-make.js?header=false&border=false"></script><noscript>[<a href="//storify.com/cbillowes/finding-opportunities-in-the-mistakes-we-make" target="_blank">View the story "Finding Opportunities in the Mistakes We Make" on Storify</a>]</noscript></div>
