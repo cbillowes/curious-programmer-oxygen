@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import classNames from "classnames"
 import Link from "gatsby-link"
 import PostMeta from "../PostMeta/Component"
+import "./ReadNextCompact.css"
 import "./ReadNext.css"
 
 function getStoryText(title, className, prettify) {

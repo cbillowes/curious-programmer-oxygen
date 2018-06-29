@@ -21,7 +21,7 @@ class Gorget extends React.Component {
                 <Link to="/">
                   &#123; <span className="normal-weight">{left}</span> {right} &#125;
                 </Link>
-                <span className={sectionClasses}> ;;{section}</span>
+                <span className={sectionClasses}> ;{section}</span>
               </div>
             </div>
           </div>
