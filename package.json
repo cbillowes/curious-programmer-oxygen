@@ -5,7 +5,7 @@
   "author": "Clarice Bouwer <curiousprogrammer.io@gmail.com>",
   "dependencies": {
     "babel-plugin-lodash": "^3.3.2",
-    "gatsby": "^1.9.272",
+    "gatsby": "^1.9.273",
     "gatsby-link": "^1.6.36",
     "gatsby-pagination": "^1.2.0",
     "gatsby-plugin-catch-links": "^1.0.15",
@@ -20,7 +20,7 @@
     "gatsby-plugin-twitter": "^1.0.16",
     "gatsby-remark-autolink-headers": "^1.4.11",
     "gatsby-remark-copy-linked-files": "^1.5.25",
-    "gatsby-remark-images": "^1.5.41",
+    "gatsby-remark-images": "^1.5.67",
     "gatsby-remark-prismjs": "^1.2.12",
     "gatsby-remark-responsive-iframe": "^1.4.16",
     "gatsby-source-filesystem": "^1.5.16",
