@@ -63,3 +63,4 @@ typings/
 #gatsby
 .cache
 public/
+drafts/
