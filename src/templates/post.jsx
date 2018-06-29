@@ -12,7 +12,6 @@ import config from "../../data/SiteConfig"
 import "./prism-default.css"
 import "./prism-default.js"
 import "./post.css"
-import "./post.js"
 
 const formatReadPost = value => ({
   path: value.fields.slug,
@@ -24,6 +23,18 @@ const formatReadPost = value => ({
 })
 
 export default class PostTemplate extends React.Component {
+  componentDidMount() {
+    window.onscroll = function () {
+      const scrollTop = window.scrollY
+      const opacity = (scrollTop / 500)
+      const background = document.getElementById("post-background")
+      if (background) {
+        background.style.opacity = opacity
+        background.style.filter = `alpha(opacity=${opacity * 10})`
+      }
+    }
+  }
+
   render() {
     const { data } = this.props
     const { slug, next, prev } = this.props.pathContext;
