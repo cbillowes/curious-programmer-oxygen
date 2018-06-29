@@ -1,6 +1,6 @@
 ---
 title: "Installing Java"
-date:   2018-06-25 18:03:00 +0200
+date:   2018-06-29 18:03:00 +0200
 tags:
     - Technical
     - Linux
