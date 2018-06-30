@@ -15,7 +15,8 @@ module.exports = {
   userName: "Clarice Bouwer", // Username to display in the author segment.
   userTwitter: "cbillowes", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Johannesburg, South Africa", // User location to display in the author segment.
-  userAvatar: "https://en.gravatar.com/userimage/34549463/acc6b8778c7b14437b7590078012302e.png?size=150", // User avatar to display in the author segment.
+  userAvatar:
+    "https://en.gravatar.com/userimage/34549463/acc6b8778c7b14437b7590078012302e.png?size=150", // User avatar to display in the author segment.
   userDescription:
     "I'm a curious web generalist who's learned that the bigger picture is about people.", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.

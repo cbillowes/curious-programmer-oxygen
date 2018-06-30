@@ -5,7 +5,9 @@ import config from "../../../data/SiteConfig"
 function getDetailsFromFrontmatter(frontmatter, postPath) {
   return {
     title: frontmatter.title,
-    description: frontmatter.description ? frontmatter.description : frontmatter.excerpt,
+    description: frontmatter.description
+      ? frontmatter.description
+      : frontmatter.excerpt,
     image: frontmatter.cover,
     postURL: `${config.siteUrl}${config.pathPrefix}${postPath}`
   }
@@ -23,7 +25,14 @@ function getDetails(postNode, postPath, postSEO) {
   }
 }
 
-function pushToSchemeOrgJsonLd(postSEO, blogURL, postURL, title, image, description) {
+function pushToSchemeOrgJsonLd(
+  postSEO,
+  blogURL,
+  postURL,
+  title,
+  image,
+  description
+) {
   const schema = [
     {
       "@context": "http://schema.org",
@@ -73,9 +82,20 @@ class SEO extends Component {
     const { postNode, postPath, postSEO } = this.props
     const realPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix
     const blogURL = config.siteUrl + config.pathPrefix
-    let { title, description, image, postURL } = getDetails(postNode, postPath, postSEO)
+    let { title, description, image, postURL } = getDetails(
+      postNode,
+      postPath,
+      postSEO
+    )
     image = config.siteUrl + realPrefix + image
-    const schemaOrgJsonLd = pushToSchemeOrgJsonLd(postSEO, blogURL, postURL, title, image, description)
+    const schemaOrgJsonLd = pushToSchemeOrgJsonLd(
+      postSEO,
+      blogURL,
+      postURL,
+      title,
+      image,
+      description
+    )
 
     return (
       <Helmet>
@@ -84,7 +104,8 @@ class SEO extends Component {
         <script type="application/ld+json">
           {JSON.stringify(schemaOrgJsonLd)}
         </script>
-        <meta property="og:url" content={postSEO ? postURL : blogURL} />{postSEO ? <meta property="og:type" content="article" /> : null}
+        <meta property="og:url" content={postSEO ? postURL : blogURL} />
+        {postSEO ? <meta property="og:type" content="article" /> : null}
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />

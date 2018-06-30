@@ -10,7 +10,7 @@ class Gorget extends React.Component {
     const left = splitTitle[0]
     const right = splitTitle[1]
     const section = this.props.section
-    const sectionClasses = classNames("section", (section) ? "" : "none")
+    const sectionClasses = classNames("section", section ? "" : "none")
 
     return (
       <div className="header">
@@ -19,7 +19,8 @@ class Gorget extends React.Component {
             <div className="col-lg-9 col-md-9 mx-auto">
               <div className="logo">
                 <Link to="/">
-                  &#123; <span className="normal-weight">{left}</span> {right} &#125;
+                  &#123; <span className="normal-weight">{left}</span> {right}{" "}
+                  &#125;
                 </Link>
                 <span className={sectionClasses}> ;{section}</span>
               </div>

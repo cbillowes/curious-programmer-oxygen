@@ -60,7 +60,7 @@
   "main": "n/a",
   "scripts": {
     "clean": "rm -rf .cache && rm -rf public",
-    "format": "prettier '**/*.{js,jsx}' --write",
+    "format": "prettier '**/*.{js,jsx}' --write --loglevel debug",
     "markdown:writing": "write-good $(glob 'content/posts/**/*.md')",
     "markdown:lint": "remark content/posts/",
     "ready": "npm run clean && npm run format",

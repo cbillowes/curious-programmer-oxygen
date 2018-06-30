@@ -32,7 +32,7 @@ class Disqus extends Component {
       identifier: postNode.fields.slug,
       title: post.title,
       url: `${config.siteUrl}${config.pathPrefix}${postNode.fields.slug}`,
-      categoryId: post.category_id,
+      categoryId: post.category_id
     }
     return (
       <ReactDisqusComments

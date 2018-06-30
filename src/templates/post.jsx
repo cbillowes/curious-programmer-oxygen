@@ -10,7 +10,7 @@ import Gorget from "../components/Gorget/Component"
 import PostMeta from "../components/PostMeta/Component"
 import config from "../../data/SiteConfig"
 import "./prism-default.css"
-import "./prism-default.js"
+import "./prism-default.min.js"
 import "./post.css"
 
 const formatReadPost = value => ({
@@ -24,9 +24,9 @@ const formatReadPost = value => ({
 
 export default class PostTemplate extends React.Component {
   componentDidMount() {
-    window.onscroll = function () {
+    window.onscroll = function() {
       const scrollTop = window.scrollY
-      const opacity = (scrollTop / 500)
+      const opacity = scrollTop / 500
       const background = document.getElementById("post-background")
       if (background) {
         background.style.opacity = opacity
@@ -37,12 +37,12 @@ export default class PostTemplate extends React.Component {
 
   render() {
     const { data } = this.props
-    const { slug, next, prev } = this.props.pathContext;
+    const { slug, next, prev } = this.props.pathContext
     const postNode = this.props.data.markdownRemark
     const post = postNode.frontmatter
-    const getNextData = () => (next ? formatReadPost(data.next) : null);
-    const getPrevData = () => (prev ? formatReadPost(data.prev) : null);
-    const coverStyle = (post.cover) ? "cover" : "cover-less"
+    const getNextData = () => (next ? formatReadPost(data.next) : null)
+    const getPrevData = () => (prev ? formatReadPost(data.prev) : null)
+    const coverStyle = post.cover ? "cover" : "cover-less"
 
     if (!post.id) {
       post.id = slug
@@ -58,19 +58,40 @@ export default class PostTemplate extends React.Component {
         <SEO postPath={slug} postNode={postNode} postSEO />
         <Gorget title={config.siteTitle} />
         <div id="post">
-          <div className={coverStyle} style={{ backgroundImage: `url(${post.cover})` }}>
-            <div id="post-background" className="cover-blur" style={{ backgroundImage: `url(${post.cover}&blur)` }}></div>
+          <div
+            className={coverStyle}
+            style={{ backgroundImage: `url(${post.cover})` }}
+          >
+            <div
+              id="post-background"
+              className="cover-blur"
+              style={{ backgroundImage: `url(${post.cover}&blur)` }}
+            />
             <div className="container">
               <div className="row">
                 <div className="post-wrapper col-lg-11 col-md-11 mx-auto">
-                  <ReadNext prettify={false} next={getNextData()} prev={getPrevData()} />
+                  <ReadNext
+                    prettify={false}
+                    next={getNextData()}
+                    prev={getPrevData()}
+                  />
                   <UserInfo config={config} />
                   <h1>{post.title}</h1>
-                  <PostMeta date={post.date} timeToRead={postNode.timeToRead} orientation="left" />
+                  <PostMeta
+                    date={post.date}
+                    timeToRead={postNode.timeToRead}
+                    orientation="left"
+                  />
                   <PostTags tags={post.tags} />
-                  <div className="body" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+                  <div
+                    className="body"
+                    dangerouslySetInnerHTML={{ __html: postNode.html }}
+                  />
                   <SocialLinks postPath={slug} postNode={postNode} />
-                  <p><strong>Cover image &hearts; </strong><a href={post.cover}>{post.cover}</a></p>
+                  <p>
+                    <strong>Cover image &hearts; </strong>
+                    <a href={post.cover}>{post.cover}</a>
+                  </p>
                   <Disqus postNode={postNode} />
                 </div>
               </div>
@@ -127,6 +148,5 @@ export const pageQuery = graphql`
         slug
       }
     }
-
   }
 `

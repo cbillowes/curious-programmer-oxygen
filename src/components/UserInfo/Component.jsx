@@ -14,7 +14,6 @@ class UserInfo extends Component {
             count: expanded ? true : "none",
             size: "large"
           }}
-
         />
       </div>
     )

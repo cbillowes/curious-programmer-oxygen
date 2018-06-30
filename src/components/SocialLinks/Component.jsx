@@ -7,12 +7,10 @@ import {
   TelegramShareButton,
   RedditShareButton,
   WhatsappShareButton,
-
   FacebookShareCount,
   GooglePlusShareCount,
   LinkedinShareCount,
   RedditShareCount,
-
   FacebookIcon,
   TwitterIcon,
   TelegramIcon,
@@ -42,11 +40,7 @@ class LinkedIn extends Component {
     const filter = count => (count > 0 ? count : "")
 
     return (
-      <LinkedinShareButton
-        url={url}
-        title={title}
-        description={excerpt}
-      >
+      <LinkedinShareButton url={url} title={title} description={excerpt}>
         <LinkedinIcon round size={iconSize} />
         <LinkedinShareCount url={url}>
           {count => <div className="share-count">{filter(count)}</div>}
@@ -140,7 +134,12 @@ class SocialLinks extends Component {
     return (
       <div className="social-links">
         <Twitter url={url} title={post.title} iconSize={iconSize} />
-        <LinkedIn url={url} title={post.title} iconSize={iconSize} excerpt={postNode.excerpt} />
+        <LinkedIn
+          url={url}
+          title={post.title}
+          iconSize={iconSize}
+          excerpt={postNode.excerpt}
+        />
         <Telegram url={url} iconSize={iconSize} />
         <WhatsApp url={url} title={post.title} iconSize={iconSize} />
         <Reddit url={url} title={post.title} iconSize={iconSize} />

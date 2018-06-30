@@ -10,10 +10,7 @@ class Button extends Component {
     }
 
     return (
-      <Link
-        to={data.url}
-        className="button badge badge-light"
-      >
+      <Link to={data.url} className="button badge badge-light">
         {data.title}
       </Link>
     )

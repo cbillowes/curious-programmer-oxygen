@@ -9,7 +9,6 @@ const {
   createLinkedPages
 } = require("gatsby-pagination")
 
-
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
   let slug
@@ -42,7 +41,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-
     const postPage = path.resolve("src/templates/post.jsx")
     const tagPage = path.resolve("src/templates/tag.jsx")
     const categoryPage = path.resolve("src/templates/category.jsx")
