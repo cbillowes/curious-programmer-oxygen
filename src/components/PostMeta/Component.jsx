@@ -5,9 +5,9 @@ import "./PostMeta.css"
 
 class PostMeta extends React.Component {
   render() {
-    const timeToRead = this.props.timeToRead
-    const postDate = Date.parse(this.props.date, "YYYY-MM-dd")
-    const metaClasses = classNames("post-meta", this.props.orientation)
+    const timeToRead = this.props.post.timeToRead
+    const postDate = Date.parse(this.props.post.date, "YYYY-MM-dd")
+    const metaClasses = classNames("post-meta", this.props.post.orientation)
 
     return (
       <div className={metaClasses}>
