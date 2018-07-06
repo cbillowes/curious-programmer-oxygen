@@ -22,7 +22,11 @@ class PostSnippet extends React.Component {
           <h3 className="post-subtitle">{post.excerpt}</h3>
         </Link>
         <PostTags tags={post.tags} excludeTag={excludeTag} />
-        <PostMeta post={post} />
+        <PostMeta
+          timeToRead={post.timeToRead}
+          postDate={post.date}
+          orientation={post.orientation}
+        />
       </div>
     )
   }
