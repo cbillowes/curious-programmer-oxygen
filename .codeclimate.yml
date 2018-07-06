@@ -40,6 +40,6 @@ plugins:
     enabled: true
 exclude_patterns:
   - "/public/"
-  - "**/node_modules/
-  - **/*.min.js
-  - **/prism-default.min.js
+  - "**/node_modules/"
+  - "**/*.min.js"
+  - "**/prism-default.min.js"
