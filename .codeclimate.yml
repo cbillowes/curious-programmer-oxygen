@@ -42,4 +42,4 @@ exclude_patterns:
   - "/public/"
   - "**/node_modules/"
   - "**/*.min.js"
-  - "**/prism-default.min.js"
+  - "**/prism-default*"
