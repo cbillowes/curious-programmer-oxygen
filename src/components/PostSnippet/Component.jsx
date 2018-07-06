@@ -1,6 +1,5 @@
 import React from "react"
 import Link from "gatsby-link"
-import Moment from "react-moment"
 import PostTags from "../PostTags/Component"
 import PostMeta from "../PostMeta/Component"
 import "./PostSnippet.css"
