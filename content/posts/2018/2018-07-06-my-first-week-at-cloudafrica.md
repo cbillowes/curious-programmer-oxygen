@@ -22,6 +22,13 @@ This gave me the ability to help members of the team to get support for failing 
 After a while I needed a change in technology. I started dabbling in Linux and was offered a new challenge in Clojure. So I packed my bags, said my goodbyes and stared my adventure on Tuesday.
 
 ## Tuesday
+
+<div style="text-align:center;margin:30px;">
+    <a href="https://www.cloudafrica.net/" target="_blank" nofollow>
+        <img src="/cloud-africa.svg" style="width:400px" />
+    </a>
+</div>
+
 Knowing that I have to climb a steep mountain, I have been both eager and anxious about going into a domain I know nothing about. I joined CloudAfrica and started the ramp up process.
 
 We started setting up my laptop until my hard drive slowed down to a halt because it's old and giving up on life. We `sudo`'ed into my laptop [remotely to copy](https://stackoverflow.com/questions/14928382/how-can-i-get-a-folder-from-remote-machine-to-local-machine) my `/home/` directory over the network hoping that the hard drive wouldn't give in. It worked. I couldn't believe that my entire setup was there just like that. Linux for the win!
@@ -64,12 +71,6 @@ I also watched two really great Clojure videos:
 
 * [Introduction to ClojureScript and Reagent](https://www.youtube.com/watch?v=wq6ctyZBb0A)
 * [Tim Ewald: Clojure - Programming with Hand Tools](https://www.youtube.com/watch?v=ShEez0JkOFw)
-
-<div style="text-align:center;margin:50px;">
-    <a href="https://www.cloudafrica.net/" target="_blank" nofollow>
-        <img src="/cloud-africa.svg" style="width:400px" />
-    </a>
-</div>
 
 ## Rounding it off
 That about sums up my first knowledge-packed week. Exhausting. Exhilarating! I look forward to many such weeks ahead.
