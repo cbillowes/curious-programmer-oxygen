@@ -74,9 +74,13 @@
 }
 
 #post .body a:visited {
-    color: #30966d;
+    color: #198459;
     text-decoration: none;
     font-weight: bold;
+}
+
+#post .body a:visited:hover {
+    color: #007bff;
 }
 
 #post .body .post-meta {
