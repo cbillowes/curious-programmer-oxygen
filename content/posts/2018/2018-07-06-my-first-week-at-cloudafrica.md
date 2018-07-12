@@ -1,5 +1,5 @@
 ---
-title: "My first week at CloudAfrica"
+title: "My First Week at CloudAfrica"
 cover: "https://picsum.photos/1600/800/?image=1056"
 date:   2018-07-06 23:32:00 +0200
 tags:
