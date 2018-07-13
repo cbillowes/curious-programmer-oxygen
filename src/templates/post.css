@@ -99,17 +99,6 @@
     height: 100%;
 }
 
-#post .post-wrapper p:hover {
-    background-color: #007bff2a;
-    margin-left: -2em;
-    padding-left: 1.5em;
-
-    margin-right: -2em;
-    padding-right: 2em;
-
-    border-left: solid 0.5em #007bff;
-}
-
 #post .post-wrapper .post-tag-container .button {
     background-color: #cc0000;
     color: #fff;
