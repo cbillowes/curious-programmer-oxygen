@@ -18,7 +18,17 @@
 
 * **Migration:** From Jekyll to Gatsby.js to to dabble in some Webpack and React.
 
+## Getting started
 
+```bash
+npm install --global gatsby-cli
+
+# Avoid ENOSPC https://stackoverflow.com/questions/22475849/node-js-error-enospc
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+sysctl --system
+
+npm run develop
+```
 
 ## Resources
 
