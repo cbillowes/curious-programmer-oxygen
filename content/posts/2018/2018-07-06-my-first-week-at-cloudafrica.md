@@ -40,7 +40,7 @@ On Wednesday I started looking at the website. I stared blankly at libraries and
 
 Starting with [Reagent](http://reagent-project.github.io/), I have a library that will let me create React components. It's written in a hiccup-like syntax. [Hiccup](https://github.com/weavejester/hiccup) is just a nifty rendering library converting ClojureScript to HTML.
 
-```clojurescript
+```clojure
 (defn simple-component []
   [:div
    [:p "I am a component!"]

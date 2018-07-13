@@ -60,6 +60,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     title
                     tags
                     cover
+                    blur
+                    custom
                     date
                     category
                     author

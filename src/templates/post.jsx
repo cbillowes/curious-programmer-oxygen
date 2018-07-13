@@ -9,14 +9,14 @@ import ReadNext from "../components/ReadNext/Component"
 import Gorget from "../components/Gorget/Component"
 import PostMeta from "../components/PostMeta/Component"
 import config from "../../data/SiteConfig"
-import "./prism-default.css"
-import "./prism-default.min.js"
 import "./post.css"
 
 const formatReadPost = value => ({
   path: value.fields.slug,
   title: value.frontmatter.title,
   cover: value.frontmatter.cover,
+  blur: value.frontmatter.blur,
+  custom: value.frontmatter.custom,
   date: value.frontmatter.date,
   excerpt: value.excerpt,
   timeToRead: value.timeToRead
@@ -43,6 +43,8 @@ export default class PostTemplate extends React.Component {
     const getNextData = () => (next ? formatReadPost(data.next) : null)
     const getPrevData = () => (prev ? formatReadPost(data.prev) : null)
     const coverStyle = post.cover ? "cover" : "cover-less"
+    const coverDisplay = post.cover ? "block" : "none"
+    const coverBlur = post.blur ? post.blur : `${post.cover}&blur`
 
     if (!post.id) {
       post.id = slug
@@ -65,7 +67,7 @@ export default class PostTemplate extends React.Component {
             <div
               id="post-background"
               className="cover-blur"
-              style={{ backgroundImage: `url(${post.cover}&blur)` }}
+              style={{ backgroundImage: `url(${coverBlur}` }}
             />
             <div className="container">
               <div className="row">
@@ -88,9 +90,11 @@ export default class PostTemplate extends React.Component {
                     dangerouslySetInnerHTML={{ __html: postNode.html }}
                   />
                   <SocialLinks postPath={slug} postNode={postNode} />
-                  <p>
+                  <p style={{ display: `${coverDisplay}` }}>
                     <strong>Cover image &hearts; </strong>
-                    <a href={post.cover}>{post.cover}</a>
+                    <a href={post.cover}>
+                      {post.custom ? post.custom : post.cover}
+                    </a>
                   </p>
                   <Disqus postNode={postNode} />
                 </div>
@@ -114,6 +118,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         cover
+        blur
+        custom
         date
         category
         tags

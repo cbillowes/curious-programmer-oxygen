@@ -36,6 +36,12 @@ module.exports = {
             }
           },
           {
+            resolve: "gatsby-remark-prismjs",
+            classPrefix: "language-",
+            inlineCodeMarker: "±",
+            aliases: {}
+          },
+          {
             resolve: "gatsby-remark-responsive-iframe"
           },
           "gatsby-remark-prismjs",
