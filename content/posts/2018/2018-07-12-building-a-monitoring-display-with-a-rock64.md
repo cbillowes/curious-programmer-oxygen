@@ -9,20 +9,20 @@ tags:
     - Hardware
 ---
 
-There is a page that we want to monitor. It has a lot of valuable information on it and fits nicely onto a 4K screen display. We have a ROCK64 device which will power this display.
+There is a page that we want to monitor. It has a lot of valuable information on it and fits nicely on a 4K screen. A ROCK64 device will power this display.
 
-The use case is simple: when the device turns on, the user must log in automatically. A browser must open in full screen mode displaying the monitoring page. The screen and device should stay on until manually turned off. Simple right?
+The use case is simple: when the device turns on, the user must log in automatically. A browser must open in full screen mode displaying the page. The screen and device should stay on until manually turned off. Simple right?
 
-Not quite. My techie luck brings about numerous adventitious complexities that bounce obtrusively into existence at undesirable times: things don't go right. I've come to terms with it. Obstacles will be obstacles and they will be overcome.
+Not quite. My techie luck brings about numerous adventitious complexities that bounce obtrusively into existence at undesirable times: things just don't go according to plan. I've come to terms with it. Obstacles will be obstacles and they will be overcome.
 
-These obstacles were awesome little challenges. I got to hack and ticker away at a little device to achieve something useful and meaningful. I got exposure to the ROCK64, Linux and searching for support.
+These obstacles were awesome little challenges. I got to hack and ticker away at a little device to achieve something useful and meaningful. I got exposure to the ROCK64, Linux and searching for support for both.
 
 Here's what I learned:
 
-## What is the ROCK64?
+## The ROCK64 device
 The ROCK64 is a small computer [like](https://www.board-db.org/compare/192,4,58/) a Raspberry Pi, Arduino and a gazillion others. It is manufactured to be affordable and extendable.
 
-It started in December 2015 as a [Kickstarter project](https://www.mickmake.com/post/rock64-cheap-rock-solid-review). These guys wanted to bring the first 64-bit expandable Quad Core 1.2Ghz board to the market. It sounds like they didn't do so well in the beginning but they've recovered nicely if that's really the case.
+It started in December 2015 as a [Kickstarter project](https://www.mickmake.com/post/rock64-cheap-rock-solid-review). These guys wanted to bring the first 64-bit expandable Quad Core 1.2Ghz board to the market. Initially there were hiccups but they eventually shipped the ROCK64 and a few [others](https://www.pine64.org/).
 
 ## Specifications
 <div style="text-align: center; margin-top: 2em;">
@@ -37,8 +37,8 @@ It provides eMMC module socket, MicroSD Card slot, Pi-2 Bus, Pi-P5+ Bus, USB 3.0
 
 Various Operating System (OS) are made available by open source community such Android 7.1, Debian, Yocto and many more to come.
 
-## Our ROCK64 Device
-While trying to get support and not knowing what the hell I was doing, I needed to learn more about the device, it's kernel, OS and how to use Linux.
+## System information
+While trying to get support and not knowing what the hell I was doing, I needed to learn more about the device, it's kernel, OS and how to use Linux. Here is how I got all that information.
 
 ### Kernel
 ```bash
@@ -53,7 +53,7 @@ $ uname -a # print all system information
 * **Hardware platform**: aarch64
 * **Operating system**: GNU/Linux
 
-### Operating System Distribution
+### Operating System distribution
 [LSB](https://systutorials.com/docs/linux/man/1-lsb_release/) (Linux Standard Base and returns the distribution information):
 
 ```bash
@@ -66,30 +66,36 @@ $ lsb-release -a # print distribution specific information
 * **Release**:  9.4
 * **Codename**:  (stretch)
 
+**Want more?** Some tips and tricks can be found [here](https://www.tecmint.com/commands-to-collect-system-and-hardware-information-in-linux/), [here](https://www.tecmint.com/tag/linux-tricks/) and [here](https://www.cyberciti.biz/faq/linux-command-to-find-the-system-configuration-and-hardware-information/).
+
 ### Graphical User Interface
-[MATE](https://mate-desktop.org) Desktop Environment 1.16.2 - It is a  continuation of GNOME 2 providing an cool desktop environment using traditional metaphors for Linux and other Unix-like operating systems.
+Going to the about splash screen in the GUI, I could see that it was running the [MATE](https://mate-desktop.org) Desktop Environment 1.16.2 - It is a  continuation of [GNOME 2](https://en.wikipedia.org/wiki/GNOME) providing a cool desktop environment using traditional desktop metaphors for Linux and other Unix-like operating systems.
+
+Essentially [desktop metaphors](https://en.wikipedia.org/wiki/Desktop_metaphor) mean that the objects such as windows, cabinets, files, trash cans etc are named after items we understand in the real world, typically found in an office it would seem. The idea was so that users could easily interact with computers systems.
+
+**Did you know?** Desktop metaphors were first introduced in 1970 by Alan Kay at Xerox PARC.
 
 ## Boot up the device
 I gave the device power and plugged in the HDMI. No signal. I checked the source. No signal. I tried other ports, changing the source. No signal. I tried a different HDMI cable. No signal.
 
-This was the first part of my task and it wasn't going well. I was about to try it using my monitor when someone else came along, plugged in the HDMI cable and it just worked. Obviously. Well, at least I knew it was working. Damn gremlins in my techie pocket.
+This was the first part of my task and it wasn't going well. I was about to try it using my monitor when someone else came along to help me, plugged in the HDMI cable and it just worked. Obviously. Well, at least I knew it was working. Damn gremlins in my techie pocket.
 
 ## Login to the ROCK64
 ### The first time
 It all starts with a login - and I didn't have one. I asked around. I Googled. I tried the obvious ones I could think of: **root**, **debian**, **user** and **admin**.
 
-I was staring blankly at a very demanding and restricting screen when I saw the word **rock64** on the top left. That was my next attempt. So obvious. So simple. So authorized. So admin.
+I was staring blankly at a very demanding and restricting screen when I saw the word **rock64** on the top left. That was my next attempt. So obvious. So simple. So authorized. So admin. Here is how I verified it:
 
 ```bash
-$ cat /etc/passwd | grep rock64:x:1 # check if the user is an admin account
+$ cat /etc/passwd | grep rock64:x:1
 > rock64:x:1...
 ```
 
 ### Automatically
-I found a [script](https://askubuntu.com/questions/51086/how-do-i-enable-auto-login-in-lightdm/51087#51087) that configures the [LightDM](https://wiki.archlinux.org/index.php/LightDM) (display manager) to log the user in automatically.
+I found a [script](https://askubuntu.com/questions/51086/how-do-i-enable-auto-login-in-lightdm/51087#51087) that configures the [LightDM](https://wiki.archlinux.org/index.php/LightDM) (display manager) to log the user in automatically. I had to edit the `/etc/lightdm/lightdm.conf` file:
 
 ```bash
-$ sudo vi /etc/lightdm/lightdm.conf # edit this file
+$ sudo vi /etc/lightdm/lightdm.conf
 
 [SeatDefaults]
 autologin-user=rock64
@@ -100,8 +106,8 @@ autologin-user-timeout=0
 I wanted to reset the **root** password. I pressed all the keys I knew I should during boot up to get into GRUB. I guess there is [no GRUB](https://forum.pine64.org/showthread.php?tid=6246). I learned how to reset the account as an admin user:
 
 ```bash
-$ sudo /etc/passwd root # reset root password
-$ cat /etc/passwd | grep root:x:0 # check if the user is a root account
+$ sudo /etc/passwd root
+$ cat /etc/passwd | grep root:x:0
 > root:x:0...
 ```
 
@@ -123,14 +129,19 @@ After that I could create a [script](https://askubuntu.com/questions/36287/how-t
 $ sudo vi /etc/init.d/open_firefox
 
 #!/bin/bash
-firefox -url "http://curiousprogrammer.io" &
+firefox -url "<URL>" &
 xdotool search --sync --onlyvisible --class "Firefox" windowactivate F11
 
 $ sudo chmod +x /etc/init.d/open_firefox
 ```
+**Want to know more?** If you want to know more about the switches: `xdotool search`.
+
+**--sync** will wait until a search result is found, **--onlyvisible** matches only windows currently visible and **--class** checks a regular expression pattern  against the window class.
+
+**Examples:** [jordansissel](https://github.com/jordansissel) has created a few [examples](https://github.com/jordansissel/xdotool/tree/master/examples) showing you some possibilities to use the tool.
 
 ### Hide the cursor
-The cursor bothered me. It just sat waiting to be moved. No one was going to move it. Why would we? It should move away or hide or something.
+The cursor bothered me. It just sat there waiting to be moved. No one was going to move it. Why would we? It should move away or hide or something.
 
 I found a library that hides cursors after a specified amount of time. This is especially useful for POS systems on touch screens.
 
@@ -140,15 +151,15 @@ $ sudo apt-get install clutter
 $ unclutter -idle 0.1 -root
 ```
 
-I added the `unclutter` script to the **startup applications**. The cursor will disappear every 1/100 second. This can be annoying while working on the device. Just run the script again with the value of **1** to get your cursor back.
+I added the `unclutter -idle 0.1 -root` script to the **startup applications**. The cursor will disappear every 1/100 second. This can be annoying while working on the device. Just run the script again with the value of **1** to get your cursor back.
 
 ### Do not restore browser tabs on login
-I was doing a lot of research on the device. It kept all the tabs when I restarted it. I didn't want that. I stopped this by changing a flag in Area51 of Firefox.
+I was doing a lot of research on the device. It kept all the tabs when I restarted it. I didn't want that as they all started up again and were assumed to be a crash, which I guess they were. I stopped this by changing a flag in Area51 of Firefox.
 
-Type **config:about** as the URL, accept the warning if you so dare, type **browser.sessionstore.resume\_from\_crash**. Click on it. It should go bold because it is a custom setting and should now be disabled.
+Type **config:about** as the URL, accept the warning if you so dare, type **browser.sessionstore.resume\_from\_crash** in the search bar. Click on it. It should go bold because it becomes a custom setting and should now be disabled.
 
 ## Keep the display on
-I searched the GUI for an interface where I could change the screen saver and power saver settings. Someone forgot to add it because it was nowhere to be found using **rock64** and **root**.
+I searched the GUI for an interface where I could change the screen saver and power saver settings. Someone forgot to add it because it was nowhere to be found using both the **rock64** and **root** accounts.
 
 I tried a number of suggestions from the web [here](https://askubuntu.com/questions/47311/how-do-i-disable-my-system-from-going-to-sleep), [here](https://askubuntu.com/questions/177348/how-do-i-disable-the-screensaver-lock)
 and many elsewhere.
@@ -181,6 +192,10 @@ I added the script to the **startup applications**.
 ## What's next?
 More screens I suppose.
 
-There are extensions like [Tab Rotator](https://addons.mozilla.org/en-US/firefox/addon/tab-rotator/?src=recommended) which automatically switches between open tabs. Just configure the extension and amend the `firefox` script to take in multiple URLs and you should have a rotating display.
+There are extensions like [Tab Rotator](https://addons.mozilla.org/en-US/firefox/addon/tab-rotator/?src=recommended) which automatically switches between open tabs. Just configure the extension and amend the `/etc/init.d/open_firefox` script to take in multiple URLs and you should have a rotating display.
 
-Sounds simple right?
+Sounds simple right? Bring it on!
+
+<style>
+    #post .body img {max-width: 600px;}
+</style>

@@ -109,6 +109,18 @@
     color: #fff;
 }
 
+#post code {
+    background-color: #ffffff44;
+    border: solid 1px #ffffff33;
+    color: #303030;
+}
+
+#post pre code {
+    background-color: transparent;
+    border: transparent;
+    color: #cccccc;
+}
+
 @media (max-width: 700px) {
     #post .cover .post-wrapper {
         margin-top: 5em;
