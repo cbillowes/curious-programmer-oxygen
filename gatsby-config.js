@@ -30,9 +30,23 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 845,
+              height: 445
+            }
+          },
+          {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 690
+              maxWidth: 845
+            }
+          },
+          {
+            resolve: "gatsby-remark-embed-gist",
+            options: {
+              username: "cbillowes",
+              includeDefaultCss: true
             }
           },
           {

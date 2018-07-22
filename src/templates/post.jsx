@@ -1,3 +1,4 @@
+import $ from "jquery"
 import React from "react"
 import Helmet from "react-helmet"
 import UserInfo from "../components/UserInfo/Component"
@@ -33,6 +34,30 @@ export default class PostTemplate extends React.Component {
         background.style.filter = `alpha(opacity=${opacity * 10})`
       }
     }
+
+    $(function() {
+      $(".gif").on("click", function() {
+        var src = $(this).data("src")
+        $(this).data("src", $(this).attr("src"))
+        $(this).attr("src", src)
+        $(this).parent().addClass("loading")
+      })
+
+      $(".gif").on("load", function () {
+        $(this).parent().removeClass("loading")
+      })
+
+      $(".gif").each(function() {
+        $(this).wrapAll("<div class='image-wrapper'></div>")
+        $(this).addClass("loading")
+      })
+
+      $(".image-wrapper").each(function() {
+        $(this).append(
+          "<img class='indicator' src='/custom/gifs/ajax-loader.gif' />"
+        )
+      })
+    })
   }
 
   render() {

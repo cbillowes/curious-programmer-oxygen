@@ -121,6 +121,21 @@
     color: #cccccc;
 }
 
+#post .twitter-tweet {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#post img {
+    text-align: center;
+    max-width: 100%;
+    display: block;
+}
+
+#post .gif {
+    cursor: pointer;
+}
+
 @media (max-width: 700px) {
     #post .cover .post-wrapper {
         margin-top: 5em;
@@ -130,4 +145,23 @@
         padding: 1em 2em;
         background-color: rgba(255,255,255,.5);
     }
+}
+
+#post .body .image-wrapper {
+    position: relative;
+}
+
+#post .body .image-wrapper .indicator {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: none;
+}
+
+#post .body .image-wrapper.loading {
+    opacity: 0.1;
+}
+
+#post .body .image-wrapper.loading .indicator {
+    display: block;
 }
