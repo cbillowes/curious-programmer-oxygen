@@ -2,7 +2,7 @@
 title: "An Iterative Approach to My Blog"
 cover: "https://picsum.photos/1600/800/?image=1082"
 date:   2018-07-27 08:30:00 +0200
-socialCover: ../custom/social-covers/2018-07-27-iterative-design.png
+socialCover: social-covers/2018-07-27-iterative-design.png
 tags:
     - Productivity
     - Mindset

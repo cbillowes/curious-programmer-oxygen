@@ -1,6 +1,6 @@
 ---
 title: "A Trilogy About the Chrome DevTools in Many Parts"
-socialCover: ../custom/social-covers/2018-07-22-chrome-devtools.png
+socialCover: social-covers/2018-07-22-chrome-devtools.png
 date: "2018-07-22"
 tags:
     - Technical
