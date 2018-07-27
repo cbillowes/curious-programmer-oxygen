@@ -31,15 +31,16 @@ class Disqus extends Component {
       shortname: config.disqusShortname,
       identifier: postNode.fields.slug,
       title: post.title,
-      url: `${config.siteUrl}${config.pathPrefix}${postNode.fields.slug}`,
+      url: `${config.siteUrl}${config.pathPrefix}`,
+      pageUrl: `${config.siteUrl}${config.pathPrefix}${config.pageUrl}`,
       categoryId: post.category_id
     }
     return (
       <ReactDisqusComments
         shortname={comment.shortname}
-        identifier={comment.identifier}
+        identifier={comment.url}
         title={comment.title}
-        url={comment.url}
+        url={comment.pageUrl}
         category_id={comment.categoryId}
         onNewComment={this.notifyAboutComment}
       />
