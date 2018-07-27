@@ -7,7 +7,6 @@ import "./PostSnippet.css"
 class PostSnippet extends React.Component {
   render() {
     const post = this.props.post
-    const postDate = Date.parse(post.date, "YYYY-MM-dd")
     const excludeTag = this.props.excludeTag
 
     return (
@@ -23,7 +22,7 @@ class PostSnippet extends React.Component {
         <PostTags tags={post.tags} excludeTag={excludeTag} />
         <PostMeta
           timeToRead={post.timeToRead}
-          postDate={post.date}
+          date={post.date}
           orientation={post.orientation}
         />
       </div>
