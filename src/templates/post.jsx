@@ -147,6 +147,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         cover
+        socialCover
         blur
         custom
         date

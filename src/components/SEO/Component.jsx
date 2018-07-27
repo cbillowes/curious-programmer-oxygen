@@ -4,9 +4,9 @@ import config from "../../../data/SiteConfig"
 
 // TODO: Find out why the socialCover is undefined when it is defined
 function getSocialImage(postMeta, config) {
-  if (postMeta.socialCover) return postMeta.socialCover
+  if (postMeta.socialCover) return config.siteUrl + config.pathPrefix + postMeta.socialCover.replace(/..\//, "")
   if (postMeta.cover && !postMeta.cover.startsWith("http"))
-    return postMeta.cover.replace(/../, "")
+    return postMeta.cover.replace(/..\//, "")
   return config.defaultSocialCover
 }
 
