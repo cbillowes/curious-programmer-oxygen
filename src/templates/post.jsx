@@ -40,11 +40,15 @@ export default class PostTemplate extends React.Component {
         var src = $(this).data("src")
         $(this).data("src", $(this).attr("src"))
         $(this).attr("src", src)
-        $(this).parent().addClass("loading")
+        $(this)
+          .parent()
+          .addClass("loading")
       })
 
-      $(".gif").on("load", function () {
-        $(this).parent().removeClass("loading")
+      $(".gif").on("load", function() {
+        $(this)
+          .parent()
+          .removeClass("loading")
       })
 
       $(".gif").each(function() {
