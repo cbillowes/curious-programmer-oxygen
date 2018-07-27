@@ -4,6 +4,7 @@ cover: "../custom/bionic-cover.png"
 blur:  "../custom/bionic-cover-blur.png"
 custom: Image from Ubuntu 18.04 LTS
 socialCover: ../custom/social-covers/2018-07-26-ubuntu-linux.png
+date: "2018-07-27 07:00"
 tags:
     - Technical
     - Linux
