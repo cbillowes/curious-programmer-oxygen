@@ -60,6 +60,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     title
                     tags
                     cover
+                    socialCover
                     blur
                     custom
                     date

@@ -2,6 +2,14 @@ import React, { Component } from "react"
 import Helmet from "react-helmet"
 import config from "../../../data/SiteConfig"
 
+// TODO: Find out why the socialCover is undefined when it is defined
+function getSocialImage(postMeta, config) {
+  if (postMeta.socialCover) return postMeta.socialCover
+  if (postMeta.cover && !postMeta.cover.startsWith("http"))
+    return postMeta.cover.replace(/../, "")
+  return config.defaultSocialCover
+}
+
 class SEO extends Component {
   render() {
     const { postNode, postPath, postSEO } = this.props
@@ -15,7 +23,7 @@ class SEO extends Component {
       description = postMeta.description
         ? postMeta.description
         : postNode.excerpt
-      image = postMeta.cover ? postMeta.cover : config.siteLogo
+      image = getSocialImage(postMeta, config)
       postURL = config.siteUrl + config.pathPrefix + postPath
     } else {
       title = config.siteTitle
