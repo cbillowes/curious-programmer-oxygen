@@ -37,8 +37,10 @@
     color: #fff;
 }
 
+html,
+#post .body,
 #post .body p {
-    line-height: 2em;
+    line-height: 2rem;
 }
 
 #post .body img {
@@ -164,4 +166,32 @@
 
 #post .body .image-wrapper.loading .indicator {
     display: block;
+}
+
+#post #accordion h2 {
+    font-size: 1.25rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    height: 100%;
+    padding: 2.5rem 2rem 2rem 2rem;
+    line-height: 0rem;
+}
+
+#post #accordion h2:hover {
+    color: teal;
+}
+
+#post #accordion h2 img {
+    position: absolute;
+    right: 2rem;
+    top: 1em;
+    width: 350px;
+}
+
+#post #accordion img {
+    display: inline;
+}
+
+#post #accordion .card-header {
+    padding: 0px;
 }

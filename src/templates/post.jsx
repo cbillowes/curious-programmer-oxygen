@@ -9,6 +9,7 @@ import SEO from "../components/SEO/Component"
 import ReadNext from "../components/ReadNext/Component"
 import Gorget from "../components/Gorget/Component"
 import PostMeta from "../components/PostMeta/Component"
+import Accordion from "../components/Accordion/Component"
 import config from "../../data/SiteConfig"
 import "./post.css"
 
@@ -61,6 +62,10 @@ export default class PostTemplate extends React.Component {
           "<img class='indicator' src='/custom/gifs/ajax-loader.gif' />"
         )
       })
+
+      if ($("#accordion").length) {
+        $(".body").remove()
+      }
     })
   }
 
@@ -118,6 +123,7 @@ export default class PostTemplate extends React.Component {
                     className="body"
                     dangerouslySetInnerHTML={{ __html: postNode.html }}
                   />
+                  <Accordion content={postNode.html} />
                   <SocialLinks postPath={slug} postNode={postNode} />
                   <p style={{ display: `${coverDisplay}` }}>
                     <strong>Cover image &hearts; </strong>
