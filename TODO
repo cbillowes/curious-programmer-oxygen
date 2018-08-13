@@ -16,7 +16,7 @@ Todo:
     ☐ Show hero image for the first post in the post listing of any listing page
 
   ☐ Disqus @high
-    ☐ Fix widget display on pages @high
+    ✔ Fix widget display on pages @high @done(18-07-27 09:22)
     ☐ Create the Comment policy @high
       ☐ Create page
       ☐ Create content referencing example https://grist.org/grist-comment-policy/
@@ -35,9 +35,12 @@ Todo:
     ☐ Add a page with all the tags
     ☐ Remove tag from listing for the tag page the user is currently visiting as it is redundant information
 
-  ☐ Footer @low
-    ☐ Fix links - use icon styles
-    ☐ Use similar content to corporate programmer
+  ☐ Social @low
+    ☐ Add cover image to cards (https://cards-dev.twitter.com/validator) @low
+
+  ✔ Footer @low @done(18-07-27 09:25)
+    ✔ Fix links - use icon styles @done(18-07-27 09:25)
+    ✔ Use similar content to corporate programmer @done(18-07-27 09:25)
 
   ☐ Create tagline/description @low
     ☐ Update in footer
