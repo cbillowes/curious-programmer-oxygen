@@ -34,7 +34,6 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          {this.props.headComponents}
           <link rel="shortcut icon" href={favicon} />
           <link
             rel="stylesheet"
@@ -42,6 +41,7 @@ export default class HTML extends React.Component {
             integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
             crossorigin="anonymous"
           />
+          {this.props.headComponents}
           {css}
         </head>
         <body>

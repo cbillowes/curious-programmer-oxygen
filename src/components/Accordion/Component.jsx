@@ -1,20 +1,67 @@
-import $ from "jquery"
 import React, { Component } from "react"
-import { Collapse, CardBody, Card, CardHeader } from "reactstrap"
 
 class Accordion extends Component {
   constructor(props) {
     super(props)
 
-    this.toggle = this.toggle.bind(this)
     this.state = {
-      openCards: [],
-      content: this.parse($(props.content))
+      content: this.props.content,
+      isAccordion: props.content.trim().startsWith(`<div id="accordion"></div>`)
     }
   }
 
   componentDidMount() {
-    $("#accordion h2 .anchor").remove()
+    if (!this.state.isAccordion) return
+
+    document
+      .getElementsByClassName("body")[0]
+      .childNodes.forEach(function(node) {
+        node.outerHTML = `<div id="accordion"></div>`
+      })
+
+    let content = this.createElementFromHTML(this.state.content)
+    let nodes = this.parse(content.childNodes)
+    let accordion = document.getElementById("accordion")
+    accordion.appendChild(nodes.introduction)
+
+    nodes.cards.forEach(node => {
+      let card = document.createElement("div")
+      let heading = document.createElement("div")
+      let cardContainer = document.createElement("div")
+      let body = document.createElement("div")
+
+      card.classList.add("card")
+      heading.classList.add("card-header")
+      cardContainer.classList.add("collapse")
+      body.classList.add("card-body")
+
+      heading.innerHTML = node.title.outerHTML
+      body.innerHTML = node.body.outerHTML
+
+      cardContainer.appendChild(body)
+      card.appendChild(heading)
+      card.appendChild(cardContainer)
+      document.getElementById("accordion").appendChild(card)
+    })
+    this.removeAnchors()
+
+    document.querySelectorAll("#accordion h2").forEach(element => {
+      element.onclick = function() {
+        let card = element.parentElement.parentElement
+        let collapse = card.children[1]
+        if (collapse.classList.contains("show")) {
+          collapse.classList.remove("show")
+        } else {
+          collapse.classList.add("show")
+        }
+      }
+    })
+  }
+
+  createElementFromHTML(htmlString) {
+    let div = document.createElement("div")
+    div.innerHTML = htmlString.trim()
+    return div
   }
 
   parse(elements) {
@@ -23,120 +70,46 @@ class Accordion extends Component {
       cards: []
     }
 
-    let titleIndex = 0
-    elements.map(index => {
-      const element = $(elements[index])
-      let content = $(element).html()
+    let cardIndex = 0
+    elements.forEach(function(element) {
+      const tagName = element.tagName
 
-      if (element.prop("nodeName") === "H2") {
-        parsed.cards.push(createCard(content))
-        titleIndex++
+      if (tagName === "H2") {
+        let heading = createCard(element)
+        parsed.cards.push(heading)
+        cardIndex++
       } else {
-        let card = parsed.cards[titleIndex - 1]
-        if (content) {
+        if (element) {
+          let card = parsed.cards[cardIndex - 1]
           if (card) {
-            var el = createBody(content.trim())
-            card.body.appendChild(el)
+            if (element.nodeName !== "#text") {
+              card.body.appendChild(element)
+            }
           } else {
-            parsed.introduction.appendChild(createIntroduction(content))
+            parsed.introduction.appendChild(element)
           }
         }
       }
-      element.remove()
     })
-
     return parsed
   }
 
-  toggle(e) {
-    let event = e.target.dataset.event
-    let openCards = this.state.openCards
-    let index = Number(event) ? Number(event) : 0
-
-    if (this.isCardOpen(index)) {
-      openCards.pop(index)
-    } else {
-      openCards.push(index)
-    }
-
-    this.setState({
-      openCards: openCards
+  removeAnchors() {
+    document.querySelectorAll("#accordion .anchor").forEach(function(element) {
+      element.outerHTML = ""
     })
   }
 
-  isCardOpen(index) {
-    for (let i = 0; i < this.state.openCards.length; i++) {
-      if (this.state.openCards[i] === index) {
-        return true
-      }
-    }
-    return false
-  }
-
   render() {
-    const { content } = this.state
-    let index = 0
-
-    return (
-      <div id="accordion">
-        <div
-          dangerouslySetInnerHTML={{ __html: content.introduction.innerHTML }}
-        />
-        {content.cards.map(card => {
-          index++
-          return (
-            <Card key={`accordion-card-${index}`}>
-              <CardHeader
-                key={`accordion-title-${index}`}
-                data-event={index}
-              >
-                <h2
-                  key={`accordion-heading-${index}`}
-                  onClick={this.toggle}
-                  data-event={index}
-                  dangerouslySetInnerHTML={{
-                    __html: `${index}. ${card.title}`
-                  }}
-                />
-              </CardHeader>
-              <Collapse isOpen={this.isCardOpen(index)}>
-                <CardBody
-                  dangerouslySetInnerHTML={{ __html: card.body.innerHTML }}
-                />
-              </Collapse>
-            </Card>
-          )
-        })}
-      </div>
-    )
+    return <div />
   }
 }
 
-function createCard(title) {
+function createCard(element) {
   return {
-    title: title,
+    title: element,
     body: document.createElement("div")
   }
-}
-
-function createBody(content) {
-  let div = document.createElement("div")
-  if (content.startsWith("<li>")) {
-    div.innerHTML += `<ul>${content}</ul>`
-  } else if (content.startsWith("<thead>")) {
-    div.innerHTML += `<table>${content}</table>`
-  } else {
-    div.innerHTML += content
-  }
-  return div
-}
-
-function createIntroduction(content) {
-  let p = document.createElement("p")
-  content.split(/\n/).map(item => {
-    p.innerHTML += item
-  })
-  return p
 }
 
 export default Accordion

@@ -62,10 +62,6 @@ export default class PostTemplate extends React.Component {
           "<img class='indicator' src='/custom/gifs/ajax-loader.gif' />"
         )
       })
-
-      if ($("#accordion").length) {
-        $(".body").remove()
-      }
     })
   }
 

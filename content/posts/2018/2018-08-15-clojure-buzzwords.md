@@ -1,6 +1,6 @@
 ---
 title: "Clojure Buzzwords I am Learning"
-date:   2018-08-09 06:42:00 +0200
+date:   2018-08-15 20:15:00 +0200
 tags:
     - Technical
     - Comfort Zone
@@ -19,7 +19,7 @@ I've migrated to Ubuntu after twenty years of using Windows so it is safe to say
 
 **Disclaimer: I am only sharing my understanding of each. If I have misunderstood something, please jump in and submit a pull request.**
 
-## Leiningen
+## Leiningen (Build automation)
 
  [![CircleCI](https://circleci.com/gh/technomancy/leiningen.svg?style=svg)](https://circleci.com/gh/technomancy/leiningen) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Leiningen](https://leiningen.org/), pronounced (LINE-ing-en ['laɪnɪŋən], is a tool created by Phil Hagelberg. He wanted to simplify the complexities involved in creating a project with Apache Maven.
 
@@ -42,17 +42,17 @@ On the front end, **lein** is used to replace JavaScript tooling such as:
 
 *This table is adapted from [Why I chose ClojureScript over JavaScript](https://m.oursky.com/why-i-chose-clojure-over-javascript-24f045daab7e) by akiroz.*
 
-## ClojureScript
+## ClojureScript (Clojure to JavaScript)
 
 Clojure targets platforms like the JVM and .NET CLR. [ClojureScript](https://clojurescript.org/)  is just a Clojure (without Java API calls) compiler targeting JavaScript. The JavaScript is compiled in such a way that it can be optimized using the Google Closure compiler.
 
-## Google Closure
+## Google Closure (JavaScript optimizer)
 
 JavaScript libraries can become bloated with dead code, comments and require dependency management. [Google Closure](https://developers.google.com/closure/)  compiles JavaScript code with an optimization algorithm creating compact and high-performance code.
 
 The compiler inspects variable references, checks syntax, types and warnings along with other common JavaScript idiosyncrasies. It then strips away dead code, rewrites what's left, minifies and packages a file that can be quickly downloaded and executed.
 
-## Datomic
+## Datomic (Database)
 
 [Datomic](https://docs.datomic.com/cloud/index.html) is a non-traditional distributed database with ACID transactions, joins and a logical query language.
 
@@ -87,7 +87,7 @@ That can translate to the following point-in-time view as only a three-tuple wit
  :user/last-name "Adams"}
 ```
 
-## Reagent [![](http://clojars.org/reagent/latest-version.svg)](https://clojars.org/reagent)
+## Reagent (React framework) [![](http://clojars.org/reagent/latest-version.svg)](https://clojars.org/reagent)
 
 [![CircleCI](https://circleci.com/gh/reagent-project/reagent.svg?style=svg)](https://circleci.com/gh/reagent-project/reagent) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [Reagent](https://github.com/reagent-project/reagent) is a minimalistic ClojureScript interface to React.js. HTML components are represented as Clojure data following a hiccup-like syntax and is compiled to React components. Pssst. No more JSX files.
 
@@ -104,7 +104,7 @@ That can translate to the following point-in-time view as only a three-tuple wit
 </div>
 ```
 
-## re-frame [![](https://clojars.org/re-frame/latest-version.svg)](https://clojars.org/re-frame)
+## re-frame (React pattern) [![](https://clojars.org/re-frame/latest-version.svg)](https://clojars.org/re-frame)
 
 [![Circle CI](https://circleci.com/gh/Day8/re-frame/tree/master.svg?style=shield&circle-token=:circle-ci-badge-token)](https://circleci.com/gh/Day8/re-frame/tree/master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [re-frame](https://github.com/Day8/re-frame) is a Reagent Framework pattern for writing SPAs (Single Page Applications) in ClojureScript. It is built on the same principles of Redux.
 
@@ -112,7 +112,7 @@ It's a loop of what they refer to as dominoes. One domino triggers the next unti
 
 !["The 6 Dominoes"](https://raw.githubusercontent.com/Day8/re-frame/master/images/Readme/6dominoes.png)
 
-## Figwheel [![](http://clojars.org/lein-figwheel/latest-version.svg)](https://clojars.org/lein-figwheel)
+## Figwheel (Hot reloader) [![](http://clojars.org/lein-figwheel/latest-version.svg)](https://clojars.org/lein-figwheel)
 
  [![CircleCI](https://circleci.com/gh/bhauman/lein-figwheel.svg?style=svg)](https://circleci.com/gh/bhauman/lein-figwheel) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Figwheel](https://github.com/bhauman/lein-figwheel), a **lein** plugin, is a ClojureScript auto builder/server which pushes changed files to the browser.
 
@@ -122,7 +122,7 @@ Cutting some fruit, it says on load, it detects changes in the code, reloads the
 lein new figwheel hello-world -- --reagent  #for a reagent based project
 ```
 
-## Garden [![](http://clojars.org/garden/latest-version.svg)](http://clojars.org/garden)
+## Garden (ClojureScript to CSS) [![](http://clojars.org/garden/latest-version.svg)](http://clojars.org/garden)
 
 [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Garden](https://github.com/noprompt/garden) generates CSS from ClojureScript data structures.
 
@@ -139,7 +139,7 @@ This imagined outdoor beauty can be digitized into Clojure vectors and maps writ
 body{font-size:16px}
 ```
 
-## Compojure [![](https://clojars.org/compojure/latest-version.svg)](https://clojars.org/compojure)
+## Compojure (Server-side routing) [![](https://clojars.org/compojure/latest-version.svg)](https://clojars.org/compojure)
 
 [![Build Status](https://travis-ci.org/weavejester/compojure.svg?branch=master)](https://travis-ci.org/weavejester/compojure) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Compojure](https://github.com/weavejester/compojure) is a small **server-side** routing library for [Ring](https://github.com/ring-clojure/ring) that allows web applications to be composed of small, independent parts.
 
@@ -159,7 +159,7 @@ lein ring server-headless
   (route/not-found "<h1>Page not found</h1>"))
 ```
 
-## Secretary [![](https://clojars.org/secretary/latest-version.svg)](https://clojars.org/secretary)
+## Secretary (Client-side routing) [![](https://clojars.org/secretary/latest-version.svg)](https://clojars.org/secretary)
 
 [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Secretary](https://github.com/gf3/secretary) is a **client-side** router for ClojureScript. It is built to create route matchers and dispatch actions.
 
@@ -173,7 +173,7 @@ lein ring server-headless
 (secretary/dispatch! "/users/gf3")
 ```
 
-## Pushy [![](https://clojars.org/kibu/pushy/latest-version.svg)](https://clojars.org/kibu/pushy/)
+## Pushy (HTML5 pushState) [![](https://clojars.org/kibu/pushy/latest-version.svg)](https://clojars.org/kibu/pushy/)
 
 [![Build Status](https://travis-ci.org/kibu-australia/pushy.svg?branch=master)](https://travis-ci.org/kibu-australia/pushy) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Pushy](https://github.com/kibu-australia/pushy) is used for HTML5 pushState and can be integrated with routing libraries such as
 [Secretary](https://github.com/gf3/secretary),
@@ -201,7 +201,7 @@ Here's an example implementation of an integration with Secretary:
 (pushy/start! history)
 ```
 
-## Bouncer [![](https://clojars.org/bouncer/latest-version.svg)](https://clojars.org/bouncer/)
+## Bouncer (Validation) [![](https://clojars.org/bouncer/latest-version.svg)](https://clojars.org/bouncer/)
 
 [![Build Status](https://travis-ci.org/leonardoborges/bouncer.svg?branch=master)](https://travis-ci.org/leonardoborges/bouncer) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [Bouncer](https://github.com/leonardoborges/bouncer) is a validation DSL.
 
@@ -220,7 +220,7 @@ Here's an example implementation of an integration with Secretary:
 ;;  {:name "Leo", :bouncer.core/errors {:age ("age must be present")}}]
 ```
 
-## Inflections [![](https://clojars.org/inflections/latest-version.svg)](https://clojars.org/inflections/)
+## Inflections (Word manipulation) [![](https://clojars.org/inflections/latest-version.svg)](https://clojars.org/inflections/)
 
 [![Build Status](https://travis-ci.org/r0man/inflections-clj.svg?branch=master)](https://travis-ci.org/r0man/inflections-clj) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Inflections](https://github.com/r0man/inflections-clj) is a rails-like inflection library.
 
@@ -254,7 +254,7 @@ Here's an example implementation of an integration with Secretary:
 ;=> "Clojure"
 ```
 
-## Humanize [![](https://clojars.org/clojure-humanize/latest-version.svg)](https://clojars.org/clojure-humanize/)
+## Humanize (Word manipulation) [![](https://clojars.org/clojure-humanize/latest-version.svg)](https://clojars.org/clojure-humanize/)
 
 [![Build Status](https://travis-ci.org/trhura/clojure-humanize.svg?branch=master)](https://travis-ci.org/trhura/clojure-humanize) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Humanize](https://github.com/trhura/clojure-humanize) produces human readable strings and dates.
 
@@ -292,7 +292,7 @@ user> (clojure.contrib.humanize/duration 325100 {:number-format str})
 => "5 minutes, 25 seconds"
 ```
 
-## URL [![](https://clojars.org/com.cemerick/url/latest-version.svg)](https://clojars.org/com.cemerick/url/)
+## URL (URL Library) [![](https://clojars.org/com.cemerick/url/latest-version.svg)](https://clojars.org/com.cemerick/url/)
 
 [![Travis CI status](https://secure.travis-ci.org/cemerick/url.png)](http://travis-ci.org/#!/cemerick/url/builds) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [URL](https://github.com/cemerick/url) is a library that makes working with URLs easier.
 
@@ -311,14 +311,17 @@ user> (clojure.contrib.humanize/duration 325100 {:number-format str})
 "https://api.twitter.com/1/users/lookup.json"
 ```
 
-## Sente [![](https://clojars.org/com.taoensso/sente/latest-version.svg)](https://clojars.org/com.taoensso/sente/)
+## Sente (WebSockets) [![](https://clojars.org/com.taoensso/sente/latest-version.svg)](https://clojars.org/com.taoensso/sente/)
 
 [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Sente](https://github.com/ptaoussanis/sente) is a real time web communications library the does bidirectional async comms over WebSockets (AJAX as fallback) working with auto keep-alives, buffering, protocol selection and reconnects.
 
-## Slingshot [![](https://clojars.org/slingshot/latest-version.svg)](https://clojars.org/slingshot)
+## Slingshot (try/throw) [![](https://clojars.org/slingshot/latest-version.svg)](https://clojars.org/slingshot)
 
 [![Build Status](https://travis-ci.org/scgilardi/slingshot.svg?branch=master)](https://travis-ci.org/scgilardi/slingshot)
-[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Sente](https://github.com/scgilardi/slingshot) is an enhanced try and throw library for Clojure leveraging Clojure's capabilities.
+[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Slingshot](https://github.com/scgilardi/slingshot) provides `try+` and `throw+` which is compatible with Java's native exception handling and a power-up to Clojure's native `try` and `throw` behavior.
+
+* `throw+` can throw any Java object, not just classes derived from `java.lang.Throwable`.
+* `catch` will catch Java objects thrown by `throw+`, map passed `ex-info` thrown by `throw`, `throw+` or any `Throwable` thrown by Clojure or Java's `throw`.
 
 ```clojure
 (ns math.expression
@@ -339,9 +342,32 @@ user> (clojure.contrib.humanize/duration 325100 {:number-format str})
       (throw+))))
 ```
 
-## Timbre [![](https://clojars.org/com.taoensso/timbre/latest-version.svg)](https://clojars.org/com.taoensso/timbre/)
+## Timbre (Logging) [![](https://clojars.org/com.taoensso/timbre/latest-version.svg)](https://clojars.org/com.taoensso/timbre/)
 
-[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Timbre](https://github.com/ptaoussanis/timbre) is pure logging library for Clojure(Script).
+[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Timbre](https://github.com/ptaoussanis/timbre) is a logging library for Clojure(Script). It offers full support for v4+ with no XML or properties files. Create a single config map and you're good to go.
+
+Add the dependency to your project and then setup your namespace imports.
+
+```clojure
+
+(ns my-clj-ns ; Clojure namespace
+  (:require
+    [taoensso.timbre :as timbre
+      :refer [log  trace  debug  info  warn  error  fatal  report
+              logf tracef debugf infof warnf errorf fatalf reportf
+              spy get-env]]))
+
+(ns my-cljs-ns ; ; ClojureScript namespace
+  (:require
+    [taoensso.timbre :as timbre
+      :refer-macros [log  trace  debug  info  warn  error  fatal  report
+                     logf tracef debugf infof warnf errorf fatalf reportf
+                     spy get-env]]))
+```
+
+You can call `(timbre/refer-timbre)` to configure the Clj namespace referrals automatically.
+
+Basic `println` and `js/console` (v4+) output at a `:debug` level is given by default.
 
 ```clojure
 (info "This will print") => nil
@@ -356,7 +382,6 @@ user> (clojure.contrib.humanize/duration 325100 {:number-format str})
 
 (trace "This won't print due to insufficient log level") => nil
 ```
-
 
 ## Other
 
@@ -418,6 +443,8 @@ This abstracted HTTP API allows web applications to be constructed of modular co
 * [Humanize](https://github.com/trhura/clojure-humanize)
 * [URL](https://github.com/cemerick/url)
 * [Sente](https://github.com/ptaoussanis/sente)
+* [Slingshot](https://github.com/scgilardi/slingshot)
+* [Timbre](https://github.com/ptaoussanis/timbre)
 * [Shadow CLJS](https://github.com/thheller/shadow-cljs)
 * [DevCards](https://github.com/bhauman/devcards)
 * [Ring](https://github.com/ring-clojure/ring)

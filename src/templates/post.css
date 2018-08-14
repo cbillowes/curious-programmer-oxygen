@@ -37,12 +37,6 @@
     color: #fff;
 }
 
-html,
-#post .body,
-#post .body p {
-    line-height: 2rem;
-}
-
 #post .body img {
     display: inline-block;
     margin: 0 auto;
@@ -57,26 +51,35 @@ html,
     padding-left: 1.5em;
 }
 
-#post .body a {
-    color: #cc0000;
+#post #accordion .card-body a:link,
+#post .body a:link {
+    color: #cc0000 !important;
     text-decoration: none;
     font-weight: bold;
 }
 
-#post .body a:hover {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
+#post #accordion .card-body a:visited,
 #post .body a:visited {
     color: #198459;
     text-decoration: none;
     font-weight: bold;
 }
 
+#post #accordion .card-body a:hover,
+#post .body a:hover {
+    color: teal;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#post #accordion .card-body a:active,
+#post .body a:active {
+    color: black;
+}
+
+#post #accordion .card-body a:visited:hover,
 #post .body a:visited:hover {
-    color: #007bff;
+    color: #cc0000;
 }
 
 #post .body .post-meta {
@@ -107,7 +110,7 @@ html,
 }
 
 #post .post-wrapper .post-tag-container .button:hover {
-    background-color: #007bff;
+    background-color: teal;
     color: #fff;
 }
 
@@ -173,12 +176,13 @@ html,
     padding: 1rem 0;
     cursor: pointer;
     height: 100%;
-    padding: 2.5rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     line-height: 0rem;
+    margin: 0px;
 }
 
 #post #accordion h2:hover {
-    color: teal;
+    color: #cc0000;
 }
 
 #post #accordion h2 img {
@@ -192,6 +196,33 @@ html,
     display: inline;
 }
 
+#post #accordion .card {
+    border: solid 1px #e9e9e9;
+    margin-bottom: 1px;
+}
+
 #post #accordion .card-header {
     padding: 0px;
+    background-color: #fdfdfd;
+    border: none;
+}
+
+#post #accordion .card-body {
+    padding: 0em 2em;
+}
+
+#post #accordion .card-body div {
+    line-height: 2.5;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 1300px) {
+    #post #accordion h2 {
+        line-height: 1.5;
+    }
+
+    #post #accordion h2 img  {
+        position: relative;
+        margin-left: 2rem;
+    }
 }
