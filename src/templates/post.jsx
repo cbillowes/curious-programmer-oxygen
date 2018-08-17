@@ -2,7 +2,7 @@ import $ from "jquery"
 import React from "react"
 import Helmet from "react-helmet"
 import UserInfo from "../components/UserInfo/Component"
-import Disqus from "../components/Disqus/Component"
+import Comments from "../components/Disqus/Component"
 import PostTags from "../components/PostTags/Component"
 import SocialLinks from "../components/SocialLinks/Component"
 import SEO from "../components/SEO/Component"
@@ -127,7 +127,7 @@ export default class PostTemplate extends React.Component {
                       {post.custom ? post.custom : post.cover}
                     </a>
                   </p>
-                  <Disqus postNode={postNode} />
+                  <Comments postNode={postNode} />
                 </div>
               </div>
             </div>
