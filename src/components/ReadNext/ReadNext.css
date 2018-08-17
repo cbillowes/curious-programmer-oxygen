@@ -15,6 +15,13 @@
 .read-next-story {
     padding-left: 1.5em;
     padding-right: 1.54em;
+    max-width: 45%;
+}
+
+.read-next-story.prev {
+    text-align: right;
+    position: absolute;
+    right: 1.54em;
 }
 
 .read-next + .site-footer {
@@ -39,6 +46,16 @@
     }
 
     .read-next .post-meta.right {
+        text-align: left;
+    }
+
+    .read-next-story {
+        width: 100%;
+        left: 0em;
+    }
+
+    .read-next-story.prev {
+        position: relative;
         text-align: left;
     }
 }
