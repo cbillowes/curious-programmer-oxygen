@@ -2,12 +2,12 @@ import React, { Component } from "react"
 import Helmet from "react-helmet"
 import config from "../../../data/SiteConfig"
 
-function getDefaultImage(config) {
+function getDefaultImage (config) {
   let url = config.siteUrl
   return `${url}/${config.defaultSocialCover.replace(/..\//, "")}`
 }
 
-function getSocialImage(postMeta, config) {
+function getSocialImage (postMeta, config) {
   let url = config.siteUrl
   let defaultImage = getDefaultImage(config)
   let coverImage = postMeta.cover ? postMeta.cover : defaultImage
@@ -15,16 +15,13 @@ function getSocialImage(postMeta, config) {
   let hasPartialUrl = coverImage.startsWith("../")
 
   if (postImage) {
-    console.log("POST IMAGE")
     return `${url}/${postImage}`
   }
 
   if (hasPartialUrl) {
-    console.log("PARTIAL IMAGE")
     return `${url}/${coverImage.replace(/..\//, "")}`
   }
 
-  console.log("FULL IMAGE")
   return coverImage
 }
 
@@ -49,7 +46,6 @@ class SEO extends Component {
       description = config.siteDescription
       image = getDefaultImage(config)
     }
-    console.log(image)
     const realPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix
     image = config.siteUrl + realPrefix + image
     const blogURL = config.siteUrl + config.pathPrefix
