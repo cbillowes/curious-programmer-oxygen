@@ -1,5 +1,9 @@
 User-agent: *
 Disallow: */tags/
 Disallow: */categories/
+Disallow: */custom/
+Disallow: */static-covers/
+Disallow: */fonts/
+Disallow: */logos/
 
 sitemap: https://curiousprogrammer.io/sitemap.xml

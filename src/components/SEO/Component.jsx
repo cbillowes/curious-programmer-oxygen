@@ -2,12 +2,30 @@ import React, { Component } from "react"
 import Helmet from "react-helmet"
 import config from "../../../data/SiteConfig"
 
-// TODO: Find out why the socialCover is undefined when it is defined
+function getDefaultImage(config) {
+  let url = config.siteUrl
+  return `${url}/${config.defaultSocialCover.replace(/..\//, "")}`
+}
+
 function getSocialImage(postMeta, config) {
-  if (postMeta.socialCover) return config.pathPrefix + postMeta.socialCover
-  if (postMeta.cover && !postMeta.cover.startsWith("http"))
-    return postMeta.cover.replace(/..\//, "")
-  return config.defaultSocialCover
+  let url = config.siteUrl
+  let defaultImage = getDefaultImage(config)
+  let coverImage = postMeta.cover ? postMeta.cover : defaultImage
+  let postImage = postMeta.socialCover
+  let hasPartialUrl = coverImage.startsWith("../")
+
+  if (postImage) {
+    console.log("POST IMAGE")
+    return `${url}/${postImage}`
+  }
+
+  if (hasPartialUrl) {
+    console.log("PARTIAL IMAGE")
+    return `${url}/${coverImage.replace(/..\//, "")}`
+  }
+
+  console.log("FULL IMAGE")
+  return coverImage
 }
 
 class SEO extends Component {
@@ -17,6 +35,7 @@ class SEO extends Component {
     let description
     let image
     let postURL
+    let twitterUser = config.userTwitter ? `@${config.userTwitter}` : ""
     if (postSEO) {
       const postMeta = postNode.frontmatter
       title = postMeta.title
@@ -24,12 +43,13 @@ class SEO extends Component {
         ? postMeta.description
         : postNode.excerpt
       image = getSocialImage(postMeta, config)
-      postURL = config.siteUrl + config.pathPrefix + postPath
+      postURL = `${config.siteUrl}${config.pathPrefix}${postPath}`
     } else {
       title = config.siteTitle
       description = config.siteDescription
-      image = config.siteLogo
+      image = getDefaultImage(config)
     }
+    console.log(image)
     const realPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix
     image = config.siteUrl + realPrefix + image
     const blogURL = config.siteUrl + config.pathPrefix
@@ -98,13 +118,8 @@ class SEO extends Component {
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:creator"
-          content={config.userTwitter ? config.userTwitter : ""}
-        />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image} />
+        <meta name="twitter:site" content={twitterUser} />
+        <meta name="twitter:creator" content={twitterUser} />
       </Helmet>
     )
   }
