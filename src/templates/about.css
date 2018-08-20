@@ -84,9 +84,6 @@ p a {
 .timeline > li .description ul {
   margin: 12.5px 0 25px 0;
 }
-.timeline > li .description ul li {
-  line-height: 2em;
-}
 .timeline > li .description .label {
   display: inline-block;
   margin: 0 1% 1% 0;
@@ -96,7 +93,7 @@ p a {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
-  line-height: 2em;
+  line-height: 1.2em;
 }
 .timeline > li .description p {
   margin: 10px 0 10px 0;
@@ -109,13 +106,9 @@ p a {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-width: 25px;
+  border-width: 15px;
   top: 10px;
   border-right-color: #1a232c22;
-}
-.timeline .label {
-  border-radius: 5px;
-  background-color: #18181825;
 }
 .timeline > li .icon {
   width: 60px;
@@ -134,7 +127,7 @@ p a {
   left: 40%;
   top: 0;
   margin: 0 10px 0 -35px;
-  box-shadow: 0 0 0 8px #e1e2e3;
+  box-shadow: 0 0 0 8px #161e2522;
   background-color: #161e2522;
 }
 .timeline > li .icon span:before {
@@ -149,9 +142,6 @@ p a {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: absolute;
-  top: 18px;
-  left: 18px;
 }
 .timeline > li.work .meta {
   color: #303030;
@@ -168,24 +158,24 @@ p a {
   color: #888;
 }
 .timeline > li.work .description {
-  border-left: solid 10px #1a232c22;
+  border-left: solid 5px #1a232c22;
 }
 .timeline > li.work .description h3 {
   color: #303030;
 }
 .timeline > li.work .description:after {
-  border-right-color: #c8cacc;
+  border-right-color: #1a232c22;
 }
 @media screen and (max-width: 640px) {
   .timeline > li.work .description {
-    border-top: solid 10px #1a232c22;
+    border-top: solid 5px #1a232c22;
   }
   .timeline > li.work .description:after {
-    border-bottom-color: #c8cacc;
+    border-bottom-color: #1a232c22;
   }
 }
 .timeline > li.work .icon {
-  background-color: #f1f1f1;
+  background-color: #1a232c22;
 }
 .timeline > li.work .icon span:before {
   content: "\e903";
@@ -206,7 +196,7 @@ p a {
   color: #888;
 }
 .timeline > li.blog .description {
-  border-left: solid 10px #950a9f;
+  border-left: solid 5px #950a9f;
 }
 .timeline > li.blog .description h3 {
   color: #950a9f;
@@ -216,7 +206,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.blog .description {
-    border-top: solid 10px #950a9f;
+    border-top: solid 5px #950a9f;
   }
   .timeline > li.blog .description:after {
     border-bottom-color: #950a9f;
@@ -244,7 +234,7 @@ p a {
   color: #888;
 }
 .timeline > li.certificate .description {
-  border-left: solid 10px #e8468b;
+  border-left: solid 5px #e8468b;
 }
 .timeline > li.certificate .description h3 {
   color: #e8468b;
@@ -254,7 +244,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.certificate .description {
-    border-top: solid 10px #e8468b;
+    border-top: solid 5px #e8468b;
   }
   .timeline > li.certificate .description:after {
     border-bottom-color: #e8468b;
@@ -282,7 +272,7 @@ p a {
   color: #888;
 }
 .timeline > li.podcast .description {
-  border-left: solid 10px #CF8EDB;
+  border-left: solid 5px #CF8EDB;
 }
 .timeline > li.podcast .description h3 {
   color: #CF8EDB;
@@ -292,7 +282,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.podcast .description {
-    border-top: solid 10px #CF8EDB;
+    border-top: solid 5px #CF8EDB;
   }
   .timeline > li.podcast .description:after {
     border-bottom-color: #CF8EDB;
@@ -320,7 +310,7 @@ p a {
   color: #888;
 }
 .timeline > li.talk .description {
-  border-left: solid 10px #1F9ACC;
+  border-left: solid 5px #1F9ACC;
 }
 .timeline > li.talk .description h3 {
   color: #1F9ACC;
@@ -330,7 +320,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.talk .description {
-    border-top: solid 10px #1F9ACC;
+    border-top: solid 5px #1F9ACC;
   }
   .timeline > li.talk .description:after {
     border-bottom-color: #1F9ACC;
@@ -358,7 +348,7 @@ p a {
   color: #888;
 }
 .timeline > li.book .description {
-  border-left: solid 10px #CC481F;
+  border-left: solid 5px #CC481F;
 }
 .timeline > li.book .description h3 {
   color: #CC481F;
@@ -368,7 +358,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.book .description {
-    border-top: solid 10px #CC481F;
+    border-top: solid 5px #CC481F;
   }
   .timeline > li.book .description:after {
     border-bottom-color: #CC481F;
@@ -396,7 +386,7 @@ p a {
   color: #888;
 }
 .timeline > li.project .description {
-  border-left: solid 10px #77ab3a;
+  border-left: solid 5px #77ab3a;
 }
 .timeline > li.project .description h3 {
   color: #77ab3a;
@@ -406,7 +396,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.project .description {
-    border-top: solid 10px #77ab3a;
+    border-top: solid 5px #77ab3a;
   }
   .timeline > li.project .description:after {
     border-bottom-color: #77ab3a;
@@ -434,7 +424,7 @@ p a {
   color: #888;
 }
 .timeline > li.award .description {
-  border-left: solid 10px #B2241F;
+  border-left: solid 5px #B2241F;
 }
 .timeline > li.award .description h3 {
   color: #B2241F;
@@ -444,7 +434,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.award .description {
-    border-top: solid 10px #B2241F;
+    border-top: solid 5px #B2241F;
   }
   .timeline > li.award .description:after {
     border-bottom-color: #B2241F;
@@ -472,7 +462,7 @@ p a {
   color: #888;
 }
 .timeline > li.community .description {
-  border-left: solid 10px #CC4D2B;
+  border-left: solid 5px #CC4D2B;
 }
 .timeline > li.community .description h3 {
   color: #CC4D2B;
@@ -482,7 +472,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.community .description {
-    border-top: solid 10px #CC4D2B;
+    border-top: solid 5px #CC4D2B;
   }
   .timeline > li.community .description:after {
     border-bottom-color: #CC4D2B;
@@ -538,12 +528,6 @@ p a {
     border-right-color: transparent !important;
     top: -35px;
   }
-
-@media screen and (max-width: 640px) {
-  .timeline > li .description:after {
-    display: none;
-  }
-}
   .timeline > li .icon {
     position: relative;
     float: right;
