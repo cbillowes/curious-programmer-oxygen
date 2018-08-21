@@ -1,7 +1,6 @@
 const path = require("path")
 const _ = require("lodash")
 const webpackLodashPlugin = require("lodash-webpack-plugin")
-const fs = require("fs")
 const siteConfig = require("./data/SiteConfig")
 
 const {
