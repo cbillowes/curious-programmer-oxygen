@@ -88,7 +88,7 @@ export default class PostTemplate extends React.Component {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
-        <Gorget title={config.siteTitle} />
+        <Gorget title={config.siteTitle} path={post.path} />
         <div id="post">
           <div
             className={coverStyle}

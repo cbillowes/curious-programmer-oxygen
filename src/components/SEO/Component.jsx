@@ -2,12 +2,12 @@ import React, { Component } from "react"
 import Helmet from "react-helmet"
 import config from "../../../data/SiteConfig"
 
-function getDefaultImage (config) {
+function getDefaultImage(config) {
   let url = config.siteUrl
   return `${url}/${config.defaultSocialCover.replace(/..\//, "")}`
 }
 
-function getSocialImage (postMeta, config) {
+function getSocialImage(postMeta, config) {
   let url = config.siteUrl
   let defaultImage = getDefaultImage(config)
   let coverImage = postMeta.cover ? postMeta.cover : defaultImage
