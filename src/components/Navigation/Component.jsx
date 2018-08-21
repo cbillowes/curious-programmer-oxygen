@@ -59,14 +59,10 @@ class Navigation extends Component {
         <div className={`nav ${this.state.className}`}>
           <ul>
             <li className={`${this.toggleCurrent("Home")}`}>
-              <a href="/">
-                Blog
-              </a>
+              <a href="/">Blog</a>
             </li>
             <li className={`${this.toggleCurrent("About")}`}>
-              <a href="/about">
-                About
-              </a>
+              <a href="/about">About</a>
             </li>
           </ul>
         </div>
