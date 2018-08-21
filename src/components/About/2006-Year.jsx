@@ -17,11 +17,11 @@ class Year_2014 extends Component {
           <div className="description">
             <h3>Senior Software Developer</h3>
             <p>
-              In the Cross Media Solutions department, I was responsible for
-              the development and maintenance of automated processes and
-              custom development integration with XMPie for on-demand variable
-              data printing solutions.
-              </p>
+              In the Cross Media Solutions department, I was responsible for the
+              development and maintenance of automated processes and custom
+              development integration with XMPie for on-demand variable data
+              printing solutions.
+            </p>
           </div>
         </li>
         <li className="project">
@@ -56,7 +56,7 @@ class Year_2014 extends Component {
             <h2>
               <a href="http://stackoverflow.com/users/849986/cbouwer?tab=profile">
                 StackOverflow
-                </a>
+              </a>
             </h2>
             <span>Jul 2011</span>
           </span>
@@ -94,11 +94,11 @@ class Year_2014 extends Component {
             <p>
               I started as a junior and worked my way up. In 2010, I was
               promoted to Lead Senior Web Developer.
-              </p>
+            </p>
             <p>
-              I was responsible for developing, deploying and supporting
-              custom event registration websites in production.
-              </p>
+              I was responsible for developing, deploying and supporting custom
+              event registration websites in production.
+            </p>
           </div>
         </li>
         <li className="project">
@@ -116,7 +116,7 @@ class Year_2014 extends Component {
             <p>
               Throughout my years at IT Event Management I developed and
               supported projects including:
-              </p>
+            </p>
             <ul>
               <li>Microsoft Tech-Ed Africa &amp; Middle East</li>
               <li>Microsoft Partner Summit</li>
@@ -137,9 +137,7 @@ class Year_2014 extends Component {
             <span className="label label-primary">Mashreq payment</span>
             <span className="label label-primary">SQL Server 2005</span>
             <span className="label label-primary">SQL Server 2008</span>
-            <span className="label label-primary">
-              Visual Studio '08 - '10
-              </span>
+            <span className="label label-primary">Visual Studio '08 - '10</span>
             <span className="label label-primary">TFS</span>
           </div>
         </li>
@@ -158,7 +156,7 @@ class Year_2014 extends Component {
             <p>
               I was responsible for developing, enhancing and supporting the
               internal Global Hotel Reservation web application.
-              </p>
+            </p>
             <span className="label label-primary">C#</span>
             <span className="label label-primary">Crystal Reports</span>
             <span className="label label-primary">HTA</span>

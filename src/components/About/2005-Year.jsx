@@ -18,7 +18,7 @@ class Year_2014 extends Component {
               I was promoted to Junior Instructor. Additional responsibilities
               included liaising with parents and managing my own class of
               students while maintaining a low failure rate.
-              </p>
+            </p>
           </div>
         </li>
         <li className="certificate">
@@ -36,7 +36,7 @@ class Year_2014 extends Component {
             <p>
               I received a <strong>VB.NET certificate</strong> for completing
               all modules. Passed with distinction.
-              </p>
+            </p>
           </div>
         </li>
         <li className="certificate">
@@ -53,10 +53,10 @@ class Year_2014 extends Component {
             <h3>National diploma</h3>
             <p>
               I received my national diploma for
-                <strong>Information Systems: Software Development</strong> with
+              <strong>Information Systems: Software Development</strong> with
               subjects in SQL Server 2000, C# and VB.NET. Passed with
               distinction.
-              </p>
+            </p>
           </div>
         </li>
         <li className="work">
@@ -70,10 +70,10 @@ class Year_2014 extends Component {
           <div className="description">
             <h3>Assistant Instructor</h3>
             <p>
-              I was awarded a bursary to study further while being an
-              Assistant Instructor. I was responsible for developing pre-test
-              materials, hosting workshops and marking projects and exams.
-              </p>
+              I was awarded a bursary to study further while being an Assistant
+              Instructor. I was responsible for developing pre-test materials,
+              hosting workshops and marking projects and exams.
+            </p>
           </div>
         </li>
         <li className="certificate">
@@ -88,10 +88,10 @@ class Year_2014 extends Component {
             <h3>National Diploma</h3>
             <p>
               I received my national diploma for
-                <strong>Computer Science: Internet Development</strong> with
+              <strong>Computer Science: Internet Development</strong> with
               subjects in Standard, Micro and Enterprise Java and Perl. Passed
               with distinction.
-              </p>
+            </p>
           </div>
         </li>
         <li className="work">
@@ -105,7 +105,7 @@ class Year_2014 extends Component {
             <h3>Freelancer</h3>
             <p>
               I did freelance websites for local companies in my spare time.
-              </p>
+            </p>
           </div>
         </li>
         <li className="certificate">
@@ -113,7 +113,7 @@ class Year_2014 extends Component {
             <h2>
               <a href="http://www.johanjurgens.co.za/">
                 Dr Johan Jurgens High School
-                </a>
+              </a>
             </h2>
             <span>2003</span>
           </span>
@@ -126,7 +126,7 @@ class Year_2014 extends Component {
               Matriculated with exemption. All subjects on higher grade.
               Subjects included English, Afrikaans, Computer Science,
               Mathematics, Science and Economics.
-              </p>
+            </p>
             <ul>
               <li>Representative of the Student Council (2002-2003)</li>
               <li>Editor of school newspaper (2003)</li>
