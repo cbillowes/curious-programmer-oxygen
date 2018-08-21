@@ -2,16 +2,24 @@
     justify-content: center;
     align-content: center;
     padding: 10px 5px 5px;
-    display: none;
+    background-color: #212529;
 }
 
-.notice-container {
+.footer .notice-container h4,
+.footer a {
+    color: white;
+    font-weight: 100;
+}
+
+.footer .notice-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin: 0px auto;
+    max-width: 800px;
+    padding: 1em 0em;
 }
 
 @media (max-width: 640px - 1px) {
