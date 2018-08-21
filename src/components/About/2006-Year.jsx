@@ -69,7 +69,7 @@ class Year_2014 extends Component {
             <p>
               <a href="http://stackexchange.com/users/453154">
                 <img
-                  src="http://stackexchange.com/users/flair/453154.png"
+                  src="https://stackexchange.com/users/flair/453154.png"
                   width="208"
                   height="58"
                   alt="Profile for cbouwer on Stack Exchange, a network of free, community-driven Q&amp;A sites"

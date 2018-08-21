@@ -88,7 +88,7 @@ That can translate to the following point-in-time view as only a three-tuple wit
  :user/last-name "Adams"}
 ```
 
-## Reagent (React framework) [![](http://clojars.org/reagent/latest-version.svg)](https://clojars.org/reagent)
+## Reagent (React framework) [![](https://clojars.org/reagent/latest-version.svg)](https://clojars.org/reagent)
 
 [![CircleCI](https://circleci.com/gh/reagent-project/reagent.svg?style=svg)](https://circleci.com/gh/reagent-project/reagent) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [Reagent](https://github.com/reagent-project/reagent) is a minimalistic ClojureScript interface to React.js. HTML components are represented as Clojure data following a hiccup-like syntax and is compiled to React components. Pssst. No more JSX files.
 
@@ -113,7 +113,7 @@ It's a loop of what they refer to as dominoes. One domino triggers the next unti
 
 !["The 6 Dominoes"](https://raw.githubusercontent.com/Day8/re-frame/master/images/Readme/6dominoes.png)
 
-## Figwheel (Hot reloader) [![](http://clojars.org/lein-figwheel/latest-version.svg)](https://clojars.org/lein-figwheel)
+## Figwheel (Hot reloader) [![](https://clojars.org/lein-figwheel/latest-version.svg)](https://clojars.org/lein-figwheel)
 
  [![CircleCI](https://circleci.com/gh/bhauman/lein-figwheel.svg?style=svg)](https://circleci.com/gh/bhauman/lein-figwheel) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Figwheel](https://github.com/bhauman/lein-figwheel), a **lein** plugin, is a ClojureScript auto builder/server which pushes changed files to the browser.
 
@@ -123,7 +123,7 @@ Cutting some fruit, it says on load, it detects changes in the code, reloads the
 lein new figwheel hello-world -- --reagent  #for a reagent based project
 ```
 
-## Garden (ClojureScript to CSS) [![](http://clojars.org/garden/latest-version.svg)](http://clojars.org/garden)
+## Garden (ClojureScript to CSS) [![](https://clojars.org/garden/latest-version.svg)](http://clojars.org/garden)
 
 [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Garden](https://github.com/noprompt/garden) generates CSS from ClojureScript data structures.
 
@@ -386,7 +386,7 @@ Basic `println` and `js/console` (v4+) output at a `:debug` level is given by de
 
 ## Other
 
-**Shadow CLJS** [![](http://clojars.org/thheller/shadow-cljs/latest-version.svg)](https://clojars.org/thheller/shadow-cljs)
+**Shadow CLJS** [![](https://clojars.org/thheller/shadow-cljs/latest-version.svg)](https://clojars.org/thheller/shadow-cljs)
 
 [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Shadow CLJS](https://github.com/thheller/shadow-cljs) is a ClojureScript development tool.
 
