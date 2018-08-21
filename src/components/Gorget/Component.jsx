@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import classNames from "classnames"
+import Navigation from "../Navigation/Component"
 import "./Gorget.css"
 
 class Gorget extends React.Component {
@@ -27,6 +28,7 @@ class Gorget extends React.Component {
             </div>
           </div>
         </div>
+        <Navigation section={section} />
       </div>
     )
   }
