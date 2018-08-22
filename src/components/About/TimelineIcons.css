@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+/* Made with http://icomoon.io/ */
 @font-face {
   font-family: "timeline";
   src: url("/fonts/timeline.eot");
@@ -8,107 +10,6 @@
        url("/fonts/timeline.svg#timeline") format("svg");
   font-weight: normal;
   font-style: normal;
-}
-p a {
-  text-decoration: none;
-}
-.bio {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 6rem;
-}
-.photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-image: url("https://pbs.twimg.com/profile_images/1016216577967050753/kNax-WlD_400x400.jpg");
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-}
-/* Made with http://icomoon.io/ */
-.timeline {
-  display: block !important;
-  margin: 50px 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  /* The line */
-}
-.timeline:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 10px;
-  background: #161e2522;
-  border-radius: 3px;
-  left: 40%;
-  margin-left: -10px;
-}
-.timeline > li {
-  position: relative;
-  /* Left content */
-  /* Right content */
-}
-.timeline > li .meta {
-  display: block;
-  width: 45%;
-  padding-right: 165px;
-  text-align: right;
-  position: absolute;
-}
-.timeline > li .meta h2 {
-  font-size: 1.2em;
-  line-height: 2em;
-  margin-top: 0em;
-}
-.timeline > li .meta span {
-  display: block;
-}
-.timeline > li .meta span:first-child {
-  padding-top: 0.5em;
-}
-.timeline > li .description {
-  margin: 25px 20% 25px 43%;
-  padding: 1.5em 2em;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.4;
-  position: relative;
-  border-radius: 10px;
-  background-color: #1a232c22;
-  /* The triangle */
-}
-.timeline > li .description ul {
-  margin: 12.5px 0 25px 0;
-}
-.timeline > li .description .label {
-  display: inline-block;
-  margin: 0 1% 1% 0;
-  padding: 6px 10px;
-}
-.timeline > li .description h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 1.2em;
-  line-height: 1.2em;
-}
-.timeline > li .description p {
-  margin: 10px 0 10px 0;
-}
-.timeline > li .description:after {
-  right: 100%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-width: 15px;
-  top: 10px;
-  border-right-color: #1a232c22;
 }
 .timeline > li .icon {
   width: 60px;
@@ -127,7 +28,7 @@ p a {
   left: 40%;
   top: 0;
   margin: 0 10px 0 -35px;
-  box-shadow: 0 0 0 8px #161e2522;
+  box-shadow: 0 0 0 8px #e1e2e3;
   background-color: #161e2522;
 }
 .timeline > li .icon span:before {
@@ -142,6 +43,9 @@ p a {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 18px;
+  left: 18px;
 }
 .timeline > li.work .meta {
   color: #303030;
@@ -158,24 +62,24 @@ p a {
   color: #888;
 }
 .timeline > li.work .description {
-  border-left: solid 5px #1a232c22;
+  border-left: solid 10px #1a232c22;
 }
 .timeline > li.work .description h3 {
   color: #303030;
 }
 .timeline > li.work .description:after {
-  border-right-color: #1a232c22;
+  border-right-color: #c8cacc;
 }
 @media screen and (max-width: 640px) {
   .timeline > li.work .description {
-    border-top: solid 5px #1a232c22;
+    border-top: solid 10px #1a232c22;
   }
   .timeline > li.work .description:after {
-    border-bottom-color: #1a232c22;
+    border-bottom-color: #c8cacc;
   }
 }
 .timeline > li.work .icon {
-  background-color: #1a232c22;
+  background-color: #f1f1f1;
 }
 .timeline > li.work .icon span:before {
   content: "\e903";
@@ -196,7 +100,7 @@ p a {
   color: #888;
 }
 .timeline > li.blog .description {
-  border-left: solid 5px #950a9f;
+  border-left: solid 10px #950a9f;
 }
 .timeline > li.blog .description h3 {
   color: #950a9f;
@@ -206,7 +110,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.blog .description {
-    border-top: solid 5px #950a9f;
+    border-top: solid 10px #950a9f;
   }
   .timeline > li.blog .description:after {
     border-bottom-color: #950a9f;
@@ -234,7 +138,7 @@ p a {
   color: #888;
 }
 .timeline > li.certificate .description {
-  border-left: solid 5px #e8468b;
+  border-left: solid 10px #e8468b;
 }
 .timeline > li.certificate .description h3 {
   color: #e8468b;
@@ -244,7 +148,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.certificate .description {
-    border-top: solid 5px #e8468b;
+    border-top: solid 10px #e8468b;
   }
   .timeline > li.certificate .description:after {
     border-bottom-color: #e8468b;
@@ -272,7 +176,7 @@ p a {
   color: #888;
 }
 .timeline > li.podcast .description {
-  border-left: solid 5px #CF8EDB;
+  border-left: solid 10px #CF8EDB;
 }
 .timeline > li.podcast .description h3 {
   color: #CF8EDB;
@@ -282,7 +186,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.podcast .description {
-    border-top: solid 5px #CF8EDB;
+    border-top: solid 10px #CF8EDB;
   }
   .timeline > li.podcast .description:after {
     border-bottom-color: #CF8EDB;
@@ -310,7 +214,7 @@ p a {
   color: #888;
 }
 .timeline > li.talk .description {
-  border-left: solid 5px #1F9ACC;
+  border-left: solid 10px #1F9ACC;
 }
 .timeline > li.talk .description h3 {
   color: #1F9ACC;
@@ -320,7 +224,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.talk .description {
-    border-top: solid 5px #1F9ACC;
+    border-top: solid 10px #1F9ACC;
   }
   .timeline > li.talk .description:after {
     border-bottom-color: #1F9ACC;
@@ -348,7 +252,7 @@ p a {
   color: #888;
 }
 .timeline > li.book .description {
-  border-left: solid 5px #CC481F;
+  border-left: solid 10px #CC481F;
 }
 .timeline > li.book .description h3 {
   color: #CC481F;
@@ -358,7 +262,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.book .description {
-    border-top: solid 5px #CC481F;
+    border-top: solid 10px #CC481F;
   }
   .timeline > li.book .description:after {
     border-bottom-color: #CC481F;
@@ -386,7 +290,7 @@ p a {
   color: #888;
 }
 .timeline > li.project .description {
-  border-left: solid 5px #77ab3a;
+  border-left: solid 10px #77ab3a;
 }
 .timeline > li.project .description h3 {
   color: #77ab3a;
@@ -396,7 +300,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.project .description {
-    border-top: solid 5px #77ab3a;
+    border-top: solid 10px #77ab3a;
   }
   .timeline > li.project .description:after {
     border-bottom-color: #77ab3a;
@@ -424,7 +328,7 @@ p a {
   color: #888;
 }
 .timeline > li.award .description {
-  border-left: solid 5px #B2241F;
+  border-left: solid 10px #B2241F;
 }
 .timeline > li.award .description h3 {
   color: #B2241F;
@@ -434,7 +338,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.award .description {
-    border-top: solid 5px #B2241F;
+    border-top: solid 10px #B2241F;
   }
   .timeline > li.award .description:after {
     border-bottom-color: #B2241F;
@@ -462,7 +366,7 @@ p a {
   color: #888;
 }
 .timeline > li.community .description {
-  border-left: solid 5px #CC4D2B;
+  border-left: solid 10px #CC4D2B;
 }
 .timeline > li.community .description h3 {
   color: #CC4D2B;
@@ -472,7 +376,7 @@ p a {
 }
 @media screen and (max-width: 640px) {
   .timeline > li.community .description {
-    border-top: solid 5px #CC4D2B;
+    border-top: solid 10px #CC4D2B;
   }
   .timeline > li.community .description:after {
     border-bottom-color: #CC4D2B;
@@ -484,71 +388,4 @@ p a {
 .timeline > li.community .icon span:before {
   content: "\e972";
   color: #f5d6ce;
-}
-
-@media screen and (max-width: 480px) {
-  header h2 {
-    font-size: 1em !important;
-  }
-  header p {
-    padding: 0px;
-  }
-
-  .timeline > li .meta {
-    margin-top: 60px !important;
-  }
-  .timeline > li .meta h2 {
-    font-size: 1em !important;
-  }
-
-  .timeline > li:first-child .meta {
-    margin-top: 0px !important;
-  }
-}
-@media screen and (max-width: 640px) {
-  .timeline:before {
-    display: none;
-  }
-
-  .timeline > li .meta {
-    width: 100%;
-    position: relative;
-    padding: 0 0 20px 0;
-    text-align: left;
-  }
-  .timeline > li .description {
-    margin-left: 0px !important;
-    margin-right: 25px !important;
-    margin-top: 5px;
-    border-left: none !important;
-  }
-  .timeline > li .description:after {
-    right: auto;
-    left: 20px;
-    border-right-color: transparent !important;
-    top: -35px;
-  }
-  .timeline > li .icon {
-    position: relative;
-    float: right;
-    left: auto;
-    margin: -75px 25px 0 0;
-  }
-}
-@media screen and (max-width: 641px) and (max-width: 1280px) {
-  .timeline > li .meta {
-    width: 49%;
-  }
-  .timeline > li .description {
-    margin-left: 45%;
-    margin-right: 5%;
-  }
-}
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
-  .timeline > li .meta {
-    width: 46%;
-  }
-  .timeline > li .description {
-    margin-left: 44%;
-  }
 }
