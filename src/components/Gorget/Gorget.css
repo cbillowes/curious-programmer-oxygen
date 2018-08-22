@@ -10,7 +10,8 @@
   z-index: 1;
 }
 
-.header .logo {
+.header .logo,
+.header .mobile-logo {
   font-size: 1.25em;
   font-weight: 900;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -20,12 +21,18 @@
   font-weight: normal;
 }
 
-.header .logo a {
+.header .logo a,
+.header .mobile-logo a {
   color: #fff;
 }
 
-.header .logo a:hover {
+.header .logo a:hover,
+.header .mobile-logo a:hover {
   text-decoration: none;
+}
+
+.header .mobile-logo {
+  display: none;
 }
 
 .header .section {
@@ -35,4 +42,14 @@
 
 .header .section.none {
   display: none;
+}
+
+@media (max-width: 640px) {
+  .header .logo {
+    display: none;
+  }
+
+  .header .mobile-logo {
+    display: inline-block;
+  }
 }

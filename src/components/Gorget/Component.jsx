@@ -25,6 +25,13 @@ class Gorget extends React.Component {
                 </Link>
                 <span className={sectionClasses}> ;{section}</span>
               </div>
+              <div className="mobile-logo">
+                <Link to="/">
+                  &#123;
+                  {" "}
+                  &#125;
+                </Link>
+              </div>
             </div>
           </div>
         </div>
