@@ -21,11 +21,13 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList()
     const excludeTag = this.props.excludeTag
+    const heading = this.props.heading
 
     return (
       <div id="post-listing" className="container">
         <div className="row">
           <div className="col-lg-9 col-md-9 mx-auto">
+            <h1>{heading}</h1>
             {postList.map(post => (
               <div key={post.path}>
                 <PostSnippet post={post} excludeTag={excludeTag} />
