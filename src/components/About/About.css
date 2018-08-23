@@ -2,10 +2,11 @@ p a {
   text-decoration: none;
 }
 .bio {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
     padding-top: 6rem;
+    padding: 1em;
 }
 
 .bio h1 {

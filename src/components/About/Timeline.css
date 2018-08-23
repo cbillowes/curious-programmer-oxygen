@@ -4,9 +4,17 @@ header h2 {
 header p {
   padding: 0px;
 }
-
 .timeline > li {
   list-style: none;
+}
+.timeline > li .description .label {
+  display: inline-block;
+  margin: 0 1% 1% 0;
+  padding: 6px 10px;
+}
+.timeline .label {
+  border-radius: 5px;
+  background-color: #18181825;
 }
 
 @media screen and (max-width: 1023px) {
@@ -27,6 +35,8 @@ header p {
     padding: 1em;
     border-left: none;
     border: solid 1px #21252933;
+    overflow-x: auto;
+    width: 90%;
   }
   .timeline > li .icon {
     position: relative;
@@ -88,6 +98,7 @@ header p {
     position: relative;
     border-radius: 10px;
     background-color: #1a232c22;
+    overflow-x: scroll;
     /* The triangle */
   }
   .timeline > li .description ul {
@@ -95,11 +106,6 @@ header p {
   }
   .timeline > li .description ul li {
     line-height: 2em;
-  }
-  .timeline > li .description .label {
-    display: inline-block;
-    margin: 0 1% 1% 0;
-    padding: 6px 10px;
   }
   .timeline > li .description h3 {
     margin: 0;
@@ -121,9 +127,5 @@ header p {
     border-width: 25px;
     top: 10px;
     border-right-color: #1a232c22;
-  }
-  .timeline .label {
-    border-radius: 5px;
-    background-color: #18181825;
   }
 }
