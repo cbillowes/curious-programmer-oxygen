@@ -14,7 +14,7 @@ export default class TagTemplate extends React.Component {
         <Gorget title={config.siteTitle} section={tag} />
         <PostListing
           postEdges={postEdges}
-          heading={`More about ${tag}`}
+          heading={`More ${tag}`}
           excludeTag={tag}
         />
       </div>
