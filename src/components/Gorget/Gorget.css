@@ -35,15 +35,6 @@
   display: none;
 }
 
-.header .section {
-  font-weight: normal;
-  color: rgb(121, 121, 121);
-}
-
-.header .section.none {
-  display: none;
-}
-
 @media (max-width: 640px) {
   .header .logo {
     display: none;
