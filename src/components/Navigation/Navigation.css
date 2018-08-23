@@ -10,6 +10,17 @@
     cursor: pointer;
 }
 
+.icon {
+    height: 2.5em;
+    padding: 0.5em;
+    margin: -1em 0em;
+}
+
+.icon:hover {
+    background-color: #333639cc;
+    border-radius: 3px;
+}
+
 .nav {
     position: fixed;
     top: 74px;

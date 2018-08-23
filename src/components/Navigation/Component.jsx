@@ -54,7 +54,7 @@ class Navigation extends Component {
     return (
       <div>
         <h3 className="nav-title" onClick={this.toggle}>
-          Menu
+          <img className="icon" src="/menu.svg" />
         </h3>
         <div className={`nav ${this.state.className}`}>
           <ul>
