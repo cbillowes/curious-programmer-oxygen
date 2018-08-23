@@ -10,7 +10,7 @@ Todo:
     ✔ Change spacing and padding of tag buttons @started(18-06-24 10:40) @done(18-06-24 10:46) @lasted(6m49s)
     ✔ Add next and back feature @started(18-06-24 10:58) @done(18-06-24 11:57) @lasted(59m19s)
     ☐ Glitz up the bottom next and back posts feature
-    ☐ Fix embedded Twitter blocks
+    ✔ Fix embedded Twitter blocks @done(18-08-23 06:09)
     ☐ Use post hero images from corporate programmer
     ☐ Add paging to post listing
     ☐ Show hero image for the first post in the post listing of any listing page
@@ -23,15 +23,15 @@ Todo:
       ☐ Update Disqus website settings
 
   ☐ Create new pages @low
-    ☐ About
+    ✔ About @done(18-08-23 06:09)
     ☐ Credits
-    ☐ Career timeline
+    ✔ Career timeline @done(18-08-23 06:09)
     ☐ Privacy policy @critical
     ✔ Create RSS @critical @started(18-06-25 01:38) @done(18-06-25 01:59) @lasted(21m13s)
-    ☐ Add a menu
+    ✔ Add a menu @done(18-08-23 06:09)
 
   ☐ Tags @low
-    ☐ Add a heading to the tag page indicating what tag page the user is visiting @high
+    ✔ Add a heading to the tag page indicating what tag page the user is visiting @high @done(18-08-23 06:09)
     ☐ Add a page with all the tags
     ☐ Remove tag from listing for the tag page the user is currently visiting as it is redundant information
 
