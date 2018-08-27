@@ -25,10 +25,23 @@ function getSocialImage(postMeta, config) {
   return coverImage
 }
 
-function getSeo(postMeta, config, postNode, postPath, hasSEO) {
-  let fbId = (config.siteFBAppID) ? config.siteFBAppID : ""
+function getSeo(config, postNode, postPath, hasSEO) {
+  let fbId = config.siteFBAppID ? config.siteFBAppID : ""
   let seo
   if (hasSEO) {
+    const postMeta = postNode.frontmatter
+    seo = {
+      title: postMeta.title,
+      description: postMeta.description
+        ? postMeta.description
+        : postNode.excerpt,
+      image: getSocialImage(postMeta, config),
+      twitterUser: config.userTwitter ? `@${config.userTwitter}` : "",
+      facebookId: fbId,
+      url: `${config.siteUrl}${config.pathPrefix}${postPath}`,
+      type: "website"
+    }
+  } else {
     seo = {
       title: config.siteTitle,
       description: config.siteDescription,
@@ -38,15 +51,7 @@ function getSeo(postMeta, config, postNode, postPath, hasSEO) {
       type: "article"
     }
   }
-  seo = {
-    title: postMeta.title,
-    description: postMeta.description ? postMeta.description : postNode.excerpt,
-    image: getSocialImage(postMeta, config),
-    twitterUser: config.userTwitter ? `@${config.userTwitter}` : "",
-    facebookId: fbId,
-    url: `${config.siteUrl}${config.pathPrefix}${postPath}`,
-    type: "website"
-  }
+  console.log(seo)
   return seo
 }
 
@@ -99,8 +104,7 @@ function getSchema(seo, config, hasSeo) {
 class SEO extends Component {
   render() {
     const { postNode, postPath, postSEO } = this.props
-    const postMeta = postNode.frontmatter
-    let seo = getSeo(postMeta, config, postNode, postPath, postSEO)
+    let seo = getSeo(config, postNode, postPath, postSEO)
     let schema = getSchema(seo, config, postSEO)
 
     return (
@@ -123,9 +127,7 @@ class SEO extends Component {
         <meta name="twitter:creator" content={seo.twitterUser} />
 
         {/* Schema.org tags */}
-        <script type="application/ld+json">
-          {schema}
-        </script>
+        <script type="application/ld+json">{schema}</script>
       </Helmet>
     )
   }
