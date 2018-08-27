@@ -47,7 +47,6 @@ class SEO extends Component {
       image = getDefaultImage(config)
     }
     const realPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix
-    image = config.siteUrl + realPrefix + image
     const blogURL = config.siteUrl + config.pathPrefix
     const schemaOrgJSONLD = [
       {
@@ -58,6 +57,8 @@ class SEO extends Component {
         alternateName: config.siteTitleAlt ? config.siteTitleAlt : ""
       }
     ]
+    console.log(image)
+
     if (postSEO) {
       schemaOrgJSONLD.push(
         {
