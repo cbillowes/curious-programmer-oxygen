@@ -42,7 +42,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     const postPage = path.resolve("src/templates/post.jsx")
     const tagPage = path.resolve("src/templates/tag.jsx")
-    const categoryPage = path.resolve("src/templates/category.jsx")
 
     resolve(
       graphql(
@@ -63,8 +62,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     blur
                     custom
                     date
-                    category
-                    author
                   }
                   fields {
                     slug
@@ -99,9 +96,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         const tagSet = new Set()
         const tagMap = new Map()
-        const categorySet = new Set()
-        const authorSet = new Set()
-        authorSet.add(siteConfig.blogAuthorId)
 
         result.data.allMarkdownRemark.edges.forEach(edge => {
           if (edge.node.frontmatter.tags) {
@@ -113,21 +107,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               tagMap.set(tag, array)
             })
           }
-
-          if (edge.node.frontmatter.category) {
-            categorySet.add(edge.node.frontmatter.category)
-          }
-
-          if (edge.node.frontmatter.author) {
-            authorSet.add(edge.node.frontmatter.author)
-          }
         })
 
         const tagFormatter = tag => route =>
           `/tags/${_.kebabCase(tag)}/${route !== 1 ? route : ""}`
         const tagList = Array.from(tagSet)
         tagList.forEach(tag => {
-          // Creates tag pages
           createPaginationPages({
             createPage,
             edges: tagMap.get(tag),
@@ -136,17 +121,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             limit: siteConfig.sitePaginationLimit,
             context: {
               tag
-            }
-          })
-        })
-
-        const categoryList = Array.from(categorySet)
-        categoryList.forEach(category => {
-          createPage({
-            path: `/categories/${_.kebabCase(category)}/`,
-            component: categoryPage,
-            context: {
-              category
             }
           })
         })
