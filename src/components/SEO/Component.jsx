@@ -10,9 +10,14 @@ function getDefaultImage(config) {
 function getSocialImage(postMeta, config) {
   let url = config.siteUrl
   let defaultImage = getDefaultImage(config)
+  let socialCover = postMeta.socialCover
   let coverImage = postMeta.cover ? postMeta.cover : defaultImage
   let postImage = postMeta.socialCover
   let hasPartialUrl = coverImage.startsWith("../")
+
+  if (socialCover) {
+    return `${url}/${socialCover}`
+  }
 
   if (postImage) {
     return `${url}/${postImage}`
@@ -51,7 +56,6 @@ function getSeo(config, postNode, postPath, hasSEO) {
       type: "article"
     }
   }
-  console.log(seo)
   return seo
 }
 
