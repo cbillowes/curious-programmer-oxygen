@@ -41,7 +41,7 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-h3 { font-size: 1.5rem; }
+h3 { font-size: 1.5rem; margin-top: 1em; }
 h4 { font-size: 1rem; }
 
 a {
@@ -122,7 +122,7 @@ table thead {
 
 table th,
 table td {
-  padding: 5px;
+    padding: 0.75em;
 }
 
 table tr:nth-child(even) td {
@@ -132,6 +132,14 @@ table tr:nth-child(even) td {
 table tr:hover td {
   background-color: #cc0000;
   color: #fff;
+}
+
+table tr:hover a {
+  color: #272822 !important;
+}
+
+table tr:hover a:hover {
+  color: #fff !important;
 }
 
 div.gatsby-highlight {
