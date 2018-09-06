@@ -10,7 +10,7 @@ tags:
 
 <div id="accordion"></div>
 
-Get started with the essentials of Datomic from installing Datomic, running a transactor, working with the Datomic console, running the Datomic REPL, creating and restoring a database, crating a schema and furnishing it with data.
+Get started with the essentials of Datomic from installing Datomic, running a transactor, working with the Datomic console, running the Datomic REPL, creating and restoring a database, creating a schema and furnishing it with data.
 
 The goal of this series is to expose a collection of queries that I find useful that can be conveniently referenced in projects.
 
