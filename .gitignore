@@ -64,3 +64,5 @@ typings/
 .cache
 public/
 drafts/
+
+*mbrainz*
