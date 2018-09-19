@@ -137,11 +137,11 @@ Create a database connection as a function
 ## Multiple inputs [(more)](https://docs.datomic.com/on-prem/query.html#multiple-inputs)
 ```clojure
 (d/q '[:find [?release-name ...]
-         :in $ ?artist-name
-         :where
-         [?artist :artist/name ?artist-name]
-         [?release :release/artists ?artist]
-         [?release :release/name ?release-name]] db "John Lennon")
+       :in $ ?artist-name
+       :where
+       [?artist :artist/name ?artist-name]
+       [?release :release/artists ?artist]
+       [?release :release/name ?release-name]] db "John Lennon")
 
   ;=> ["Power to the People"
   ;    "Unfinished Music No. 2: Life With the Lions"
@@ -152,11 +152,11 @@ Create a database connection as a function
 ## Tuple binding [(more)](https://docs.datomic.com/on-prem/query.html#tuple-binding)
 ```clojure
 (d/q '[:find [?release ...]
-         :in $ [?artist-name ?release-name]
-         :where
-         [?artist :artist/name ?artist-name]
-         [?release :release/artists ?artist]
-         [?release :release/name ?release-name]] db ["John Lennon" "Mind Games"])
+       :in $ [?artist-name ?release-name]
+       :where
+       [?artist :artist/name ?artist-name]
+       [?release :release/artists ?artist]
+       [?release :release/name ?release-name]] db ["John Lennon" "Mind Games"])
 
   ;=> [17592186157686 17592186157672 17592186157690 17592186157658]
 ```
