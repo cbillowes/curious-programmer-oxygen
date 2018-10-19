@@ -99,8 +99,9 @@ img::-moz-selection {
   background: transparent;
 }
 
-ul {
+ul, ol {
   margin-bottom: 2rem;
+  line-height: 2.5;
 }
 
 ul li {
