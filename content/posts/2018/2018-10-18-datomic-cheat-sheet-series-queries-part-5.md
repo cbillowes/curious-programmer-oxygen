@@ -1,7 +1,7 @@
 ---
 title: "Datomic Cheat Sheet Series - Queries (Part 5) - Transactions"
 socialCover: social-covers/2018-09-06-datomic.png
-date:   2018-09-20 07:00:00 +0200
+date:   2018-10-18 04:54:00 +0200
 tags:
     - Technical
     - Datomic
