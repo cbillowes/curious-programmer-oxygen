@@ -7,7 +7,7 @@ tags:
 ---
 
 I had to [re-install](/blog/setting-up-my-environment-in-fedora) so I documented my process.
-In this post, I focus on configuring my shell for a personalized experience. :blush:
+In this post, I focus on configuring my shell for a personalized experience.
 
 ---
 
