@@ -1,6 +1,6 @@
 ---
 title: "Setting up my environment in Fedora - Creating backups"
-socialCover: social-covers/2018-10-18-backups.png
+socialCover: social-covers/2018-10-20-backups.png
 date:   2018-10-20 18:30:01 +0200
 tags:
     - Technical

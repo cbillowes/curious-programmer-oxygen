@@ -1,6 +1,6 @@
 ---
 title: "Setting up my environment in Fedora - Installing apps"
-socialCover: social-covers/2018-10-18-apps.png
+socialCover: social-covers/2018-10-20-apps.png
 date:   2018-10-20 18:30:04 +0200
 tags:
     - Technical

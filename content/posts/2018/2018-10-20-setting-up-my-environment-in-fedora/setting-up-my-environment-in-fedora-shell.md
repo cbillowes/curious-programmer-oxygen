@@ -1,6 +1,6 @@
 ---
 title: "Setting up my environment in Fedora - Customizing my shell"
-socialCover: social-covers/2018-10-18-shell.png
+socialCover: social-covers/2018-10-20-shell.png
 date:   2018-10-20 18:30:03 +0200
 tags:
     - Technical
