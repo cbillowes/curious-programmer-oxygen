@@ -25,6 +25,7 @@
 .read-next-compact h2 {
     font-size: 0.75em;
     font-style: normal;
+    line-height: 1.5em;
 }
 
 .read-next-compact a:hover,

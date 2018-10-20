@@ -39,6 +39,7 @@ h5,
 h6 {
   font-weight: 800;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
 }
 
 h3 { font-size: 1.5rem; margin-top: 1em; }

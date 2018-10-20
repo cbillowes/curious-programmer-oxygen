@@ -10,7 +10,7 @@ tags:
 
 <div id="accordion"></div>
 
-In this post I work through transactions. The example queries are grabbed from the [Datomic Docs](https://docs.datomic.com/on-prem/transactions.html). *If you want to get started with Datomic, check out the [first post](/blog/datomic-cheat-sheet-series-getting-started) in the series. If you want to see other queries, then check out [part 1](/blog/datomic-cheat-sheet-series-queries-part-1) and [part 2](/blog/datomic-cheat-sheet-series-queries-part-2). If you want to set up query rules then check out [part 3](/blog/datomic-cheat-sheet-series-queries-part-3). If you want to learn more about pull then check out [part 4](blog/datomic-cheat-sheat-series-queries-part-4).
+In this post I work through transactions. The example queries are grabbed from the [Datomic Docs](https://docs.datomic.com/on-prem/transactions.html). *If you want to get started with Datomic, check out the [first post](/blog/datomic-cheat-sheet-series-getting-started) in the series. If you want to see other queries, then check out [part 1](/blog/datomic-cheat-sheet-series-queries-part-1) and [part 2](/blog/datomic-cheat-sheet-series-queries-part-2). If you want to set up query rules then check out [part 3](/blog/datomic-cheat-sheet-series-queries-part-3). If you want to learn more about pull then check out [part 4](blog/datomic-cheat-sheat-series-queries-part-4).*
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/bAilFQdaiHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -43,7 +43,7 @@ Create a database connection as a function
 ```clojure
 (require '[datomic.api :as d])
 (def txn ...)
-(:db-after @(d/transact txn))
+(:db-after @(d/transact [txn]))
 ```
 
 ```clojure

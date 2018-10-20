@@ -1,13 +1,13 @@
 ---
 title: "Setting up my environment in Fedora - Installing apps"
 socialCover: social-covers/2018-10-18-apps.png
-date:   2018-10-19 05:10:04 +0200
+date:   2018-10-20 18:30:04 +0200
 tags:
     - Technical
 ---
 
 I had to [re-install](/blog/setting-up-my-environment-in-fedora) so I documented my process.
-In this post, I focus on configuring my shell for a personalized experience.
+In this post, I focus on the installation of my most used apps.
 
 ---
 
@@ -41,9 +41,7 @@ Here are some of the apps I use and where to download them from.
 
 ### IntelliJ
 
-#### Inotify watches limit
-
-[Inotify watches limit](https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit)
+#### [Inotify watches limit](https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit)
 
 1. Add the following line to either `/etc/sysctl.conf` file or a new `*.conf` file (e.g. `idea.conf`) under `/etc/sysctl.d/` directory:
 

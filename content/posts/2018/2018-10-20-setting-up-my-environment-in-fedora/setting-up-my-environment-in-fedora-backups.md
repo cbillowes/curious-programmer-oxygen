@@ -1,7 +1,7 @@
 ---
 title: "Setting up my environment in Fedora - Creating backups"
 socialCover: social-covers/2018-10-18-backups.png
-date:   2018-10-19 05:10:01 +0200
+date:   2018-10-20 18:30:01 +0200
 tags:
     - Technical
     - Fedora
@@ -72,7 +72,7 @@ cd project.git
 git init --bare
 ```
 
-Configure the git repo locally and point to the newly create remote repository.
+Configure the git repo locally and point to the newly created remote repository.
 
 ```bash
 cd /home/<user>/path/to/project

@@ -1,14 +1,14 @@
 ---
 title: "Setting up my environment in Fedora - Creating a boot disk"
 socialCover: 2018-10-18-usb-flash-drive.jpg
-date:   2018-10-19 05:10:02 +0200
+date:   2018-10-20 18:30:02 +0200
 tags:
     - Technical
     - Fedora
 ---
 
 I had to [re-install](/blog/setting-up-my-environment-in-fedora) so I documented my process.
-In this post, I focus on getting a Fedora 28 live media installation ready in a USB boot disk
+In this post, I focus on getting a Fedora 28 live media installation ready on a USB boot disk
 so that I can begin the installation process.
 
 ---

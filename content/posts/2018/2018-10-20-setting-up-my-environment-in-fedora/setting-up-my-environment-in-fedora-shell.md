@@ -1,7 +1,7 @@
 ---
 title: "Setting up my environment in Fedora - Customizing my shell"
 socialCover: social-covers/2018-10-18-shell.png
-date:   2018-10-19 05:10:03 +0200
+date:   2018-10-20 18:30:03 +0200
 tags:
     - Technical
 ---
@@ -55,8 +55,8 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 sudo dnf -y install powerline-fonts
 ```
 
-[FiraCode](https://github.com/tonsky/FiraCode) gives you a monospaced font with programming ligatures.
-I now use this font in IntelliJ.
+[Fira Code](https://github.com/tonsky/FiraCode) gives you a monospaced font with programming ligatures.
+I now use this font in IntelliJ and VS Code.
 
 ```bash
 sudo dnf -y copr enable evana/fira-code-fonts
@@ -134,6 +134,8 @@ POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='clear'
 
 This [plugin](https://github.com/zsh-users/zsh-syntax-highlighting) highlights commands while typing into an interactive terminal.
 
+![My plugin configuration](zsh-syntax-highlighting-plugin.png)
+
 ```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
@@ -194,5 +196,4 @@ plugins=(
 )
 ```
 
-For more options, check out [awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins), 
-a collection of ZSH frameworks, plugins & themes inspired by the various awesome list collections out there.
+For more plugins, check out [awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins).
