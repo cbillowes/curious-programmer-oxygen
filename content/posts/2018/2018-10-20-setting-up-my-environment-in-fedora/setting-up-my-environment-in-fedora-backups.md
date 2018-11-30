@@ -83,7 +83,8 @@ git remote add origin git@<host>:/srv/git/project.git
 git push origin master
 ```
 
-*If you have problems pushing, check that the directory permissions are not assigned to root `ls -lah`.*
+*If you have problems pushing, check that the directory permissions are not assigned to root `ls -lah`. 
+Assign the files and folders to git using `sudo chown git *`*
 
 ## Global save-to-git script
 
