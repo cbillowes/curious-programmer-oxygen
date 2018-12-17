@@ -1,12 +1,14 @@
 .menu-bar {
   position: fixed;
-  background-color: #212529;
-  width: 500px;
+  background-color: #1c1f21;
+  width: 250px;
+  top: 75px;
   right: 0;
   opacity: 0;
-  -webkit-transform: translate3d(500px, 0, 0);
-  -ms-transform: translate3d(500px, 0, 0);
-  transform: translate3d(500px, 0, 0);
+  height: 100vh;
+  -webkit-transform: translate3d(250px, 0, 0);
+  -ms-transform: translate3d(250px, 0, 0);
+  transform: translate3d(250px, 0, 0);
   -webkit-transition:
       -webkit-transform 0.5s ease,
       opacity 0.3s ease 0.7s;
@@ -28,21 +30,30 @@
   transform: translate3d(0, 0, 0);
 }
 
+.menu-bar > ul {
+  padding-left: 0px;
+}
+
 .menu-bar > ul > li {
-  margin: 0px;
   list-style: none;
 }
 
 .menu-bar .menu-item {
   cursor: pointer;
-  padding: 0.25em 0.5em; 
+  padding: 0.25em 2em; 
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.menu-bar > a {
+.menu-bar .menu-item > a {
   display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-bar .menu-item:hover {
+  background-color: #3c3b3b80;
 }
 
 .menu-bar .menu-item.selected {
-  background-color: #3c3b3b80;
-  border-radius: 4px;
+  background-color: #cc0000;
 }

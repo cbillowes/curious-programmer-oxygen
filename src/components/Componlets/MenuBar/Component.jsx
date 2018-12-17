@@ -1,20 +1,37 @@
 import React, { Component } from "react"
 import "./MenuBar.css"
+import { Link } from "react-router-dom";
 
 class MenuBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: "Home"
+      selected: this.getSelected()
+    };
+  }
+
+  getSelected = () => {
+    let url = window.location.href;
+    if (url.endsWith("/")) {
+      return "Home";
+    }
+    if (url.endsWith("/about")) {
+      return "About";
+    }
+    if (url.endsWith("/credits")) {
+      return "Credits";
+    }
+    if (url.endsWith("/privacy-policy")) {
+      return "Privacy Policy";
     }
   }
-
-  toggle = section => {
-    this.setState({ section: section });
+  
+  select = (section) => {
+    this.setState({selected: section});
   }
 
-  isSelected = section => {
-    if (section === this.state.section) {
+  selected = (section) => {
+    if (this.state.selected === section) {
       return "menu-item selected";
     }
     return "menu-item";
@@ -22,20 +39,28 @@ class MenuBar extends Component {
 
   render() {
     return (
-      <div
-        onClick={this.props.toggle.bind(this)}
-        className={`menu-bar ${this.props.active ? "active" : ""}`}>
+      <div className={`menu-bar ${this.props.active ? "active" : ""}`}>
         <ul>
-          <li 
-            onClick={this.toggle.bind(this, "Home")} 
-            className={`${this.isSelected("Home")}`}>
-            <a data-href="/">Blog</a>
+          <li
+            className={this.selected("Home")}
+            onClick={this.select.bind(this, "Home")}>
+            <Link to="/">Blog</Link>
           </li>
-          <li 
-            onClick={this.toggle.bind(this, "About")}
-            className={`${this.isSelected("About")}`}>
-            <a data-href="/about">About</a>
+          <li
+            className={this.selected("About")} 
+            onClick={this.select.bind(this, "About")}>
+            <Link to="/about">About</Link>
           </li>
+          {/* <li
+            className={this.selected("Credits")} 
+            onClick={this.select.bind(this, "Credits")}>
+            <Link to="/credits">Credits</Link>
+          </li>
+          <li
+            className={this.selected("Privacy Policy")} 
+            onClick={this.select.bind(this, "Privacy Policy")}>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+          </li> */}
         </ul>
       </div>
     );
