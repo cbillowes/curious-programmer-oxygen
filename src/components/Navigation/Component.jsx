@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Search from "../Componlets/Search/Component"
 import Menu from "../Componlets/Menu/Component"
+import MenuBar from "../Componlets/MenuBar/Component"
 import "./Navigation.css"
 
 class Navigation extends Component {
@@ -23,8 +24,9 @@ class Navigation extends Component {
   render() {
     return (
       <div>
-        <Search toggle={this.toggleSearch.bind(this)} active={this.state.search} activate={this.state.search} />
-        <Menu toggle={this.toggleMenu.bind(this)} active={this.state.menu} activate={this.state.menu} />
+        <Search toggle={this.toggleSearch.bind(this)} active={this.state.search} />
+        <Menu toggle={this.toggleMenu.bind(this)} active={this.state.menu} />
+        <MenuBar toggle={this.toggleMenu.bind(this)} active={this.state.menu} />
      </div>
     )
   };
