@@ -11,18 +11,20 @@ class MenuBar extends Component {
   }
 
   getSelected = () => {
-    let url = window.location.href;
-    if (url.endsWith("/")) {
-      return "Home";
-    }
-    if (url.endsWith("/about")) {
-      return "About";
-    }
-    if (url.endsWith("/credits")) {
-      return "Credits";
-    }
-    if (url.endsWith("/privacy-policy")) {
-      return "Privacy Policy";
+    if (window) {
+      let url = window.location.href;
+      if (url.endsWith("/")) {
+        return "Home";
+      }
+      if (url.endsWith("/about")) {
+        return "About";
+      }
+      if (url.endsWith("/credits")) {
+        return "Credits";
+      }
+      if (url.endsWith("/privacy-policy")) {
+        return "Privacy Policy";
+      }
     }
   }
   
