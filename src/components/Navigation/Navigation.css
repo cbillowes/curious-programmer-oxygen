@@ -1,4 +1,10 @@
-.icon {
+.icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.icons > .icon {
     display:inline-block;
     cursor: pointer;
     margin-left:0.5em;
@@ -6,12 +12,12 @@
     height: 60px;
 }
 
-.icon.active {
+.icons > .icon.active {
     background-color: #3c3b3b80;
     border-radius: 4px;
 }
 
-.icon > i {
+.icons > .icon > i {
     display:inline-block;
     background-size: cover;
     width: 40px;

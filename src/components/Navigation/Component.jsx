@@ -24,10 +24,12 @@ class Navigation extends Component {
   render() {
     return (
       <div>
-        <Search toggle={this.toggleSearch.bind(this)} active={this.state.search} />
-        <Menu toggle={this.toggleMenu.bind(this)} active={this.state.menu} />
+        <div class="icons">
+          <Search toggle={this.toggleSearch.bind(this)} active={this.state.search} />
+          <Menu toggle={this.toggleMenu.bind(this)} active={this.state.menu} />
+        </div>
         <MenuBar toggle={this.toggleMenu.bind(this)} active={this.state.menu} />
-     </div>
+      </div>
     )
   };
 }
