@@ -16,7 +16,7 @@ class SearchBar extends Component {
   generateResults = () => {
     if (this.state.error) {
       return (
-        <li key="empty">
+        <li key="empty" className="empty">
           Sorry, but something strange is going on. Search does not want to
           behave appropriately. Perhaps try again a little later.
         </li>
@@ -38,10 +38,13 @@ class SearchBar extends Component {
         let result = this.state.results[i]
         let title = result.title
           .toString()
-          .replace(/\| Curious Programmer/gi, "")
+          .replace(/\| Curious Programmer/gi, "");
+        let url = result.url
+          .toString()
+          .replace(/https:\/\/curiousprogrammer.io/gi, "");
         results.push(
           <li key={i}>
-            <a href={result.url}>{title}</a>
+            <a href={url}>{title}</a>
           </li>
         )
       }
