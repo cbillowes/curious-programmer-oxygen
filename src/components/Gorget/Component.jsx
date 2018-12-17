@@ -1,6 +1,5 @@
 import React from "react"
 import Link from "gatsby-link"
-import classNames from "classnames"
 import Navigation from "../Navigation/Component"
 import "./Gorget.css"
 

@@ -1,74 +1,33 @@
 import React, { Component } from "react"
+import Search from "../Componlets/Search/Component"
+import Menu from "../Componlets/Menu/Component"
 import "./Navigation.css"
 
 class Navigation extends Component {
-  state = {
-    open: false,
-    className: "closed"
-  }
-
-  toggle = () => {
-    if (this.state.open) {
-      this.close()
-    } else {
-      this.open()
+  constructor(props) {
+    super(props);
+    this.state = {
+      search: false,
+      menu: false
     }
+  };
+
+  toggleSearch = () => {
+    this.setState({ search: !this.state.search });
   }
 
-  handleOnClick = evt => {
-    evt.stopPropagation()
-    if (this.state.open) {
-      this.close()
-    } else {
-      this.open()
-    }
-  }
-
-  handleOnClose = evt => {
-    evt.stopPropagation()
-    this.close()
-  }
-
-  open = () => {
-    this.setState({
-      open: true,
-      className: "open"
-    })
-  }
-
-  close = () => {
-    this.setState({
-      open: false,
-      className: "closed"
-    })
-  }
-
-  toggleCurrent = section => {
-    if (section === this.props.section) {
-      return "nav-current"
-    }
-    return ""
+  toggleMenu = () => {
+    this.setState({ menu: !this.state.menu });
   }
 
   render() {
     return (
       <div>
-        <h3 className="nav-title" onClick={this.toggle}>
-          <img className="icon" src="/menu.svg" />
-        </h3>
-        <div className={`nav ${this.state.className}`}>
-          <ul>
-            <li className={`${this.toggleCurrent("Home")}`}>
-              <a href="/">Blog</a>
-            </li>
-            <li className={`${this.toggleCurrent("About")}`}>
-              <a href="/about">About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <Search toggle={this.toggleSearch.bind(this)} active={this.state.search} activate={this.state.search} />
+        <Menu toggle={this.toggleMenu.bind(this)} active={this.state.menu} activate={this.state.menu} />
+     </div>
     )
-  }
+  };
 }
 
 export default Navigation
