@@ -1,42 +1,42 @@
 import React, { Component } from "react"
 import "./MenuBar.css"
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 class MenuBar extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       selected: this.getSelected()
-    };
+    }
   }
 
   getSelected = () => {
-    if (window) {
-      let url = window.location.href;
+    if (typeof window !== "undefined" && window.location) {
+      let url = window.location.href
       if (url.endsWith("/")) {
-        return "Home";
+        return "Home"
       }
       if (url.endsWith("/about")) {
-        return "About";
+        return "About"
       }
       if (url.endsWith("/credits")) {
-        return "Credits";
+        return "Credits"
       }
       if (url.endsWith("/privacy-policy")) {
-        return "Privacy Policy";
+        return "Privacy Policy"
       }
     }
   }
-  
-  select = (section) => {
-    this.setState({selected: section});
+
+  select = section => {
+    this.setState({ selected: section })
   }
 
-  selected = (section) => {
+  selected = section => {
     if (this.state.selected === section) {
-      return "menu-item selected";
+      return "menu-item selected"
     }
-    return "menu-item";
+    return "menu-item"
   }
 
   render() {
@@ -45,12 +45,14 @@ class MenuBar extends Component {
         <ul>
           <li
             className={this.selected("Home")}
-            onClick={this.select.bind(this, "Home")}>
+            onClick={this.select.bind(this, "Home")}
+          >
             <Link to="/">Blog</Link>
           </li>
           <li
-            className={this.selected("About")} 
-            onClick={this.select.bind(this, "About")}>
+            className={this.selected("About")}
+            onClick={this.select.bind(this, "About")}
+          >
             <Link to="/about">About</Link>
           </li>
           {/* <li
@@ -65,7 +67,7 @@ class MenuBar extends Component {
           </li> */}
         </ul>
       </div>
-    );
+    )
   }
 }
 
