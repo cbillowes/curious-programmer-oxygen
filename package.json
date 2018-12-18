@@ -30,6 +30,7 @@
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "jquery": "^3.3.1",
+    "libvips": "0.0.2",
     "lodash": "^4.17.4",
     "lodash-webpack-plugin": "^0.11.4",
     "moment": "^2.22.2",
@@ -66,14 +67,22 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "clean": "rm -rf .cache && rm -rf public",
+    "clean": "rm -rf public && rm -rf .cache && rm -rf public && rm -rf build",
     "format": "prettier '**/*.{js,jsx}' --write --loglevel debug",
     "markdown:writing": "write-good $(glob 'content/posts/**/*.md')",
     "markdown:lint": "remark content/posts/",
     "ready": "npm run clean && npm run format",
     "develop": "npm run ready && gatsby develop --host localhost --port 8081",
     "build": "npm run ready && gatsby build --prefix-paths",
-    "serve": "npm run build && gatsby serve"
+    "serve": "npm run build && gatsby serve",
+    "install": "sudo npm install --unsafe-perm=true --allow-root",
+    "clean-package-lock": "sudo rm -rf package-lock.json",
+    "clean-node-modules": "sudo rm -rf node_modules",
+    "fresh-clean": "npm run clean-package-lock && npm run clean-node-modules && sudo npm cache clean --force && npm run clean",
+    "libvips-prerequisites": "sudo npm install -g node-gyp && sudo yarn upgrade-interactive && sudo yum install -y libpng-devel && sudo npm install -g pngquant-bin",
+    "libvips-catastrophe": "sudo npm install -g pngquant-bin --allow-root --unsafe-perm=true && sudo npm i libvips --unsafe-perm=true --allow-root && sudo npm i gatsby-plugin-sharp --unsafe-perm --allow-root",
+    "fresh": "npm run fresh-clean && && sudo npm run libvips-prerequisites && sudo run libvips-catastrophy && sudo npm install --unsafe-perm=true --allow-root &&  sudo npm audit fix && npm run develop",
+    "self-destruct": "npm run clean-package-lock && sudo run clean-node-modules && sudo dnf remove nodejs && sudo dnf install -y nodejs && sudo npm run fresh"
   },
   "remarkConfig": {
     "plugins": [
