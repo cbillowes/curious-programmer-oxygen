@@ -9,8 +9,7 @@ class Introduction extends Component {
         <p>
           My name is Clarice Bouwer. I am a software generalist. I am curious
           about how things work.
-          <br />
-          I offer giggles, laughs and a wealth of radiant energy which
+          <br />I offer giggles, laughs and a wealth of radiant energy which
           apparently makes people smile - and sometimes even happy. Who would
           have thought?
         </p>

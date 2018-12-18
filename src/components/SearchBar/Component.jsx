@@ -38,10 +38,10 @@ class SearchBar extends Component {
         let result = this.state.results[i]
         let title = result.title
           .toString()
-          .replace(/\| Curious Programmer/gi, "");
+          .replace(/\| Curious Programmer/gi, "")
         let url = result.url
           .toString()
-          .replace(/https:\/\/curiousprogrammer.io/gi, "");
+          .replace(/https:\/\/curiousprogrammer.io/gi, "")
         results.push(
           <li key={i}>
             <a href={url}>{title}</a>

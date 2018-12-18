@@ -3,7 +3,6 @@ import Helmet from "react-helmet"
 import Footer from "../components/Footer/Component"
 import config from "../../data/SiteConfig"
 import "./index.css"
-import "./index.js"
 require("../prism/prism-okaidia.css")
 
 export default class MainLayout extends React.Component {

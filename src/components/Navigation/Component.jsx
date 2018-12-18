@@ -1,8 +1,8 @@
 import React, { Component } from "react"
-import Search from "../Componlets/Search/Component"
-import Menu from "../Componlets/Menu/Component"
-import MenuBar from "../Componlets/MenuBar/Component"
-import SearchBar from "../Componlets/SearchBar/Component"
+import Search from "../Search/Component"
+import Menu from "../Menu/Component"
+import MenuBar from "../MenuBar/Component"
+import SearchBar from "../SearchBar/Component"
 import "./Navigation.css"
 
 class Navigation extends Component {

@@ -26,8 +26,8 @@ class Year_2016 extends Component {
               This post sparked some interesting conversation on
               <a href="https://www.reddit.com/r/programming/comments/5cpaty/ive_had_a_lot_of_problems_with_imposter_syndrome/">
                 Reddit
-              </a>, which initiated 6,734 unique pageviews within a week of
-              posting.
+              </a>
+              , which initiated 6,734 unique pageviews within a week of posting.
             </p>
             <p>
               The Reddit post on the /programming subreddit surprisingly
@@ -100,9 +100,9 @@ class Year_2016 extends Component {
             <h3>Java 9 and Women in tech Unconference</h3>
             <p>
               I gave my first talk about marketing for software developers
-              titled "<a href="/blog/branding-your-identity/">
-                Branding your Identity
-              </a>".
+              titled "
+              <a href="/blog/branding-your-identity/">Branding your Identity</a>
+              ".
             </p>
           </div>
         </li>
