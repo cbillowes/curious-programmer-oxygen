@@ -36,8 +36,6 @@ npm run develop
 
 * [Oxygen Logo](https://seeklogo.com/vector-logo/329229/oxygen)
 
-
-
 ## Gremlins
 
 * **Clean** the crap out of it to get out a gremlin or two
@@ -74,8 +72,14 @@ EACCES: permission denied, open '/home/<directory>/node_modules/sharp/10298-libv
 50729 silly lifecycle sharp@0.20.1~install: Returned: code: 1  signal: null
 50730 info lifecycle sharp@0.20.1~install: Failed to exec install script
 ```
+* ****
 
-## MIT License
+```bash
+sudo dnf install libpng-dev
+sudo npm install -g pngquant-bin
+```
+
+## MIT License for the source code
 
 Copyright (c) 2018 Curious Programmer
 
