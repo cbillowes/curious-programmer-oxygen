@@ -7,7 +7,7 @@ import config from "../../data/SiteConfig"
 class AboutPage extends Component {
   render() {
     return (
-      <div className="about-container">
+      <div>
         <Helmet title={`About | ${config.siteTitle}`} />
         <Gorget title={config.siteTitle} section="About" />
         <About />

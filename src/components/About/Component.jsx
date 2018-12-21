@@ -12,7 +12,7 @@ import "./About.css"
 class About extends Component {
   render() {
     return (
-      <div className="about">
+      <div>
         <Introduction />
         <Year_2018 />
         <Year_2017 />
