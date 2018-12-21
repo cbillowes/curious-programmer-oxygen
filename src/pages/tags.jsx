@@ -42,7 +42,10 @@ export default class TagsTemplate extends React.Component {
                 <Link
                   key={Math.random() * this.state.tags.length}
                   className="button badge badge-light"
-                  to={`/tags/${_.kebabCase(item)}`}>{item}</Link>
+                  to={`/tags/${_.kebabCase(item)}`}
+                >
+                  {item}
+                </Link>
               ))}
             </div>
           </div>

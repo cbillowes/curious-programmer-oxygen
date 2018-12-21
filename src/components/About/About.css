@@ -1,6 +1,11 @@
 p a {
   text-decoration: none;
 }
+
+#post-listing.page-container {
+    padding-top: 0px;
+}
+
 .page-container {
     padding-top: 6em;
     padding-bottom: 100px;

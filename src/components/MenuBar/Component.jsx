@@ -41,7 +41,7 @@ class MenuBar extends Component {
     }
     return "menu-item"
   }
-
+  //TODO: put the items into an array and map through them
   render() {
     return (
       <div className={`menu-bar ${this.props.active ? "active" : ""}`}>
@@ -63,6 +63,12 @@ class MenuBar extends Component {
             onClick={this.select.bind(this, "Tags")}
           >
             <Link to="/tags">Tags</Link>
+          </li>
+          <li
+            className={this.selected("Credits")}
+            onClick={this.select.bind(this, "Credits")}
+          >
+            <Link to="/credits">Credits</Link>
           </li>
           {/* <li
             className={this.selected("Credits")} 
