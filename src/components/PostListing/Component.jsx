@@ -24,7 +24,7 @@ class PostListing extends React.Component {
     const heading = this.props.heading
 
     return (
-      <div id="post-listing" className="container">
+      <div id="post-listing" className="container page-container">
         <div className="row">
           <div className="col-lg-9 col-md-9 mx-auto">
             <h1>{heading}</h1>

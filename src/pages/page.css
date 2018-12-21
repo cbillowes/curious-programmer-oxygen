@@ -1,0 +1,16 @@
+.page-container { 
+  padding: 0em 0em 100px 0em ;
+}
+
+.footer {
+  margin-top: -80px;
+}
+
+.tags-container {
+  margin-top: 5em;
+}
+
+/* This is a hack for now */
+.tag-container {
+  padding-top: 0px;
+}

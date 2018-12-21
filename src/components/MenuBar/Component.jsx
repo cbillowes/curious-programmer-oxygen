@@ -19,6 +19,9 @@ class MenuBar extends Component {
       if (url.endsWith("/about")) {
         return "About"
       }
+      if (url.endsWith("/tags")) {
+        return "Tags"
+      }
       if (url.endsWith("/credits")) {
         return "Credits"
       }
@@ -54,6 +57,12 @@ class MenuBar extends Component {
             onClick={this.select.bind(this, "About")}
           >
             <Link to="/about">About</Link>
+          </li>
+          <li
+            className={this.selected("Tags")}
+            onClick={this.select.bind(this, "Tags")}
+          >
+            <Link to="/tags">Tags</Link>
           </li>
           {/* <li
             className={this.selected("Credits")} 

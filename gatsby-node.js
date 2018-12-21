@@ -42,6 +42,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     const postPage = path.resolve("src/templates/post.jsx")
     const tagPage = path.resolve("src/templates/tag.jsx")
+    const tagsPage = path.resolve("src/pages/tags.jsx")
 
     resolve(
       graphql(
@@ -79,6 +80,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           console.log(result.errors)
           reject(result.errors)
         }
+
+        result.data.allMarkdownRemark.edges.forEach(edge => {
+          createPage({
+            path: `/tags`,
+            component: tagsPage
+          })
+        })
 
         // Creates Posts
         createLinkedPages({

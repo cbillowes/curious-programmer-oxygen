@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import Gorget from "../components/Gorget/Component"
 import PostListing from "../components/PostListing/Component"
+import "../pages/page.css"
 import config from "../../data/SiteConfig"
 
 export default class TagTemplate extends React.Component {
@@ -9,7 +10,7 @@ export default class TagTemplate extends React.Component {
     const tag = this.props.pathContext.tag
     const postEdges = this.props.data.allMarkdownRemark.edges
     return (
-      <div className="tag-container">
+      <div className="tag-container page-container">
         <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
         <Gorget title={config.siteTitle} section={tag} />
         <PostListing
